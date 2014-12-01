@@ -1,0 +1,19 @@
+#wrap {
+	min-height: 100%
+}
+.navbar-header{
+	opacity: 1;
+}
+.navbar {
+	opacity: 0.6;
+	
+}
+
+#main {
+	margin-top:90px;
+}
+
+
+#footer {
+	background-color: #27272b;
+}
