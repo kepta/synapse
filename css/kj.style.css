@@ -12,7 +12,15 @@
 #main {
 	margin-top:90px;
 }
-
+.container {
+	width:950px;
+}
+.page-header {
+	text-align:center;
+}
+#inferno {
+	text-align:center;
+}
 
 #footer {
 	background-color: #27272b;
