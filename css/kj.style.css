@@ -21,6 +21,16 @@
 	
 
 }
+.logo{
+	font-weight: bolder;
+	margin-top: 25px;
+	margin-left: 0px;
+	font-size: 25px;
+	letter-spacing: 0.2em;
+}
+#redLogo{
+	color: #de4f4f;
+}
 .info  {
 	text-align:center;
 	height:150px;
@@ -42,6 +52,7 @@
 #main {
 	margin-top:80px;
 	width: 100%;
+	font-family: 'Open Sans', sans-serif;
 }
 #shit {
 	height:10%;
