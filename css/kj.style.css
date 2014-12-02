@@ -8,15 +8,13 @@
 }
 
 .navbar {
-<<<<<<< HEAD
 	opacity: 1;
 	height: 90px;
-=======
 	opacity: 0.92;
 	
->>>>>>> 7c34916bbb14637d147ad87c3fbbd8eae9bdd486
+
 }
-.info {
+.info  {
 	text-align:center;
 	height:150px;
 }
@@ -25,6 +23,10 @@
 }
 .redzone {
 	background-color:#de4f4f;
+	height:630px;
+}
+.end {
+	background-color:black;
 	height:630px;
 }
 #othershit{
@@ -56,9 +58,13 @@
 #inferno {
 	text-align:center;
 }
-
 #footer {
 	background-color: #27272b;
+	color:white;
+}
+#footer ul{
+	
+	list-style:none;
 }
 
 rect {
