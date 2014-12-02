@@ -3,14 +3,14 @@
 }
 .navbar-header{
 	opacity: 1;
-	-webkit-filter: blur(10px);
-		filter: blur(10px);
+	
 }
 .navbar {
 	opacity: 1;
 	height: 80px;
 	opacity: 0.92;
 	margin-bottom: 0px;
+	
 }
 #navRight{
 	margin-top: 13px;
@@ -62,8 +62,9 @@
 	background-color:#27272b;
 	width: 100%;
 }
-.container {
-	width:950px;
+.container-fluid {
+	padding-left:10%;
+	padding-right:10%;
 }
 .page-header {
 	text-align:center;
