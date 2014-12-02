@@ -8,6 +8,7 @@
 }
 .navbar {
 	opacity: 1;
+<<<<<<< HEAD
 	height: 80px;
 	opacity: 0.92;
 	margin-bottom: 0px;
@@ -16,9 +17,27 @@
 	margin-top: 13px;
 	font-family:;
 	font-size: 13px;
+=======
+	height: 90px;
+	opacity: 0.92;
+	
+
+}
+.info  {
+	text-align:center;
+	height:150px;
+>>>>>>> 4f1ad05ef9cfa9095dedac6e9aef74d3923ef13b
 }
 .jumbotron {
 	background-color:transparent;
+}
+.redzone {
+	background-color:#de4f4f;
+	height:630px;
+}
+.end {
+	background-color:black;
+	height:630px;
 }
 #othershit{
 	color:#de4f4f;
@@ -40,7 +59,12 @@
 }
 .page-header {
 	text-align:center;
+<<<<<<< HEAD
 	border: none;
+=======
+	border-bottom:none;
+	
+>>>>>>> 4f1ad05ef9cfa9095dedac6e9aef74d3923ef13b
 }
 .celeb {
 	background-color:#e9e9e9;
@@ -50,9 +74,13 @@
 #inferno {
 	text-align:center;
 }
-
 #footer {
 	background-color: #27272b;
+	color:white;
+}
+#footer ul{
+	
+	list-style:none;
 }
 
 rect {
