@@ -6,15 +6,16 @@
 	-webkit-filter: blur(10px);
 		filter: blur(10px);
 }
-
 .navbar {
-<<<<<<< HEAD
 	opacity: 1;
-	height: 90px;
-=======
+	height: 80px;
 	opacity: 0.92;
-	
->>>>>>> 7c34916bbb14637d147ad87c3fbbd8eae9bdd486
+	margin-bottom: 0px;
+}
+#navRight{
+	margin-top: 13px;
+	font-family:;
+	font-size: 13px;
 }
 .jumbotron {
 	background-color:transparent;
@@ -23,7 +24,8 @@
 	color:#de4f4f;
 }
 #main {
-	margin-top:90px;
+	margin-top:80px;
+	width: 100%;
 }
 #shit {
 	height:10%;
@@ -31,13 +33,14 @@
 }
 .intro {
 	background-color:#27272b;
+	width: 100%;
 }
 .container {
 	width:950px;
 }
 .page-header {
 	text-align:center;
-	
+	border: none;
 }
 .celeb {
 	background-color:#e9e9e9;
