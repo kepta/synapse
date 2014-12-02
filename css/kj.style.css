@@ -8,8 +8,13 @@
 }
 
 .navbar {
+<<<<<<< HEAD
+	opacity: 1;
+	height: 90px;
+=======
 	opacity: 0.92;
 	
+>>>>>>> 7c34916bbb14637d147ad87c3fbbd8eae9bdd486
 }
 .info {
 	text-align:center;
