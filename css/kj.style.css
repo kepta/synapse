@@ -11,8 +11,16 @@
 	opacity: 0.92;
 	
 }
+.info {
+	text-align:center;
+	height:150px;
+}
 .jumbotron {
 	background-color:transparent;
+}
+.redzone {
+	background-color:#de4f4f;
+	height:630px;
 }
 #othershit{
 	color:#de4f4f;
@@ -32,6 +40,7 @@
 }
 .page-header {
 	text-align:center;
+	border-bottom:none;
 	
 }
 .celeb {
