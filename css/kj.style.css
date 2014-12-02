@@ -8,9 +8,21 @@
 	opacity: 0.6;
 	
 }
-
+.jumbotron {
+	background-color:transparent;
+}
+#othershit{
+	color:#de4f4f;
+}
 #main {
 	margin-top:90px;
+}
+#shit {
+	height:30%;
+	width:30%;
+}
+.intro {
+	background-color:#27272b;
 }
 .container {
 	width:950px;
@@ -24,4 +36,16 @@
 
 #footer {
 	background-color: #27272b;
+}
+
+rect {
+  fill: none;
+  pointer-events: all;
+  background: #222;
+  
+}
+
+circle {
+  fill: none;
+  stroke-width: 2.5px;
 }
