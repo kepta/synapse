@@ -198,6 +198,13 @@
 						</div>
 					</div>
 				</section>
+				<section class="test"> 
+					<div class="container-fluid"> 
+						<div class="row chart">
+							
+						</div>
+					</div>
+				</section>
 			</div>
 		</div>
 	</div>
@@ -232,13 +239,13 @@
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
 	<script>
-
+/*
 	var width = Math.max(960, innerWidth),
 		height = Math.max(500, innerHeight);
 
 	var i = 0;
 
-	var svg = d3.select("#main").append("svg")
+	var svg = d3.select(".test").append("svg")
 		.attr("width", width)
 		.attr("height", height);
 
@@ -265,7 +272,107 @@
 
 		d3.event.preventDefault();
 	}
+	var width = Math.max(960, innerWidth),
+		height = Math.max(500, innerHeight);
+	
+	var color = d3.scale.category20();
 
+	var force = d3.layout.force()
+	    .charge(-120)
+	    .linkDistance(130)
+	    .size([width, height]);
+
+	var svg = d3.select(".test").append("svg")
+	    .attr("width", width)
+	    .attr("height", height);
+
+	d3.json("miserables.json", function(error, graph) {
+	  force
+	      .nodes(graph.nodes)
+	      .links(graph.links)
+	      .start();
+
+
+	  var link = svg.selectAll(".link")
+	      .data(graph.links)
+	    .enter().append("line")
+	      .attr("class", "link")
+	      .style("stroke-width", "2");
+
+
+	  var node = svg.selectAll(".node")
+	      .data(graph.nodes)
+	    .enter().append("circle")
+	      .attr("class", "node")
+	      .attr("r", 5)
+	      .style("fill", "#5F5F5F")
+	      .call(force.drag);
+	  
+	  
+	  force.on("tick", function() {
+	    link.attr("x1", function(d) { return d.source.x; })
+	        .attr("y1", function(d) { return d.source.y; })
+	        .attr("x2", function(d) { return d.target.x; })
+	        .attr("y2", function(d) { return d.target.y; });
+
+	    node.attr("cx", function(d) { return d.x; })
+	        .attr("cy", function(d) { return d.y; });
+	  });
+	});
+	
+	/*
+
+	var width = Math.max(960, innerWidth),
+		height = Math.max(500, innerHeight);
+	var svg = d3.select("#main").append("svg")
+		.attr("width", width)
+		.attr("height", height);
+
+	var circle = svg.selectAll("circle")
+	    .data([32, 57, 112, 293,555]);
+
+	var circleEnter = circle.enter().append("circle");
+	circleEnter.attr("cy", 60);
+	circleEnter.attr("cx", function(d, i) { return i * 100 + 30; });
+	circleEnter.attr("r", function(d) { return Math.sqrt(d); });
+	circleEnter.style("fill", "steelblue");
+	
+	circle.exit().remove();*/
+	var width = Math.max(960, innerWidth),
+		height = Math.max(500, innerHeight);
+	
+	var nodes = [
+	    { x:   width/3, y: height/2 },
+	    { x: 2*width/3, y: height/2 }
+	];
+	
+	var links = [
+		{source:0,target:1}
+	];
+	var svg =d3.select(".test").append('svg')
+		.attr('width',width)
+		.attr('height',height);
+	var force = d3.layout.force().size([width,height]).nodes(nodes).links(links);
+	force.linkDistance(width/2);
+	
+	var link = svg.selectAll('.link')
+		.data(links)
+		.enter().append('line')
+		.attr('class','link');
+	var node = svg.selectAll('.node')
+		.data(nodes)
+		.enter().append('circle')
+		.attr('class','node');
+	force.on('end',function() {
+		node.attr('r',width/25)
+		.attr('cx',function(d){return d.x;})
+		.attr('cy',function(d){return d.y;});
+		link.attr('x1',function(d) {return d.source.x;})
+			.attr('y1',function(d) {return d.source.y;})
+			.attr('x2',function(d) {return d.target.x;})
+			.attr('y2',function(d) {return d.target.y;})
+	});
+	force.start();
 	</script>
 </body>
 </html>

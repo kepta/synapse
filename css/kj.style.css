@@ -35,6 +35,14 @@
 	letter-spacing: 0.2em;
 	
 }
+.chart div {
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
 #logoIn {
 	width: 317px;
 	height: 50px;
@@ -76,6 +84,18 @@
 	background-color: #27272b;
 	width: 100%;
 	/* background-image: url("img/muchbef.jpg"); */
+}
+.test {
+	background-color:#27272b;
+}
+.node {
+  stroke: #fff;
+  stroke-width: 0px;
+}
+
+.link {
+  stroke: #999;
+  stroke-opacity: .6;
 }
 .container-fluid {
 	padding-left:10%;
