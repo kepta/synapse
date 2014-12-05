@@ -2,7 +2,7 @@
 $( document ).ready(function() {
     // your code here
 	
-	
+	$(".fancybox").fancybox();
 	$(window).scroll(function() {
 		
 		
@@ -58,11 +58,14 @@ $( document ).ready(function() {
 		});
 		
 	});
+
 	
+
 	$('#firstball').addClass("slideDownX");
 	$('#secondball').addClass("slideDownX slideDownX2");
 	$('#thirdball').addClass("slideDownX slideDownX3");
 	$('#fourthball').addClass("slideDownX slideDownX4");
+	$('#fifthball').addClass("slideDownX slideDownX4");
 	
 	
 	

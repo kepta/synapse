@@ -18,7 +18,7 @@
 }
 #navRight{
 	margin-top: 13px;
-	font-family:;
+
 	font-size: 13px;
 
 	text-transform: uppercase;
@@ -31,8 +31,8 @@
     background: rgba(250,250,250,0.7);     top: 0;     left: 0;     width: 100%;     
     height: 77px;     padding: 0;
 } 
-#slideshow {
-	height :400px;
+#slider {
+	height :100px;
 	background-position: center center;
 		background-repeat:no-repeat;
 		background-attachment:fixed;
@@ -40,7 +40,20 @@
 		width:100%;
 		display:table;
 		position:relative;
-	-webkit-animation:slide 20s;
+		
+	}
+	#slideshow {
+		height:200px;
+		text-align:center;
+		 overflow:scroll;
+		 background-color:black;
+	}
+	#slideshow a {
+		margin-top:5px;
+		padding-top:5px;
+	}
+		/*
+	-webkit-animation:slide 5s;
     -webkit-animation-timing-function: linear;
        -webkit-animation-delay: 2s;
        -webkit-animation-iteration-count: infinite;
@@ -57,7 +70,7 @@
 	29% {background-image:url("pics/img2.jpg")};
 	50% {background-image:url("pics/img3.jpg");}
 	
-}
+}*/
 .redzone img {
 	width:50%;
 	position:relative;
@@ -77,17 +90,15 @@
 	height:50px;
 	overflow:scroll;
 }
-
+/*
 @-webkit-keyframes slide {
-	0% {background-image:url("pics/img3.jpg")};
-	29% {background-image:url("pics/img3.jpg")};
-	30% {background-image:url("pics/img1.jpg")};
-	59% {background-image:url("pics/img1.jpg")};
-	60% {background-image:url("pics/img2.jpg")};
+	0% {background-image:url("pics/img1.jpg")};
+	
+	50% {background-image:url("pics/t.jpg")};
 	
 	
-	99% {background-image:url("img/img2.png");}
-}
+	100% {background-image:url("pics/img3.jpg");}
+}*/
 .teamhead {
 	position: relative;
 	top: -40px;
@@ -363,6 +374,10 @@
 	left:66%;
 	top: 590px;
 }
+#fifthball {
+	left: 86%;
+	top: 600px;
+}
 circle {
 	fill:rgb(98,98,98);
 	-webkit-animation:circles 5s;
@@ -417,7 +432,7 @@ line:hover {
 }
 
 @-webkit-keyframes myfirst {
-    from {stroke:rgb(53,53,53);;
+    from {stroke:rgb(53,53,53);
   stroke-width:0.4;}
     to {stroke:rgb(100,100,100);
   stroke-width:0.7;}
