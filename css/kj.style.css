@@ -80,13 +80,13 @@
 
 @-webkit-keyframes slide {
 	0% {background-image:url("pics/img3.jpg")};
-	29% {background-image:url("pics/img1.jpg")};
+	29% {background-image:url("pics/img3.jpg")};
+	30% {background-image:url("pics/img1.jpg")};
+	59% {background-image:url("pics/img1.jpg")};
+	60% {background-image:url("pics/img2.jpg")};
 	
-	49% {background-image:url("img/muchbef.jpg");}
 	
-	89% {background-image:url("img/navLogo.png");}
-	90% {background-image:url("img/logo.png");}
-	99% {background-image:url("img/logo.png");}
+	99% {background-image:url("img/img2.png");}
 }
 .teamhead {
 	position: relative;
