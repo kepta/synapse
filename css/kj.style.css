@@ -209,7 +209,8 @@
 #main {
 	margin-top:80px;
 	width: 100%;
-	font-family: 'Montserrat', sans-serif;
+	font-family:Helvetica;
+/*	font-family: 'Montserrat', sans-serif;*/
 }
 #footer ul {
 	top: -50px;
@@ -316,8 +317,54 @@
 	
 	list-style:none;
 }
+.value {
+	display: block;
+	line-height: 68px;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+	font-size: 22px;
+}
+.stats {
+	z-index:1000;
+	position: absolute;
+	width: 68px;
+	height: 68px;
+	background-color: #27272b;
+	border-radius: 120px;
+	border: 2px solid #de4f4f;
+	transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+	color: white;
+	text-decoration: none;
+}
+.stats:hover {
+	background-color:#de4f4f;
+}
+.stat-title {
+	display: block;
+	text-transform: uppercase;
+	width: 250px;
+	text-align: center;
+	margin-left: -93px;
+	margin-top: 7px;
+	-webkit-font-smoothing: antialiased;
+	letter-spacing: 1px;
+	font-size: 12px;
+}
+#secondball {
+	left: 47%;
+	top: 630px;
+}
+#thirdball {
+	top: 567px;
+	left: 30%;
+}
 
-#de4f4f
+#fourthball {
+	left:66%;
+	top: 590px;
+}
 circle {
 	fill:grey;
 	-webkit-animation:circles 5s;
@@ -328,14 +375,23 @@ circle {
 	
     animation: circles 5s;
 	animation-timing-function: linear;
-	animation-delay: 2s;
+	animation-delay: 4s;
     animation-iteration-count: infinite;
 	animation-direction: alternate;
     animation-play-state: running;
 }
+
+
+@-webkit-keyframes circles {
+    from {fill:grey;;
+ }
+    to {fill:#de4f4f;
+ }
+}
 line {
   stroke:#393939;
-  stroke-width:0.7;
+  stroke-width:0.7;;
+  
   transition-property: background;
     transition-duration: 5s;
     transition-timing-function: linear;
@@ -355,7 +411,7 @@ line {
 
 line:hover {
     stroke:rgb(255,255,0);
-    stroke-width:5;
+    stroke-width:1;
 	
 }
 
@@ -369,7 +425,7 @@ line:hover {
 /* Standard syntax */
 @keyframes myfirst {
     from {stroke:#393939;
-  stroke-width:0.7;}
+  stroke-width:1.2;}
     to {stroke:rgb(99,99,99);
   stroke-width:1;}
 }
