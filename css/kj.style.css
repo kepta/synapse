@@ -198,6 +198,7 @@
 	color: white;
 	text-transform: uppercase;
 	margin-top: 10px;
+	
 }
 .boxe {
 	border: 1px  solid #e8e5d5;
@@ -316,9 +317,21 @@
 	list-style:none;
 }
 
-
+#de4f4f
 circle {
 	fill:grey;
+	-webkit-animation:circles 5s;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+	
+    animation: circles 5s;
+	animation-timing-function: linear;
+	animation-delay: 2s;
+    animation-iteration-count: infinite;
+	animation-direction: alternate;
+    animation-play-state: running;
 }
 line {
   stroke:#393939;

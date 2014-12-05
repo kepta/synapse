@@ -1,726 +1,730 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Synapse v0.1.5</title>
-	<link rel = "icon" href = "/favicon.png" type = "image/png"> <!-- NEED TO ADD FAVICON-->
-	
-	<!-- Bootstrap -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	
-	<!-- custom style sheet-->
-	<link href ="css/blueimp.css" rel="stylesheet">
-	<link href = "css/kj.style.css" rel="stylesheet">
-	
-	
-	<!-- meta discription -->
-	<meta name="Discription" content="Some shit here " >
-	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-</head>
-<body>
-	<div id="wrap">
-		<div id="main">
-			
-			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-				<div class="container-fluid">
-					<div class="navbar-header">
-						<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<div class="logo">
-							<img src="img/navLogo.png" id="logoIn">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Synapse v0.2.5</title>
+        <link rel = "icon" href = "/favicon.png" type = "image/png"> <!-- NEED TO ADD FAVICON-->
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- custom style sheet-->
+      
+		<link href ="css/animate.css" rel="styelsheet">
+        <link href = "css/kj.style.css" rel="stylesheet">
+		
+
+ <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+      
+        <script src="js/kj.js"></script>
+		
+        <!-- meta discription -->
+        <meta name="Discription" content="Some shit here " >
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div id="wrap">
+            <div id="main">
+
+                <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div class="logo">
+                                <img src="img/navLogo.png" id="logoIn">
+                            </div>
+                        </div>
+
+                        <div id ="navbarCollapse" class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav navbar-right" id="navRight">
+                                <li><a href="/install">Home</a></li>
+                                <li><a target="_blank" href="">Events</a></li>
+                                <li><a href="/projects">Sponsors</a></li>
+                                <li><a target="_blank" href="">Gallery</a></li>
+                                <li><a href="/about">About us</a></li>
+                                <li><a href="/blog/2014/10/28/meteor-1-0">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>	
+                </nav>
+
+                <div id="home">
+                    <section class="intro">
+                       
+                            <div class="row">
+                                <div class= "col-md-6 jeweltopleft">
+                                    <svg width="100%" height="100%">
+                                        <line x1="0" y1="0" x2="10%" y2="39%"></line>
+                                        <line x1="10%" y1="39%" x2="17%" y2="0%"></line>
+                                        <line x1="17%" y1="0%" x2="25%" y2="25%"></line>
+                                        <line x1="0%" y1="60%" x2="10%" y2="39%"></line>
+                                        <line x1="10%" y1="39%" x2="25%" y2="25%"></line>
+                                        <line x1="25%" y1="25%" x2="37%" y2="0%"></line>
+                                        <line x1="37%" y1="0%" x2="46%" y2="56%"></line>
+                                        <line x1="46%" y1="56%" x2="25%" y2="25%"></line>
+                                        <line x1="25%" y1="25%" x2="19%" y2="81%"></line>
+                                        <line x1="19%" y1="81%" x2="10%" y2="39%"></line>
+                                        <line x1="19%" y1="81%" x2="0%" y2="60%"></line>
+                                        <line x1="46%" y1="56%" x2="47%" y2="0%"></line>
+                                        <line x1="47%" y1="0%" x2="57%" y2="20%"></line>
+                                        <line x1="58%" y1="0%" x2="57%" y2="20%"></line>
+                                        <line x1="64%" y1="0%" x2="57%" y2="20%"></line>
+                                        <line x1="78%" y1="41%" x2="57%" y2="20%"></line>
+                                        <line x1="54%" y1="0%" x2="57%" y2="20%"></line>
+                                        <line x1="69%" y1="80%" x2="57%" y2="20%"></line>
+                                        <line x1="69%" y1="80%" x2="78%" y2="41%"></line>
+                                        <line x1="73%" y1="0%" x2="78%" y2="41%"></line>
+                                        <line x1="100%" y1="25%" x2="78%" y2="41%"></line>
+                                        <line x1="80%" y1="0%" x2="78%" y2="41%"></line>
+                                        <line x1="96%" y1="80%" x2="78%" y2="41%"></line>
+                                        <line x1="96%" y1="80%" x2="100%" y2="25%"></line>
+                                        <line x1="100%" y1="25%" x2="96%" y2="0%"></line>
+                                        <line x1="96%" y1="80%" x2="100%" y2="70%"></line>
+                                        <line x1="46%" y1="56%" x2="57%" y2="20%"></line>
+										<line x1="46%" y1="56%" x2="57%" y2="20%"></line>
+
+                                        <circle r="2" cx="10%" cy="39%"></circle>
+                                        <circle r="2" cx="25%" cy="25%"></circle>
+                                        <circle r="2" cx="0%" cy="60%"></circle>
+                                        <circle r="2" cx="37%" cy="0%"></circle>
+                                        <circle r="2" cx="17%" cy="0%"></circle>
+                                        <circle r="2" cx="10%" cy="39%"></circle>
+                                        <circle r="2" cx="19%" cy="81%"></circle>
+                                        <circle r="2" cx="46%" cy="56%"></circle>
+                                        <circle r="2" cx="57%" cy="20%"></circle>
+                                        <circle r="2" cx="46%" cy="56%"></circle>
+                                        <circle r="2" cx="69%" cy="80%"></circle>
+                                        <circle r="2" cx="78%" cy="41%"></circle>
+
+                                        <circle r="2" cx="96%" cy="80%"></circle>
+                                        <circle r="2" cx="100%" cy="25%"></circle>
+
+
+                                    </svg>
+                                </div>
+                                <div class= "col-md-6 hidden-sm hidden-xs jeweltopright">
+                                    <svg width="100%" height="100%">
+                                        <line x1="5%" y1="0" x2="10%" y2="39%"></line>
+                                        <line x1="5%" y1="0" x2="0%" y2="26%"></line>
+                                        <line x1="10%" y1="39%" x2="17%" y2="0%"></line>
+                                        <line x1="17%" y1="0%" x2="25%" y2="25%"></line>
+                                        <line x1="0%" y1="26%" x2="10%" y2="39%"></line>
+                                        <line x1="10%" y1="39%" x2="25%" y2="25%"></line>
+                                        <line x1="25%" y1="25%" x2="37%" y2="0%"></line>
+                                        <line x1="37%" y1="0%" x2="46%" y2="56%"></line>
+                                        <line x1="46%" y1="56%" x2="25%" y2="25%"></line>
+                                        <line x1="25%" y1="25%" x2="19%" y2="81%"></line>
+                                        <line x1="19%" y1="81%" x2="10%" y2="39%"></line>
+
+                                        <line x1="10%" y1="39%" x2="0%" y2="70%"></line>
+
+
+                                        <line x1="46%" y1="56%" x2="47%" y2="0%"></line>
+                                        <line x1="47%" y1="0%" x2="57%" y2="20%"></line>
+                                        <line x1="58%" y1="0%" x2="57%" y2="20%"></line>
+                                        <line x1="64%" y1="0%" x2="57%" y2="20%"></line>
+                                        <line x1="78%" y1="41%" x2="57%" y2="20%"></line>
+                                        <line x1="54%" y1="0%" x2="57%" y2="20%"></line>
+                                        <line x1="69%" y1="80%" x2="57%" y2="20%"></line>
+                                        <line x1="69%" y1="80%" x2="78%" y2="41%"></line>
+                                        <line x1="73%" y1="0%" x2="78%" y2="41%"></line>
+                                        <line x1="99%" y1="25%" x2="78%" y2="41%"></line>
+                                        <line x1="80%" y1="0%" x2="78%" y2="41%"></line>
+                                        <line x1="96%" y1="80%" x2="78%" y2="41%"></line>
+                                        <line x1="96%" y1="80%" x2="99%" y2="25%"></line>
+                                        <line x1="99%" y1="25%" x2="96%" y2="0%"></line>
+                                        <line x1="46%" y1="56%" x2="57%" y2="20%"></line>
+
+                                        <circle r="2" cx="10%" cy="39%"></circle>
+                                        <circle r="2" cx="25%" cy="25%"></circle>
+
+                                        <circle r="2" cx="37%" cy="0%"></circle>
+                                        <circle r="2" cx="17%" cy="0%"></circle>
+                                        <circle r="2" cx="10%" cy="39%"></circle>
+                                        <circle r="2" cx="19%" cy="81%"></circle>
+                                        <circle r="2" cx="46%" cy="56%"></circle>
+                                        <circle r="2" cx="57%" cy="20%"></circle>
+                                        <circle r="2" cx="46%" cy="56%"></circle>
+                                        <circle r="2" cx="69%" cy="80%"></circle>
+                                        <circle r="2" cx="78%" cy="41%"></circle>
+
+                                        <circle r="2" cx="96%" cy="80%"></circle>
+
+                                        <circle r="2" cx="0%" cy="25%"></circle>
+                                    </svg>
+                                </div>
+                            </div>
+ <div class="container-fluid">
+                            <div class="row">
+
+                                <div class="col-md-12">
+                                    <div class="jumbotron page-header">
+                                        <img id="shit" src="" >
+                                        <div id ="othershit">
+
+                                            <h2>A song of fire and shit</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 						</div>
-					</div>
-				   
-					<div id ="navbarCollapse" class="collapse navbar-collapse">
-						<ul class="nav navbar-nav navbar-right" id="navRight">
-							<li><a href="/install">Home</a></li>
-							<li><a target="_blank" href="">Events</a></li>
-							<li><a href="/projects">Sponsors</a></li>
-							<li><a target="_blank" href="">Gallery</a></li>
-							<li><a href="/about">About us</a></li>
-							<li><a href="/blog/2014/10/28/meteor-1-0">Blog</a></li>
-						</ul>
-					</div>
-				</div>	
-			</nav>
-			
-			<div id="home">
-				<section class="intro">
-					<div class="container-fluid">
-						<div class="row">
-							<div class= "col-md-6 jeweltopleft">
-								<svg width="100%" height="100%">
-									<line x1="0" y1="0" x2="10%" y2="39%"></line>
-									<line x1="10%" y1="39%" x2="17%" y2="0%"></line>
-									<line x1="17%" y1="0%" x2="25%" y2="25%"></line>
-									<line x1="0%" y1="60%" x2="10%" y2="39%"></line>
-									<line x1="10%" y1="39%" x2="25%" y2="25%"></line>
-									<line x1="25%" y1="25%" x2="37%" y2="0%"></line>
-									<line x1="37%" y1="0%" x2="46%" y2="56%"></line>
-									<line x1="46%" y1="56%" x2="25%" y2="25%"></line>
-									<line x1="25%" y1="25%" x2="19%" y2="81%"></line>
-									<line x1="19%" y1="81%" x2="10%" y2="39%"></line>
-									<line x1="19%" y1="81%" x2="0%" y2="60%"></line>
-									<line x1="46%" y1="56%" x2="47%" y2="0%"></line>
-									<line x1="47%" y1="0%" x2="57%" y2="20%"></line>
-									<line x1="58%" y1="0%" x2="57%" y2="20%"></line>
-									<line x1="64%" y1="0%" x2="57%" y2="20%"></line>
-									<line x1="78%" y1="41%" x2="57%" y2="20%"></line>
-									<line x1="54%" y1="0%" x2="57%" y2="20%"></line>
-									<line x1="69%" y1="80%" x2="57%" y2="20%"></line>
-									<line x1="69%" y1="80%" x2="78%" y2="41%"></line>
-									<line x1="73%" y1="0%" x2="78%" y2="41%"></line>
-									<line x1="100%" y1="25%" x2="78%" y2="41%"></line>
-									<line x1="80%" y1="0%" x2="78%" y2="41%"></line>
-									<line x1="96%" y1="80%" x2="78%" y2="41%"></line>
-									<line x1="96%" y1="80%" x2="100%" y2="25%"></line>
-									<line x1="100%" y1="25%" x2="96%" y2="0%"></line>
-									<line x1="96%" y1="80%" x2="100%" y2="70%"></line>
-									<line x1="46%" y1="56%" x2="57%" y2="20%"></line><line x1="46%" y1="56%" x2="57%" y2="20%"></line>
-																	
-									<circle r="2" cx="10%" cy="39%"></circle>
-									<circle r="2" cx="25%" cy="25%"></circle>
-									<circle r="2" cx="0%" cy="60%"></circle>
-									<circle r="2" cx="37%" cy="0%"></circle>
-									<circle r="2" cx="17%" cy="0%"></circle>
-									<circle r="2" cx="10%" cy="39%"></circle>
-									<circle r="2" cx="19%" cy="81%"></circle>
-									<circle r="2" cx="46%" cy="56%"></circle>
-									<circle r="2" cx="57%" cy="20%"></circle>
-									<circle r="2" cx="46%" cy="56%"></circle>
-									<circle r="2" cx="69%" cy="80%"></circle>
-									<circle r="2" cx="78%" cy="41%"></circle>
-																	
-									<circle r="2" cx="96%" cy="80%"></circle>
-									<circle r="2" cx="100%" cy="25%"></circle>
-																	
-																	
-								</svg>
-							</div>
-							<div class= "col-md-6 hidden-sm hidden-xs jeweltopright">
-								<svg width="100%" height="100%">
-									<line x1="5%" y1="0" x2="10%" y2="39%"></line>
-									<line x1="5%" y1="0" x2="0%" y2="26%"></line>
-									<line x1="10%" y1="39%" x2="17%" y2="0%"></line>
-									<line x1="17%" y1="0%" x2="25%" y2="25%"></line>
-									<line x1="0%" y1="26%" x2="10%" y2="39%"></line>
-									<line x1="10%" y1="39%" x2="25%" y2="25%"></line>
-									<line x1="25%" y1="25%" x2="37%" y2="0%"></line>
-									<line x1="37%" y1="0%" x2="46%" y2="56%"></line>
-									<line x1="46%" y1="56%" x2="25%" y2="25%"></line>
-									<line x1="25%" y1="25%" x2="19%" y2="81%"></line>
-									<line x1="19%" y1="81%" x2="10%" y2="39%"></line>
-									
-									<line x1="10%" y1="39%" x2="0%" y2="70%"></line>
-																	
-																	
-									<line x1="46%" y1="56%" x2="47%" y2="0%"></line>
-									<line x1="47%" y1="0%" x2="57%" y2="20%"></line>
-									<line x1="58%" y1="0%" x2="57%" y2="20%"></line>
-									<line x1="64%" y1="0%" x2="57%" y2="20%"></line>
-									<line x1="78%" y1="41%" x2="57%" y2="20%"></line>
-									<line x1="54%" y1="0%" x2="57%" y2="20%"></line>
-									<line x1="69%" y1="80%" x2="57%" y2="20%"></line>
-									<line x1="69%" y1="80%" x2="78%" y2="41%"></line>
-									<line x1="73%" y1="0%" x2="78%" y2="41%"></line>
-									<line x1="99%" y1="25%" x2="78%" y2="41%"></line>
-									<line x1="80%" y1="0%" x2="78%" y2="41%"></line>
-									<line x1="96%" y1="80%" x2="78%" y2="41%"></line>
-									<line x1="96%" y1="80%" x2="99%" y2="25%"></line>
-									<line x1="99%" y1="25%" x2="96%" y2="0%"></line>
-									<line x1="46%" y1="56%" x2="57%" y2="20%"></line>
-																	
-									<circle r="2" cx="10%" cy="39%"></circle>
-									<circle r="2" cx="25%" cy="25%"></circle>
-																	
-									<circle r="2" cx="37%" cy="0%"></circle>
-									<circle r="2" cx="17%" cy="0%"></circle>
-									<circle r="2" cx="10%" cy="39%"></circle>
-									<circle r="2" cx="19%" cy="81%"></circle>
-									<circle r="2" cx="46%" cy="56%"></circle>
-									<circle r="2" cx="57%" cy="20%"></circle>
-									<circle r="2" cx="46%" cy="56%"></circle>
-									<circle r="2" cx="69%" cy="80%"></circle>
-									<circle r="2" cx="78%" cy="41%"></circle>
-																	
-									<circle r="2" cx="96%" cy="80%"></circle>
-																	
-									<circle r="2" cx="0%" cy="25%"></circle>
-								</svg>
-							</div>
-						</div>
-						
-						<div class="row">
+                            <div class="row">
+                                <div class="col-md-6 lowerjewelleft">
+                                    <svg width="100%" height="140px">
 
-							<div class="col-md-12">
-								<div class="jumbotron page-header">
-									<img id="shit" src="" >
-									<div id ="othershit">
-										
-										<h2>A song of fire and shit</h2>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6 lowerjewelleft">
-								<svg width="100%" height="140px">
-							  
-									<line x1="10%" y1="39%" x2="17%" y2="4%"></line>
-									<line x1="17%" y1="4%" x2="25%" y2="25%"></line>
-									<line x1="0%" y1="60%" x2="10%" y2="39%"></line>
-									<line x1="10%" y1="39%" x2="25%" y2="25%"></line>
-									<line x1="25%" y1="25%" x2="37%" y2="4%"></line>
-									<line x1="37%" y1="4%" x2="46%" y2="56%"></line>
-									<line x1="46%" y1="56%" x2="25%" y2="25%"></line>
-									<line x1="25%" y1="25%" x2="19%" y2="100%"></line>
-									<line x1="19%" y1="100%" x2="10%" y2="39%"></line>
-									<line x1="19%" y1="100%" x2="0%" y2="60%"></line>
-									<line x1="46%" y1="56%" x2="47%" y2="4%"></line>
-									<line x1="47%" y1="4%" x2="57%" y2="20%"></line>
-									<line x1="46%" y1="56%" x2="19%" y2="100%"></line>
-									<line x1="69%" y1="100%" x2="46%" y2="56%"></line>
-									<line x1="46%" y1="56%" x2="19%" y2="100%"></line>
-									<line x1="71%" y1="4%" x2="57%" y2="20%"></line>
-									<line x1="78%" y1="41%" x2="57%" y2="20%"></line>
-									<line x1="69%" y1="100%" x2="57%" y2="20%"></line>
-									<line x1="69%" y1="100%" x2="78%" y2="41%"></line>
-									<line x1="71%" y1="4%" x2="78%" y2="41%"></line>
-									<line x1="100%" y1="25%" x2="78%" y2="41%"></line>
-									<line x1="90%" y1="4%" x2="78%" y2="41%"></line>
-									<line x1="96%" y1="100%" x2="78%" y2="41%"></line>
-									<line x1="96%" y1="100%" x2="100%" y2="25%"></line>
-									<line x1="100%" y1="25%" x2="90%" y2="4%"></line>
-									<line x1="46%" y1="56%" x2="57%" y2="20%"></line>
-									
-									<circle r="2" cx="10%" cy="39%"></circle>
-									<circle r="2" cx="17%" cy="4%"></circle>
-									<circle r="2" cx="0%" cy="60%"></circle>
-									<circle r="2" cx="25%" cy="25%"></circle>
-									<circle r="2" cx="37%" cy="4%"></circle>
-									<circle r="2" cx="46%" cy="56%"></circle>
-									<circle r="2" cx="19%" cy="100%"></circle>
-									<circle r="2" cx="47%" cy="4%"></circle>
-									<circle r="2" cx="69%" cy="100%"></circle>
-									<circle r="2" cx="96%" cy="99%"></circle>
-									<circle r="2" cx="71%" cy="4%"></circle>
-									<circle r="2" cx="78%" cy="41%"></circle>
-									<circle r="2" cx="57%" cy="20%"></circle>
-									<circle r="2" cx="100%" cy="25%"></circle>
-									<circle r="2" cx="90%" cy="4%"></circle>
-									
-									
-								</svg>
-							</div>
-							<div class="col-md-6 lowerjewelright hidden-xs hidden-sm">
-								<svg width="100%" height="140px">
-							  
-									<line x1="10%" y1="39%" x2="12%" y2="4%"></line>
-									<line x1="12%" y1="4%" x2="25%" y2="25%"></line>
-									<line x1="0%" y1="25%" x2="10%" y2="39%"></line>
-									<line x1="10%" y1="39%" x2="25%" y2="25%"></line>
-																
-																
-									<line x1="46%" y1="56%" x2="25%" y2="25%"></line>
-									<line x1="25%" y1="25%" x2="19%" y2="100%"></line>
-									<line x1="19%" y1="100%" x2="10%" y2="39%"></line>
-									<line x1="19%" y1="100%" x2="0%" y2="25%"></line>
-									<line x1="46%" y1="56%" x2="47%" y2="4%"></line>
-									<line x1="47%" y1="4%" x2="57%" y2="20%"></line>
-									<line x1="46%" y1="56%" x2="19%" y2="100%"></line>
-									<line x1="69%" y1="100%" x2="46%" y2="56%"></line>
-									<line x1="46%" y1="56%" x2="19%" y2="100%"></line>
-									<line x1="71%" y1="4%" x2="57%" y2="20%"></line>
-									<line x1="78%" y1="41%" x2="57%" y2="20%"></line>
-									<line x1="69%" y1="100%" x2="57%" y2="20%"></line>
-									<line x1="69%" y1="100%" x2="78%" y2="41%"></line>
-									<line x1="71%" y1="4%" x2="78%" y2="41%"></line>
-									<line x1="99%" y1="25%" x2="78%" y2="41%"></line>
-									<line x1="90%" y1="4%" x2="78%" y2="41%"></line>
-									<line x1="96%" y1="100%" x2="78%" y2="41%"></line>
-									<line x1="96%" y1="100%" x2="99%" y2="25%"></line>
-									<line x1="99%" y1="25%" x2="90%" y2="4%"></line>
-									<line x1="46%" y1="56%" x2="57%" y2="20%"></line>
-									<line x1="25%" y1="25%" x2="47%" y2="4%"></line>
-									<circle r="2" cx="10%" cy="39%"></circle>
-									<circle r="2" cx="12%" cy="4%"></circle>
-									<circle r="2" cx="0%" cy="25%"></circle>
-									<circle r="2" cx="25%" cy="25%"></circle>
-									<circle r="2" cx="46%" cy="56%"></circle>
-									<circle r="2" cx="19%" cy="100%"></circle>
-									<circle r="2" cx="47%" cy="4%"></circle>
-									<circle r="2" cx="69%" cy="100%"></circle>
-									<circle r="2" cx="96%" cy="99%"></circle>
-									<circle r="2" cx="71%" cy="4%"></circle>
-									<circle r="2" cx="78%" cy="41%"></circle>
-									<circle r="2" cx="57%" cy="20%"></circle>
-									<circle r="2" cx="99%" cy="25%"></circle>
-									<circle r="2" cx="90%" cy="4%"></circle>
-								</svg>
-							</div>
-						</div>
-						
-					</div>
-				</section>
-				<section class="slider">
-					<div id = "slideshow">
-						
-						
-						
-						<p>hello</p>
-					</div>
-				</section>
-				<section class="pronites">
-					<div class="container-fluid">
-						<div class="row">
-							<h2>Pronites</h2>
-						
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-							
-								<img src="img/cyno.png">
-								<h3>Cynosure</h3>
-								<p>Stars brighten up the night. But the kind cynosure offer can set the night ablaze. The celebrity walks up to the stage amidst loud cheers from the crowd. <button id="show">Show</button><span class="texty">The next few hours of the night will leave you mesmerized, for sure . The Raghu Dixit Project, Agnee , Indi- an Ocean , Aditya Narayan , Tochi Raina and still counting ..</span></p>
-							</div>
-							<div class="col-md-3">
-								<img src="img/rampage.png">
-								<h3>Rampage</h3>
-								<p>camera, fashion! “Heads turn when they walk” catch a glimpse of what’s new in the
-									glitzy world of fashion as the hottest of models catwalk to the beats of music, oomph and charisma personified</p> 
-								</div>
-								<div class="col-md-3">
-									<img src="img/piano.png">
-									<h3>Innaugral</h3>
-									<p>Some random shit here ut the kind cyno- sure offer can set the night ablaze. The celebrity walks up to the stage amidst loud cheers from the crowd. The next fe</p>
-								</div>
-								<div class="col-md-3">
-									<img src="img/rock.jpg">
-									<h3>Rampage</h3>
-									<p>Stars brighten up the night. But the kind cyno- sure offer can set the night ablaze. The celebrity walks up to the stage amidst loud cheers from the crowd. The next few hours of the night will leave you mesmerized, for sure . The Raghu Dixit Project, Agnee , Indian Ocean , Aditya Na- rayan , Tochi Raina and still counting ...</p>
-								</div>
-							</div>
-						</div>
-					</section>
-					<section class="mid">
-						<div class="container-fluid">
-							<div class="row">
-								<div class="col-md-12">
-									<div class="page-header">
-										<h1>
-											Synapse is the new shit in town
-											<br>
-											it keeps getting better
-											<br>
-											And yes we never will pay your prize money 
-										</h1>
-									</div>
-								</div>
-							</div>
-							<div class="row about-header-row">
-								<div class="col-md-10 col-md-offset-1">
-									<div class="box" id="inferno">
-										<h2>Inferno</h2>
-									</div>
-								</div>
-							</div>
-							<div class="row about-row">
-								<div class="col-md-6 about-section">
-									<div class="image-block modern-user-interface"></div>
-									<div class="content-block">
-										<h3>Aome</h3>
-										<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, st laborum.</p>
-									</div>
-								</div>
-								<div class="col-md-6 about-section">
-									<div class="image-block radically-less-code"></div>
-									<div class="content-block">
-										<h3>Radically less code</h3>
-										<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut </p>
-									</div>
-								</div>
-							</div>
-							<div class="row about-row">
-								<div class="col-md-6 about-section">
-									<div class="image-block modern-user-interface"></div>
-									<div class="content-block">
-										<h3>Aome</h3>
-										<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, st laborum.</p>
-									</div>
-								</div>
-								<div class="col-md-6 about-section">
-									<div class="image-block radically-less-code"></div>
-									<div class="content-block">
-										<h3>Radically less code</h3>
-										<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut </p>
-									</div>
-								</div>
-							</div>
-							<div class="row about-row">
-								<div class="col-md-6 about-section">
-									<div class="image-block modern-user-interface"></div>
-									<div class="content-block">
-										<h3>Aome</h3>
-										<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, st laborum.</p>
-									</div>
-								</div>
-								<div class="col-md-6 about-section">
-									<div class="image-block radically-less-code"></div>
-									<div class="content-block">
-										<h3>Radically less code</h3>
-										<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut </p>
-									</div>
-								</div>
-							</div>
-							<div class="row about-row">
-								<div class="col-md-6 about-section">
-									<div class="image-block modern-user-interface"></div>
-									<div class="content-block">
-										<h3>Aome</h3>
-										<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, st laborum.</p>
-									</div>
-								</div>
-								<div class="col-md-6 about-section">
-									<div class="image-block radically-less-code"></div>
-									<div class="content-block">
-										<h3>Radically less code</h3>
-										<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut </p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-					<section class="celeb">
-						<div class="container-fluid">
-							<div class="row"> 
-								<div class = "col-md-6">
-									<h2>Javed ali</h2>
-								</div>
-								<div class= "col-md-6">
-									<h2>Picture of this guy</h2>
-								</div>
-							</div>
-						</div>
-					</section>
-					<section class="redzone">
-						<div class="container-fluid">
-							<div class="row">
-								<div class="col-md-8 col-md-offset-2">
-									<div class="page-header"><h1>The events</h1></div>
-								</div>
-							</div>
-							<div class="eventzone">
-								<div class="row">
-									<div class="col-xs-4 info">
-										<img src="img/drama.png">
-										<h3>Masquerade</h3>
-									</div>
-									<div class="col-xs-4 info">
-										<img src="img/zing.jpg">
-										<h3>Zing</h3>
-									</div>
-									<div class="col-xs-4 info">
-										<img src="img/head.png">
-										<h3>Headrush</h3>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-xs-4 info">
-										<img src="img/senate.jpg">
-										<h3>Senate</h3>
-									</div>
-									<div class="col-xs-4 info">
-										<img src="img/dlounge.jpg">
-										<h3>D-lounge</h3>
-									</div>
-									<div class="col-xs-4 info">
-										<img src="img/shailey.png">
-										<h3>Shailey</h3>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-xs-4 info">
-										<img src="img/circus.png">
-										<h3>Synapcity</h3>
-									</div>
-									<div class="col-xs-4 info">
-										<img src="img/geek.png">
-										<h3>Technical</h3>
-									</div>
-									<div class="col-xs-4 info">
-										<img src="img/online.png">
-										<h3>Online Events</h3>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-					<section class="sponsors2">
-						<div class="container" style="text-align:center">
-							<div class="row solidsponsor">
-								<h2 style="z-index:50">Sponsors</h2>
-							</div></div>
-						</section> 
-						<section class="sponsors"> 
-							<div class="container-fluid">
-							
-								<div class="col-md-6 sponsorleft">
-									<img src="img/sponsor1.jpg">
-								</div>
-								<div class="col-md-6 sponsorright">
-									<img src="img/sponsor2.jpg">
-								</div>
-							</div>
-						</section>
-						<section class="end">
-							<div class="container-fluid">
-								<div class="row">
-						
-									<h2>Some stuff </h2>
-								</div>
-							</div>
-						</section>
-						<section class="test"> 
-							<div class="container-fluid"> 
-								<div class="row chart">
-							
-								</div>
-							</div>
-						</section>
-					</div>
-				</div>
-			</div>
-			<!-- some spanning of fonts here -->
-	
-			<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-			<div id="footer">
-				<div class="container-fluid">
-				
-					<div class="col-sm-4 footerfirstcol">
-						<div class="row teamhead">
-							<h4 style="text-rendering: optimizelegibility;line-height: 18.200000762939453px;"><span style="display:inline-block ; background-color:rgb(242, 105, 81);padding-left:10px;padding-right:10px;letter-spacing:4px;line-height: 18.200000762939453px;">The Team</span></h4>
-						</div>
-						<ul>
-							
-							<li>Person1</li>
-							<li>Person1</li>
-							<li>Person1</li>
-							<li>Person1</li>
-							<li>Person1</li>
-						</ul>
-					</div>
-					
-					<div class="col-sm-4 middlecol">
-						<div class="boxe">
-							<h5>DA-IICT</h5> 
-						</div> 
-						<div class="boxe">
-							<h5>Synapse 2014</h5> 
-						</div>
-						<div class="boxe">
-							<h5>Gandhinagar</h5> 
-						</div>
-						<div class="boxe">
-							<h5>Title Sponsor</h5> 
-						</div>
-						<div class="boxe">
-							<h5>Other sponsor</h5> 
-						</div>
-					</div>
-					<div class="col-sm-4 footerfirstcol">
-						<div class="row teamhead">
-							<h4 style="text-rendering: optimizelegibility;line-height: 18.200000762939453px;"><span style="display:inline-block ; background-color:rgb(242, 105, 81);padding-left:10px;padding-right:10px;letter-spacing:4px;line-height: 18.200000762939453px;">The Team</span></h4>
-						</div>
-						<ul>
-							
-							<li>Person1</li>
-							<li>Person1</li>
-							<li>Person1</li>
-							<li>Person1</li>
-							<li>Person1</li>
-						</ul>
-					</div>
-					
-				</div>
-			
-			</div>
-	
-			<script src="js/jquery.js"></script>
-	
-			<script src="js/d3.js"></script>
+                                        <line x1="10%" y1="39%" x2="17%" y2="4%"></line>
+                                        <line x1="17%" y1="4%" x2="25%" y2="25%"></line>
+                                        <line x1="0%" y1="60%" x2="10%" y2="39%"></line>
+                                        <line x1="10%" y1="39%" x2="25%" y2="25%"></line>
+                                        <line x1="25%" y1="25%" x2="37%" y2="4%"></line>
+                                        <line x1="37%" y1="4%" x2="46%" y2="56%"></line>
+                                        <line x1="46%" y1="56%" x2="25%" y2="25%"></line>
+                                        <line x1="25%" y1="25%" x2="19%" y2="100%"></line>
+                                        <line x1="19%" y1="100%" x2="10%" y2="39%"></line>
+                                        <line x1="19%" y1="100%" x2="0%" y2="60%"></line>
+                                        <line x1="46%" y1="56%" x2="47%" y2="4%"></line>
+                                        <line x1="47%" y1="4%" x2="57%" y2="20%"></line>
+                                        <line x1="46%" y1="56%" x2="19%" y2="100%"></line>
+                                        <line x1="69%" y1="100%" x2="46%" y2="56%"></line>
+                                        <line x1="46%" y1="56%" x2="19%" y2="100%"></line>
+                                        <line x1="71%" y1="4%" x2="57%" y2="20%"></line>
+                                        <line x1="78%" y1="41%" x2="57%" y2="20%"></line>
+                                        <line x1="69%" y1="100%" x2="57%" y2="20%"></line>
+                                        <line x1="69%" y1="100%" x2="78%" y2="41%"></line>
+                                        <line x1="71%" y1="4%" x2="78%" y2="41%"></line>
+                                        <line x1="100%" y1="25%" x2="78%" y2="41%"></line>
+                                        <line x1="90%" y1="4%" x2="78%" y2="41%"></line>
+                                        <line x1="96%" y1="100%" x2="78%" y2="41%"></line>
+                                        <line x1="96%" y1="100%" x2="100%" y2="25%"></line>
+                                        <line x1="100%" y1="25%" x2="90%" y2="4%"></line>
+                                        <line x1="46%" y1="56%" x2="57%" y2="20%"></line>
 
-			<!-- Include all compiled plugins (below), or include individual files as needed -->
-			<script src="js/bootstrap.min.js"></script>
-			<script src="js/unslider.js"></script>
-			<script src="js/kj.js"></script>
-	
-	
-			<!--
-				/*
-				var width = Math.max(960, innerWidth),
-				height = Math.max(500, innerHeight);
-
-				var i = 0;
-
-				var svg = d3.select(".test").append("svg")
-				.attr("width", width)
-				.attr("height", height);
-
-				svg.append("rect")
-				.attr("width", width)
-				.attr("height", height)
-				.on("ontouchstart" in document ? "touchmove" : "mousemove", particle);
-
-				function particle() {
-				var m = d3.mouse(this);
-
-				svg.insert("circle", "rect")
-				.attr("cx", m[0])
-				.attr("cy", m[1])
-				.attr("r", 1e-6)
-				.style("stroke", d3.hsl((i = (i + 1) % 360), 1, .5))
-				.style("stroke-opacity", 1)
-				.transition()
-				.duration(2000)
-				.ease(Math.sqrt)
-				.attr("r", 100)
-				.style("stroke-opacity", 1e-6)
-				.remove();
-
-				d3.event.preventDefault();
-				}
-				var width = Math.max(960, innerWidth),
-				height = Math.max(500, innerHeight);
-	
-				var color = d3.scale.category20();
-
-				var force = d3.layout.force()
-				.charge(-120)
-				.linkDistance(130)
-				.size([width, height]);
-
-				var svg = d3.select(".test").append("svg")
-				.attr("width", width)
-				.attr("height", height);
-
-				d3.json("miserables.json", function(error, graph) {
-				force
-				.nodes(graph.nodes)
-				.links(graph.links)
-				.start();
+                                        <circle r="2" cx="10%" cy="39%"></circle>
+                                        <circle r="2" cx="17%" cy="4%"></circle>
+                                        <circle r="2" cx="0%" cy="60%"></circle>
+                                        <circle r="2" cx="25%" cy="25%"></circle>
+                                        <circle r="2" cx="37%" cy="4%"></circle>
+                                        <circle r="2" cx="46%" cy="56%"></circle>
+                                        <circle r="2" cx="19%" cy="100%"></circle>
+                                        <circle r="2" cx="47%" cy="4%"></circle>
+                                        <circle r="2" cx="69%" cy="100%"></circle>
+                                        <circle r="2" cx="96%" cy="99%"></circle>
+                                        <circle r="2" cx="71%" cy="4%"></circle>
+                                        <circle r="2" cx="78%" cy="41%"></circle>
+                                        <circle r="2" cx="57%" cy="20%"></circle>
+                                        <circle r="2" cx="100%" cy="25%"></circle>
+                                        <circle r="2" cx="90%" cy="4%"></circle>
 
 
-				var link = svg.selectAll(".link")
-				.data(graph.links)
-				.enter().append("line")
-				.attr("class", "link")
-				.style("stroke-width", "2");
+                                    </svg>
+                                </div>
+                                <div class="col-md-6 lowerjewelright hidden-xs hidden-sm">
+                                    <svg width="100%" height="140px">
+
+                                        <line x1="10%" y1="39%" x2="12%" y2="4%"></line>
+                                        <line x1="12%" y1="4%" x2="25%" y2="25%"></line>
+                                        <line x1="0%" y1="25%" x2="10%" y2="39%"></line>
+                                        <line x1="10%" y1="39%" x2="25%" y2="25%"></line>
 
 
-				var node = svg.selectAll(".node")
-				.data(graph.nodes)
-				.enter().append("circle")
-				.attr("class", "node")
-				.attr("r", 5)
-				.style("fill", "#5F5F5F")
-				.call(force.drag);
-	  
-	  
-				force.on("tick", function() {
-				link.attr("x1", function(d) { return d.source.x; })
-				.attr("y1", function(d) { return d.source.y; })
-				.attr("x2", function(d) { return d.target.x; })
-				.attr("y2", function(d) { return d.target.y; });
+                                        <line x1="46%" y1="56%" x2="25%" y2="25%"></line>
+                                        <line x1="25%" y1="25%" x2="19%" y2="100%"></line>
+                                        <line x1="19%" y1="100%" x2="10%" y2="39%"></line>
+                                        <line x1="19%" y1="100%" x2="0%" y2="25%"></line>
+                                        <line x1="46%" y1="56%" x2="47%" y2="4%"></line>
+                                        <line x1="47%" y1="4%" x2="57%" y2="20%"></line>
+                                        <line x1="46%" y1="56%" x2="19%" y2="100%"></line>
+                                        <line x1="69%" y1="100%" x2="46%" y2="56%"></line>
+                                        <line x1="46%" y1="56%" x2="19%" y2="100%"></line>
+                                        <line x1="71%" y1="4%" x2="57%" y2="20%"></line>
+                                        <line x1="78%" y1="41%" x2="57%" y2="20%"></line>
+                                        <line x1="69%" y1="100%" x2="57%" y2="20%"></line>
+                                        <line x1="69%" y1="100%" x2="78%" y2="41%"></line>
+                                        <line x1="71%" y1="4%" x2="78%" y2="41%"></line>
+                                        <line x1="99%" y1="25%" x2="78%" y2="41%"></line>
+                                        <line x1="90%" y1="4%" x2="78%" y2="41%"></line>
+                                        <line x1="96%" y1="100%" x2="78%" y2="41%"></line>
+                                        <line x1="96%" y1="100%" x2="99%" y2="25%"></line>
+                                        <line x1="99%" y1="25%" x2="90%" y2="4%"></line>
+                                        <line x1="46%" y1="56%" x2="57%" y2="20%"></line>
+                                        <line x1="25%" y1="25%" x2="47%" y2="4%"></line>
+                                        <circle r="2" cx="10%" cy="39%"></circle>
+                                        <circle r="2" cx="12%" cy="4%"></circle>
+                                        <circle r="2" cx="0%" cy="25%"></circle>
+                                        <circle r="2" cx="25%" cy="25%"></circle>
+                                        <circle r="2" cx="46%" cy="56%"></circle>
+                                        <circle r="2" cx="19%" cy="100%"></circle>
+                                        <circle r="2" cx="47%" cy="4%"></circle>
+                                        <circle r="2" cx="69%" cy="100%"></circle>
+                                        <circle r="2" cx="96%" cy="99%"></circle>
+                                        <circle r="2" cx="71%" cy="4%"></circle>
+                                        <circle r="2" cx="78%" cy="41%"></circle>
+                                        <circle r="2" cx="57%" cy="20%"></circle>
+                                        <circle r="2" cx="99%" cy="25%"></circle>
+                                        <circle r="2" cx="90%" cy="4%"></circle>
+                                    </svg>
+                                </div>
+                            </div>
 
-				node.attr("cx", function(d) { return d.x; })
-				.attr("cy", function(d) { return d.y; });
-				});
-				});
-	
-				/*
+                       
+                    </section>
+                    <section class="slider">
+                        <div id = "slideshow">
 
-				var width = Math.max(960, innerWidth),
-				height = Math.max(500, innerHeight);
-				var svg = d3.select("#main").append("svg")
-				.attr("width", width)
-				.attr("height", height);
 
-				var circle = svg.selectAll("circle")
-				.data([32, 57, 112, 293,555]);
 
-				var circleEnter = circle.enter().append("circle");
-				circleEnter.attr("cy", 60);
-				circleEnter.attr("cx", function(d, i) { return i * 100 + 30; });
-				circleEnter.attr("r", function(d) { return Math.sqrt(d); });
-				circleEnter.style("fill", "steelblue");
-	
-				circle.exit().remove();
-				var width = Math.max(960, innerWidth),
-				height = Math.max(500, innerHeight);
-	
-				var nodes = [
-				{ x:   width/3, y: height/2 },
-				{ x: 2*width/3, y: height/2 }
-				];
-	
-				var links = [
-				{source:0,target:1}
-				];
-				var svg =d3.select(".test").append('svg')
-				.attr('width',width)
-				.attr('height',height);
-				var force = d3.layout.force().size([width,height]).nodes(nodes).links(links);
-				force.linkDistance(width/2);
-	
-				var link = svg.selectAll('.link')
-				.data(links)
-				.enter().append('line')
-				.attr('class','link');
-				var node = svg.selectAll('.node')
-				.data(nodes)
-				.enter().append('circle')
-				.attr('class','node');
-				force.on('end',function() {
-				node.attr('r',width/25)
-				.attr('cx',function(d){return d.x;})
-				.attr('cy',function(d){return d.y;});
-				link.attr('x1',function(d) {return d.source.x;})
-				.attr('y1',function(d) {return d.source.y;})
-				.attr('x2',function(d) {return d.target.x;})
-				.attr('y2',function(d) {return d.target.y;})
-				});
-				force.start();
-				var svgq =d3.select(".test").append('svg')
-				.attr('width',width)
-				.attr('height',height);
-				var force2 = d3.layout.force().size([width,height]).nodes(nodes).links(links);
-				force2.linkDistance(width/2);
-	
-				var link = svgq.selectAll('.link')
-				.data(links)
-				.enter().append('line')
-				.attr('class','link');
-				var node = svgq.selectAll('.node')
-				.data(nodes)
-				.enter().append('circle')
-				.attr('class','node');
-				force2.on('end',function() {
-				node.attr('r',width/25)
-				.attr('cx',function(d){return d.x;})
-				.attr('cy',function(d){return d.y;});
-				link.attr('x1',function(d) {return d.source.x;})
-				.attr('y1',function(d) {return d.source.y;})
-				.attr('x2',function(d) {return d.target.x;})
-				.attr('y2',function(d) {return d.target.y;})
-				});
-				force2.start();
-				*/
-				-->
-			</body>
-			</html>
+                            <p>hello</p>
+                        </div>
+                    </section>
+                    <section class="pronites">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <h2>Pronites</h2>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+
+                                    <img src="img/cyno.png">
+                                    <h3>Cynosure</h3>
+                                    <p>Stars brighten up the night. But the kind cynosure offer can set the night ablaze. The celebrity walks up to the stage amidst loud cheers from the crowd. <button id="show">Show</button><span class="texty">The next few hours of the night will leave you mesmerized, for sure . The Raghu Dixit Project, Agnee , Indi- an Ocean , Aditya Narayan , Tochi Raina and still counting ..</span></p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="img/rampage.png">
+                                    <h3>Rampage</h3>
+                                    <p>camera, fashion! “Heads turn when they walk” catch a glimpse of what’s new in the
+                                        glitzy world of fashion as the hottest of models catwalk to the beats of music, oomph and charisma personified</p> 
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="img/piano.png">
+                                        <h3>Innaugral</h3>
+                                        <p>Some random shit here ut the kind cyno- sure offer can set the night ablaze. The celebrity walks up to the stage amidst loud cheers from the crowd. The next fe</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="img/rock.jpg">
+                                        <h3>Rampage</h3>
+                                        <p>Stars brighten up the night. But the kind cyno- sure offer can set the night ablaze. The celebrity walks up to the stage amidst loud cheers from the crowd. The next few hours of the night will leave you mesmerized, for sure . The Raghu Dixit Project, Agnee , Indian Ocean , Aditya Na- rayan , Tochi Raina and still counting ...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    <section class="mid">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="page-header">
+                                            <h1>
+                                                Synapse is the new shit in town
+                                                <br>
+                                                it keeps getting better
+                                                <br>
+                                                And yes we never will pay your prize money 
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row about-header-row">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="box" id="inferno">
+                                            <h2>Inferno</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row about-row">
+                                    <div class="col-md-6 about-section">
+                                        <div class="image-block modern-user-interface"></div>
+                                        <div class="content-block">
+                                            <h3>Aome</h3>
+                                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, st laborum.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 about-section">
+                                        <div class="image-block radically-less-code"></div>
+                                        <div class="content-block">
+                                            <h3>Radically less code</h3>
+                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row about-row">
+                                    <div class="col-md-6 about-section">
+                                        <div class="image-block modern-user-interface"></div>
+                                        <div class="content-block">
+                                            <h3>Aome</h3>
+                                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, st laborum.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 about-section">
+                                        <div class="image-block radically-less-code"></div>
+                                        <div class="content-block">
+                                            <h3>Radically less code</h3>
+                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row about-row">
+                                    <div class="col-md-6 about-section">
+                                        <div class="image-block modern-user-interface"></div>
+                                        <div class="content-block">
+                                            <h3>Aome</h3>
+                                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, st laborum.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 about-section">
+                                        <div class="image-block radically-less-code"></div>
+                                        <div class="content-block">
+                                            <h3>Radically less code</h3>
+                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row about-row">
+                                    <div class="col-md-6 about-section">
+                                        <div class="image-block modern-user-interface"></div>
+                                        <div class="content-block">
+                                            <h3>Aome</h3>
+                                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, st laborum.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 about-section">
+                                        <div class="image-block radically-less-code"></div>
+                                        <div class="content-block">
+                                            <h3>Radically less code</h3>
+                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    <section class="celeb">
+                        <div class="container-fluid">
+                            <div class="row"> 
+                                <div class = "col-md-6">
+                                    <h2>Javed ali</h2>
+                                </div>
+                                <div class= "col-md-6">
+                                    <h2>Picture of this guy</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="redzone">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 col-md-offset-2">
+                                        <div class="page-header"><h1>The events</h1></div>
+                                    </div>
+                                </div>
+                                <div class="eventzone">
+                                    <div class="row">
+                                        <div class="col-xs-4 info">
+                                            <img src="img/drama.png">
+                                            <h3>Masquerade</h3>
+                                        </div>
+                                        <div class="col-xs-4 info">
+                                            <img src="img/zing.jpg">
+                                            <h3>Zing</h3>
+                                        </div>
+                                        <div class="col-xs-4 info">
+                                            <img src="img/head.png">
+                                            <h3>Headrush</h3>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-4 info">
+                                            <img src="img/senate.jpg">
+                                            <h3>Senate</h3>
+                                        </div>
+                                        <div class="col-xs-4 info">
+                                            <img src="img/dlounge.jpg">
+                                            <h3>D-lounge</h3>
+                                        </div>
+                                        <div class="col-xs-4 info">
+                                            <img src="img/shailey.png">
+                                            <h3>Shailey</h3>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-4 info">
+                                            <img src="img/circus.png">
+                                            <h3>Synapcity</h3>
+                                        </div>
+                                        <div class="col-xs-4 info">
+                                            <img src="img/geek.png">
+                                            <h3>Technical</h3>
+                                        </div>
+                                        <div class="col-xs-4 info">
+                                            <img src="img/online.png">
+                                            <h3>Online Events</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    <section class="sponsors2">
+                            <div class="container" style="text-align:center">
+                                <div class="row solidsponsor">
+                                    <h2 style="z-index:50">Sponsors</h2>
+                                </div></div>
+                            </section> 
+                    <section class="sponsors"> 
+                                <div class="container-fluid">
+
+                                    <div class="col-md-6 sponsorleft">
+                                        <img src="img/sponsor1.jpg">
+                                    </div>
+                                    <div class="col-md-6 sponsorright">
+                                        <img src="img/sponsor2.jpg">
+                                    </div>
+                                </div>
+                            </section>
+                    <section class="end">
+                                <div class="container-fluid">
+                                    <div class="row">
+
+                                        <h2>Some stuff </h2>
+                                    </div>
+                                </div>
+                            </section>
+                    <section class="test"> 
+                                <div class="container-fluid"> 
+                                    <div class="row chart">
+
+                                    </div>
+                                </div>
+                            </section>
+                </div>
+                    </div>
+                </div>
+                <!-- some spanning of fonts here -->
+
+                <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <div id="footer">
+                    <div class="container-fluid">
+
+                        <div class="col-sm-4 footerfirstcol">
+                            <div class="row teamhead">
+                                <h4 style="text-rendering: optimizelegibility;line-height: 18.200000762939453px;"><span style="display:inline-block ; background-color:rgb(242, 105, 81);padding-left:10px;padding-right:10px;letter-spacing:4px;line-height: 18.200000762939453px;">The Team</span></h4>
+                            </div>
+                            <ul>
+
+                                <li>Person1</li>
+                                <li>Person1</li>
+                                <li>Person1</li>
+                                <li>Person1</li>
+                                <li>Person1</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4 middlecol">
+                            <div class="boxe">
+                                <h5>DA-IICT</h5> 
+                            </div> 
+                            <div class="boxe">
+                                <h5>Synapse 2014</h5> 
+                            </div>
+                            <div class="boxe">
+                                <h5>Gandhinagar</h5> 
+                            </div>
+                            <div class="boxe">
+                                <h5>Title Sponsor</h5> 
+                            </div>
+                            <div class="boxe">
+                                <h5>Other sponsor</h5> 
+                            </div>
+                        </div>
+                        <div class="col-sm-4 footerfirstcol">
+                            <div class="row teamhead">
+                                <h4 style="text-rendering: optimizelegibility;line-height: 18.200000762939453px;"><span style="display:inline-block ; background-color:rgb(242, 105, 81);padding-left:10px;padding-right:10px;letter-spacing:4px;line-height: 18.200000762939453px;">The Team</span></h4>
+                            </div>
+                            <ul>
+
+                                <li>Person1</li>
+                                <li>Person1</li>
+                                <li>Person1</li>
+                                <li>Person1</li>
+                                <li>Person1</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+               
+
+                <!-- Include all compiled plugins (below), or include individual files as needed -->
+              
+
+                <!--
+                    /*
+                    var width = Math.max(960, innerWidth),
+                    height = Math.max(500, innerHeight);
+
+                    var i = 0;
+
+                    var svg = d3.select(".test").append("svg")
+                    .attr("width", width)
+                    .attr("height", height);
+
+                    svg.append("rect")
+                    .attr("width", width)
+                    .attr("height", height)
+                    .on("ontouchstart" in document ? "touchmove" : "mousemove", particle);
+
+                    function particle() {
+                    var m = d3.mouse(this);
+
+                    svg.insert("circle", "rect")
+                    .attr("cx", m[0])
+                    .attr("cy", m[1])
+                    .attr("r", 1e-6)
+                    .style("stroke", d3.hsl((i = (i + 1) % 360), 1, .5))
+                    .style("stroke-opacity", 1)
+                    .transition()
+                    .duration(2000)
+                    .ease(Math.sqrt)
+                    .attr("r", 100)
+                    .style("stroke-opacity", 1e-6)
+                    .remove();
+
+                    d3.event.preventDefault();
+                    }
+                    var width = Math.max(960, innerWidth),
+                    height = Math.max(500, innerHeight);
+
+                    var color = d3.scale.category20();
+
+                    var force = d3.layout.force()
+                    .charge(-120)
+                    .linkDistance(130)
+                    .size([width, height]);
+
+                    var svg = d3.select(".test").append("svg")
+                    .attr("width", width)
+                    .attr("height", height);
+
+                    d3.json("miserables.json", function(error, graph) {
+                    force
+                    .nodes(graph.nodes)
+                    .links(graph.links)
+                    .start();
+
+
+                    var link = svg.selectAll(".link")
+                    .data(graph.links)
+                    .enter().append("line")
+                    .attr("class", "link")
+                    .style("stroke-width", "2");
+
+
+                    var node = svg.selectAll(".node")
+                    .data(graph.nodes)
+                    .enter().append("circle")
+                    .attr("class", "node")
+                    .attr("r", 5)
+                    .style("fill", "#5F5F5F")
+                    .call(force.drag);
+
+
+                    force.on("tick", function() {
+                    link.attr("x1", function(d) { return d.source.x; })
+                    .attr("y1", function(d) { return d.source.y; })
+                    .attr("x2", function(d) { return d.target.x; })
+                    .attr("y2", function(d) { return d.target.y; });
+
+                    node.attr("cx", function(d) { return d.x; })
+                    .attr("cy", function(d) { return d.y; });
+                    });
+                    });
+
+                    /*
+
+                    var width = Math.max(960, innerWidth),
+                    height = Math.max(500, innerHeight);
+                    var svg = d3.select("#main").append("svg")
+                    .attr("width", width)
+                    .attr("height", height);
+
+                    var circle = svg.selectAll("circle")
+                    .data([32, 57, 112, 293,555]);
+
+                    var circleEnter = circle.enter().append("circle");
+                    circleEnter.attr("cy", 60);
+                    circleEnter.attr("cx", function(d, i) { return i * 100 + 30; });
+                    circleEnter.attr("r", function(d) { return Math.sqrt(d); });
+                    circleEnter.style("fill", "steelblue");
+
+                    circle.exit().remove();
+                    var width = Math.max(960, innerWidth),
+                    height = Math.max(500, innerHeight);
+
+                    var nodes = [
+                    { x:   width/3, y: height/2 },
+                    { x: 2*width/3, y: height/2 }
+                    ];
+
+                    var links = [
+                    {source:0,target:1}
+                    ];
+                    var svg =d3.select(".test").append('svg')
+                    .attr('width',width)
+                    .attr('height',height);
+                    var force = d3.layout.force().size([width,height]).nodes(nodes).links(links);
+                    force.linkDistance(width/2);
+
+                    var link = svg.selectAll('.link')
+                    .data(links)
+                    .enter().append('line')
+                    .attr('class','link');
+                    var node = svg.selectAll('.node')
+                    .data(nodes)
+                    .enter().append('circle')
+                    .attr('class','node');
+                    force.on('end',function() {
+                    node.attr('r',width/25)
+                    .attr('cx',function(d){return d.x;})
+                    .attr('cy',function(d){return d.y;});
+                    link.attr('x1',function(d) {return d.source.x;})
+                    .attr('y1',function(d) {return d.source.y;})
+                    .attr('x2',function(d) {return d.target.x;})
+                    .attr('y2',function(d) {return d.target.y;})
+                    });
+                    force.start();
+                    var svgq =d3.select(".test").append('svg')
+                    .attr('width',width)
+                    .attr('height',height);
+                    var force2 = d3.layout.force().size([width,height]).nodes(nodes).links(links);
+                    force2.linkDistance(width/2);
+
+                    var link = svgq.selectAll('.link')
+                    .data(links)
+                    .enter().append('line')
+                    .attr('class','link');
+                    var node = svgq.selectAll('.node')
+                    .data(nodes)
+                    .enter().append('circle')
+                    .attr('class','node');
+                    force2.on('end',function() {
+                    node.attr('r',width/25)
+                    .attr('cx',function(d){return d.x;})
+                    .attr('cy',function(d){return d.y;});
+                    link.attr('x1',function(d) {return d.source.x;})
+                    .attr('y1',function(d) {return d.source.y;})
+                    .attr('x2',function(d) {return d.target.x;})
+                    .attr('y2',function(d) {return d.target.y;})
+                    });
+                    force2.start();
+                    */
+                    -->
+                </body>
+    </html>
