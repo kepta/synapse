@@ -48,12 +48,31 @@ $( document ).ready(function() {
 				$(this).addClass("slideDown");
 			}
 		});
-		$('#eventzone').each(function(){
+	
+		$('.events1').each(function(){
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+500) {
-				$(this).addClass("slideDown");
+			if (imagePos < topOfWindow+800) {
+				$(this).addClass("slideRight");
+			}
+		});
+		
+		$('.events2').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+800) {
+				$(this).addClass("slideRight");
+			}
+		});
+		
+		$('.events3').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+800) {
+				$(this).addClass("slideRight");
 			}
 		});
 		
