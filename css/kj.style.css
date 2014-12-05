@@ -390,8 +390,9 @@ circle {
 }
 line {
   stroke:#393939;
-  stroke-width:0.7;;
+  stroke-width:0.2;;
   
+  filter:"url(#f1)";
   transition-property: background;
     transition-duration: 5s;
     transition-timing-function: linear;
@@ -417,9 +418,9 @@ line:hover {
 
 @-webkit-keyframes myfirst {
     from {stroke:#393939;
-  stroke-width:0.7;}
+  stroke-width:0.3;}
     to {stroke:grey;
-  stroke-width:1;}
+  stroke-width:0.4;}
 }
 
 /* Standard syntax */
