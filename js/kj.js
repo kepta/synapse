@@ -1,19 +1,19 @@
 
 $( document ).ready(function() {
     // your code here
-	//$('#othershit').addClass("slideUp");
+	
 	
 	$(window).scroll(function() {
 		
-		$('#othershit').each(function(){
+		
+		$('#firstball').each(function(){
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+400) {
-			//	$(this).addClass("slideDown");
+			if (imagePos < topOfWindow+1000) {
+				$(this).addClass("slideDown");
 			}
 		});
-		
 		$('#cyno').each(function(){
 		var imagePos = $(this).offset().top;
 
@@ -44,7 +44,7 @@ $( document ).ready(function() {
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+600) {
+			if (imagePos < topOfWindow+500) {
 				$(this).addClass("slideDown");
 			}
 		});
@@ -59,16 +59,12 @@ $( document ).ready(function() {
 		
 	});
 	
+	$('#firstball').addClass("slideDownX");
+	$('#secondball').addClass("slideDownX slideDownX2");
+	$('#thirdball').addClass("slideDownX slideDownX3");
+	$('#fourthball').addClass("slideDownX slideDownX4");
 	
-$('circle').addClass("pulse");
-	
-	console.log("checl");
 	
 	
-	
-	$('circle').hover( function() {
-		console.log("checkkkk");
-		$(this).addClass("slideUp");
-	});
 	
 	});

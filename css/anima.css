@@ -74,6 +74,63 @@ slideDown
 	}	
 }
 
+
+
+.slideDownX{
+	animation-name: slideDownX;
+	-webkit-animation-name: slideDownX;	
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;	
+
+	visibility: visible !important;						
+}
+
+@keyframes slideDownX {
+	0% {
+		transform: translateY(-800%);
+	}
+	50%{
+		transform: translateY(10%);
+	}
+	65%{
+		transform: translateY(-10%);
+	}
+	80%{
+		transform: translateY(4%);
+	}
+	95%{
+		transform: translateY(-2%);
+	}			
+	100% {
+		transform: translateY(0%);
+	}		
+}
+
+@-webkit-keyframes slideDownX {
+	0% {
+		transform: translateY(-800%);
+	}
+	50%{
+		transform: translateY(10%);
+	}
+	65%{
+		transform: translateY(-7%);
+	}
+	80%{
+		transform: translateY(4%);
+	}
+	95%{
+		-webkit-transform: translateY(-2%);
+	}			
+	100% {
+		-webkit-transform: translateY(0%);
+	}	
+}
+
 /*
 ==============================================
 slideUp

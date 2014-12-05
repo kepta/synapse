@@ -53,12 +53,10 @@
 }
 
 @keyframes slide {
-	0% {background-image:url("img/ico.png")};
-	29% {background-image:url("img/ico.png")};
-	30% {background-image:url("img/muchbef.jpg");}
-	50% {background-image:url("img/muchbef.jpg");}
-	40% {background-image:url("img/navLogo.png");}
-	90% {background-image:url("img/logo.png");}
+	0% {background-image:url("pics/img1.jpg")};
+	29% {background-image:url("pics/img2.jpg")};
+	50% {background-image:url("pics/img3.jpg");}
+	
 }
 .redzone img {
 	width:50%;
@@ -69,7 +67,7 @@
 	width:80%;
 }
 .pronites {
-    margin-top: 100px;
+    margin-top: 40px;
 	text-align:center;
 }
 .pronites .row .col-md-3 {
@@ -81,11 +79,11 @@
 }
 
 @-webkit-keyframes slide {
-	0% {background-image:url("img/ico.png")};
-	29% {background-image:url("img/ico.png")};
-	30% {background-image:url("img/muchbef.jpg");}
-	39% {background-image:url("img/muchbef.jpg");}
-	40% {background-image:url("img/navLogo.png");}
+	0% {background-image:url("pics/img3.jpg")};
+	29% {background-image:url("pics/img1.jpg")};
+	
+	49% {background-image:url("img/muchbef.jpg");}
+	
 	89% {background-image:url("img/navLogo.png");}
 	90% {background-image:url("img/logo.png");}
 	99% {background-image:url("img/logo.png");}
@@ -366,7 +364,7 @@
 	top: 590px;
 }
 circle {
-	fill:grey;
+	fill:rgb(98,98,98);
 	-webkit-animation:circles 5s;
 	-webkit-animation-delay: 1s;
 	-webkit-animation-iteration-count: infinite;
@@ -383,14 +381,16 @@ circle {
 
 
 @-webkit-keyframes circles {
-    from {fill:grey;;
+    from {fill:rgb(98,98,98);
+		stroke-width:0.1;
  }
-    to {fill:#de4f4f;
+    to {fill:rgb(200,200,200);
+		stroke-width:0.9;
  }
 }
 line {
-  stroke:#393939;
-  stroke-width:0.2;;
+  stroke:rgb(53,53,53);
+  stroke-width:0.1;
   
   filter:"url(#f1)";
   transition-property: background;
@@ -417,16 +417,16 @@ line:hover {
 }
 
 @-webkit-keyframes myfirst {
-    from {stroke:#393939;
-  stroke-width:0.3;}
-    to {stroke:grey;
+    from {stroke:rgb(53,53,53);;
   stroke-width:0.4;}
+    to {stroke:rgb(100,100,100);
+  stroke-width:0.7;}
 }
 
 /* Standard syntax */
 @keyframes myfirst {
-    from {stroke:#393939;
-  stroke-width:1.2;}
-    to {stroke:rgb(99,99,99);
-  stroke-width:1;}
+    from {stroke:rgb(53,53,53);;
+  stroke-width:0.4;}
+    to {stroke:rgb(100,100,100);
+  stroke-width:0.7;}
 }
