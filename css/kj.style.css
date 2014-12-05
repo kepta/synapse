@@ -82,6 +82,7 @@
 .pronites {
     margin-top: 40px;
 	text-align:center;
+    margin-bottom: 80px;
 }
 .pronites .row .col-md-3 {
 	text-align:center;
@@ -333,6 +334,9 @@
 	-webkit-font-smoothing: antialiased;
 	font-size: 22px;
 }
+.pronitesicon {
+	margin-bottom: 80px;
+}
 .stats {
 	z-index:1000;
 	position: absolute;
@@ -453,9 +457,19 @@ line:hover {
 
 
 
+.inline-popups a {
+	
+	  color: black;
+	  text-decoration: none; /* no underline */
+	
+}
+.inline-popups li {
+	list-style-type: none;
+}
 
-
-
+.inline-popups ul {
+	padding-left:0px;
+}
 .white-popup {
   position: relative;
   background: #FFF;
