@@ -262,13 +262,13 @@
 	background-image:url("img/muchbef.jpg");*/
 	/* background-image: url("img/muchbef.jpg"); */
 	background-color:#27272b;
-	-moz-transition: all 3s ease-out;
+	-moz-transition: all 15s ease-out;
 	    /* WebKit */
-	    -webkit-transition: all 3s ease-out;
+	    -webkit-transition: all 8s ease-out;
 	    /* Opera */
-	    -o-transition: all 3s ease-out;
+	    -o-transition: all 8s ease-out;
 	    /* Standard */
-	    transition: all 3s ease-out;
+	    transition: all 8s ease-out;
 }
 .test {
 	background-color:#27272b;
@@ -715,7 +715,8 @@ circle {
 	border-color: #de4f4f;
 	border-radius:0px;
 	margin-top:10px;
-	font-size: xx-large;
+	font-size: large;
+	letter-spacing: 10px;
 }
 .btnmine:hover {
 	border: 2px solid #de4f4f;
@@ -725,6 +726,27 @@ circle {
 #mainhead {
 	position:relative;
 	top: -30px;
+}
+
+.redLine {
+	stroke:rgb(200,200,200);
+	
+	-webkit-animation: myfirstRed 3s;
+	stroke-width:0.9;
+}
+@-webkit-keyframes myfirstRed {
+    from {stroke:rgb(70,70,70);
+  stroke-width:1;}
+    to {stroke:rgb(230,220,210);
+  stroke-width:1.2;}
+}
+
+/* Standard syntax */
+@keyframes myfirstRed {
+    from {stroke:rgb(100,100,100);;
+  stroke-width:0.6;}
+    to {stroke:rgb(100,100,100);
+  stroke-width:0.9;}
 }
 line {
   stroke:rgb(53,53,53);

@@ -9,8 +9,21 @@ $( document ).ready(function() {
 	});
 	$(".btnmine" ).mouseenter(function() {
 		$(".intro").css("background-color","#de4f4f");
+		$('line').each(function() {
+			
+			$(this).attr("class", "redLine");
+			$(this).attr("id", " ");
+		});
 	}).mouseleave(function() {
 		$(".intro").css("background-color","#27272b");
+		$('line').each(function() {
+			
+			$(this).attr("class", " ");
+			var x = Math.floor(150*Math.random());
+			x=x.toString();
+			x="n"+x;
+			$(this).attr("id", x);
+		});
 	});
 	
 	$(".fancybox").fancybox();
