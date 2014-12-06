@@ -1,7 +1,12 @@
 
 $( document ).ready(function() {
     // your code here
-	
+	$('line').each(function() {
+		var x = Math.floor(100*Math.random());
+		x=x.toString();
+		x="n"+x;
+		$(this).attr("id", x);
+	});
 	$(".fancybox").fancybox();
 	$(window).scroll(function() {
 		
@@ -76,6 +81,23 @@ $( document ).ready(function() {
 			}
 		});
 		
+		$('#sponsorpic1').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+800) {
+				$(this).addClass("slideRight");
+			}
+		});
+		$('#sponsorpic2').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+800) {
+				$(this).addClass("slideLeft");
+				
+			}
+		});
 	});
 
 	

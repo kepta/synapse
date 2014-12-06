@@ -131,8 +131,9 @@
 .sponsors {
 	padding-top:10px;
 	background-color:white;
-	height :380px;
+	/* height :380px; */
 	overflow:hidden;
+	padding-bottom: 50px;
 }
 .sponsors img {
 	width:90%;
@@ -140,44 +141,19 @@
 .sponsors2 {
 	height:100px;
 }
-.sponsorleft , .sponsorright {
-	top:0px;
-    -webkit-animation-name: sponsoranimate;
-       -webkit-animation-duration: 5s;
-       -webkit-animation-timing-function: ease;
-       -webkit-animation-delay: 5s;
-       -webkit-animation-iteration-count: infinite;
-       /*-webkit-animation-direction: alternate;*/
-       -webkit-animation-play-state: running;
-       /* Standard syntax */
-       animation-name: sponsoranimate;
-       animation-duration: 5s;
-       animation-timing-function: ease;
-       animation-delay: 5s;
-       animation-iteration-count: infinite;
-       animation-play-state: running;
-} 
-@-webkit-keyframes sponsoranimate {
-	
-}
-
-/* Standard syntax */
-@keyframes sponsoranimate {
-	0% {top:-100%;}
-	25% {top:-50%;}
-	75% {top:-20%;}
-	0% {top:0%;}
-}
 .sponsors .sponsorleft {
 	padding-right:0px;
 	position:relative;
 	
-	z-index:3;
+
+}
+.sponsorpic1 , .sponsorpic2 {
+	visibility:hidden;
 }
 .sponsors .solidsponsor {
 	z-index:10;
 	text-align:center ;
-	 padding-bottom:15px;
+	
 	 fill:white;
 }
 .sponsors .sponsorright{
@@ -244,15 +220,30 @@
 }
 .col-md-6.lowerjewelright{
 	padding-left:0px;
+	
+}
+.lowerupperjewel {
+    top: 2px;
+	
+    position: relative;
 }
 .col-md-6.lowerjewelleft{
 	padding-right:0px;
+	position: relative;
+	position: relative;
+
 }
 .col-md-6.jeweltopleft {
 	padding-right:0px;
+	position: relative;
+
+	top: -20px;
 }
 .col-md-6.jeweltopright{
 	padding-left:0px;
+
+	position: relative;
+	top: -20px;
 }
 .mid {
 	/*background-image:url("img/muchbef.jpg");*/
@@ -382,10 +373,11 @@
 	left: 86%;
 	top: 600px;
 }
+
 circle {
 	fill:rgb(98,98,98);
-	-webkit-animation:circles 5s;
-	-webkit-animation-delay: 1s;
+	-webkit-animation:circles 3s;
+	
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-direction: alternate;
     -webkit-animation-play-state: running;
@@ -400,26 +392,325 @@ circle {
 
 
 @-webkit-keyframes circles {
-    from {fill:rgb(98,98,98);
+    from {fill:rgb(60,60,60);
 		stroke-width:0.1;
  }
-    to {fill:rgb(200,200,200);
+    to {fill:rgb(220,220,220);
 		stroke-width:0.9;
  }
 }
+#n1 {animation-delay:0.4373780226862345s; -webkit-animation-delay:2.5871224328116504s;}
+#n2 {animation-delay:1.328340811232306s; -webkit-animation-delay:0.26389825331579475s;}
+#n3 {animation-delay:2.83727661670746s; -webkit-animation-delay:0.35610972932436447s;}
+#n4 {animation-delay:2.948723683557881s; -webkit-animation-delay:3.9091561577505316s;}
+#n5 {animation-delay:0.7483049722809896s; -webkit-animation-delay:0.3530682112391781s;}
+#n6 {animation-delay:1.4473870040145438s; -webkit-animation-delay:3.7410192737282855s;}
+#n7 {animation-delay:3.978055215337194s; -webkit-animation-delay:1.2585171086970424s;}
+#n8 {animation-delay:3.322776400184951s; -webkit-animation-delay:2.045670524031696s;}
+#n9 {animation-delay:2.5680812819203447s; -webkit-animation-delay:2.9104691814507206s;}
+#n10 {animation-delay:0.8796264602110453s; -webkit-animation-delay:0.8924945640086954s;}
+#n11 {animation-delay:1.2534799474586475s; -webkit-animation-delay:3.8365717159231054s;}
+#n12 {animation-delay:0.13432852213645674s; -webkit-animation-delay:0.6897190537599482s;}
+#n13 {animation-delay:2.996937797172551s; -webkit-animation-delay:2.2400167504241235s;}
+#n14 {animation-delay:1.016506010138225s; -webkit-animation-delay:0.13285165128277399s;}
+#n15 {animation-delay:0.3229533790960839s; -webkit-animation-delay:0.4510622798357109s;}
+#n16 {animation-delay:1.4225836928752411s; -webkit-animation-delay:1.7159559971936016s;}
+#n17 {animation-delay:3.6193479467114402s; -webkit-animation-delay:3.203661217607506s;}
+#n18 {animation-delay:1.1810423704877686s; -webkit-animation-delay:1.8859683456020555s;}
+#n19 {animation-delay:3.1395860387213625s; -webkit-animation-delay:0.5693503310836641s;}
+#n20 {animation-delay:1.6179583196116214s; -webkit-animation-delay:3.955409301038614s;}
+#n21 {animation-delay:2.1308321024961585s; -webkit-animation-delay:0.9782104942589913s;}
+#n22 {animation-delay:3.1653324525411355s; -webkit-animation-delay:3.049005103438365s;}
+#n23 {animation-delay:0.32907609439472685s; -webkit-animation-delay:0.4793630025065587s;}
+#n24 {animation-delay:1.3336195443403027s; -webkit-animation-delay:3.6448865318013906s;}
+#n25 {animation-delay:2.0040682923788546s; -webkit-animation-delay:1.241124082186174s;}
+#n26 {animation-delay:2.373776030493535s; -webkit-animation-delay:1.6811903686334855s;}
+#n27 {animation-delay:2.8032075598153674s; -webkit-animation-delay:1.2635961571480694s;}
+#n28 {animation-delay:0.08304886346773577s; -webkit-animation-delay:2.7340460974335565s;}
+#n29 {animation-delay:2.8349352162535086s; -webkit-animation-delay:0.37413050003533144s;}
+#n30 {animation-delay:2.462636262789833s; -webkit-animation-delay:3.433084147150514s;}
+#n31 {animation-delay:3.7485935540896507s; -webkit-animation-delay:0.7987518373805291s;}
+#n32 {animation-delay:3.3142560917202606s; -webkit-animation-delay:3.0657604317749843s;}
+#n33 {animation-delay:3.009111207179086s; -webkit-animation-delay:3.950291830228546s;}
+#n34 {animation-delay:3.366563633880676s; -webkit-animation-delay:0.23194669620002895s;}
+#n35 {animation-delay:3.131288115089173s; -webkit-animation-delay:2.546635593235843s;}
+#n36 {animation-delay:2.1512689769709947s; -webkit-animation-delay:1.4453943641330986s;}
+#n37 {animation-delay:3.3298552972064632s; -webkit-animation-delay:2.770139849408435s;}
+#n38 {animation-delay:1.6027071105689314s; -webkit-animation-delay:0.7388333223554953s;}
+#n39 {animation-delay:3.857892524962399s; -webkit-animation-delay:0.9019388457064395s;}
+#n40 {animation-delay:1.2335229530595626s; -webkit-animation-delay:1.614625070283842s;}
+#n41 {animation-delay:1.247594655191079s; -webkit-animation-delay:2.7125103659185736s;}
+#n42 {animation-delay:2.7430386465988374s; -webkit-animation-delay:1.0930452388702285s;}
+#n43 {animation-delay:1.733780035102241s; -webkit-animation-delay:3.862530323192869s;}
+#n44 {animation-delay:3.0437761286263583s; -webkit-animation-delay:0.14542769149967283s;}
+#n45 {animation-delay:2.3319440496812778s; -webkit-animation-delay:1.6656992437026696s;}
+#n46 {animation-delay:2.94551545550674s; -webkit-animation-delay:1.4595567317522895s;}
+#n47 {animation-delay:0.35906581340068566s; -webkit-animation-delay:2.787883365989481s;}
+#n48 {animation-delay:2.1151749825120842s; -webkit-animation-delay:0.26985215362262815s;}
+#n49 {animation-delay:0.6267813359433978s; -webkit-animation-delay:3.8045657526739385s;}
+#n50 {animation-delay:1.4347051423045327s; -webkit-animation-delay:2.8950472437051245s;}
+#n51 {animation-delay:3.102945136825476s; -webkit-animation-delay:0.011261795880288972s;}
+#n52 {animation-delay:3.5080955359187076s; -webkit-animation-delay:0.6612158986365984s;}
+#n53 {animation-delay:0.5290051268530465s; -webkit-animation-delay:2.4792082448561787s;}
+#n54 {animation-delay:2.822498799468079s; -webkit-animation-delay:0.0481615163155924s;}
+#n55 {animation-delay:3.2970262051151202s; -webkit-animation-delay:2.0712914139573475s;}
+#n56 {animation-delay:0.9473843691966497s; -webkit-animation-delay:3.1823376733266473s;}
+#n57 {animation-delay:1.8315989745391708s; -webkit-animation-delay:3.980837230103868s;}
+#n58 {animation-delay:1.1595369491854854s; -webkit-animation-delay:2.2096233895626307s;}
+#n59 {animation-delay:2.7882819397317364s; -webkit-animation-delay:3.328540866815036s;}
+#n60 {animation-delay:3.0106257137681482s; -webkit-animation-delay:0.6164375345143687s;}
+#n61 {animation-delay:2.57162688140585s; -webkit-animation-delay:1.450470642086524s;}
+#n62 {animation-delay:2.607972930698025s; -webkit-animation-delay:0.22782744210949035s;}
+#n63 {animation-delay:1.992245981577442s; -webkit-animation-delay:1.7327374243141382s;}
+#n64 {animation-delay:0.758058241993544s; -webkit-animation-delay:2.396327351189755s;}
+#n65 {animation-delay:3.3237859277322173s; -webkit-animation-delay:1.1960761001237499s;}
+#n66 {animation-delay:0.6262006114441694s; -webkit-animation-delay:1.8055355317665804s;}
+#n67 {animation-delay:1.5870776986486255s; -webkit-animation-delay:1.5062425117550324s;}
+#n68 {animation-delay:3.194767934502051s; -webkit-animation-delay:1.3475180061098615s;}
+#n69 {animation-delay:1.5801403278359598s; -webkit-animation-delay:0.6837857622189172s;}
+#n70 {animation-delay:2.556167831991043s; -webkit-animation-delay:2.693300303622973s;}
+#n71 {animation-delay:0.9891212681221973s; -webkit-animation-delay:2.5094116753865356s;}
+#n72 {animation-delay:3.9557808564100134s; -webkit-animation-delay:1.4608668321266762s;}
+#n73 {animation-delay:1.8566618973380984s; -webkit-animation-delay:2.468808485470931s;}
+#n74 {animation-delay:3.5039046986379394s; -webkit-animation-delay:2.2952431722684374s;}
+#n75 {animation-delay:3.75058450831551s; -webkit-animation-delay:1.0534650459849346s;}
+#n76 {animation-delay:3.6046814172855015s; -webkit-animation-delay:3.7103919924539617s;}
+#n77 {animation-delay:0.16720246540970995s; -webkit-animation-delay:1.331663905735394s;}
+#n78 {animation-delay:0.4038886999203264s; -webkit-animation-delay:1.2028109019643027s;}
+#n79 {animation-delay:1.0199608858863134s; -webkit-animation-delay:3.926491817139175s;}
+#n80 {animation-delay:0.936381108572828s; -webkit-animation-delay:3.9318767142867084s;}
+#n81 {animation-delay:2.505523005922041s; -webkit-animation-delay:2.8853639573773195s;}
+#n82 {animation-delay:0.15787298928300642s; -webkit-animation-delay:3.172134744708651s;}
+#n83 {animation-delay:1.2058215956096485s; -webkit-animation-delay:2.398214951988349s;}
+#n84 {animation-delay:3.674662786696357s; -webkit-animation-delay:1.777890949250311s;}
+#n85 {animation-delay:1.9760039782993952s; -webkit-animation-delay:0.919167130440131s;}
+#n86 {animation-delay:0.7388026413714872s; -webkit-animation-delay:1.0606193296933464s;}
+#n87 {animation-delay:2.984601048691081s; -webkit-animation-delay:1.969140558919452s;}
+#n88 {animation-delay:1.9551249293130568s; -webkit-animation-delay:0.7648528038489926s;}
+#n89 {animation-delay:0.21366263547287367s; -webkit-animation-delay:1.7445288701081965s;}
+#n90 {animation-delay:1.150443465873201s; -webkit-animation-delay:3.238384042203191s;}
+#n91 {animation-delay:1.7930019218951236s; -webkit-animation-delay:0.6297166896577493s;}
+#n92 {animation-delay:0.9841516183865835s; -webkit-animation-delay:0.4277564491232293s;}
+#n93 {animation-delay:3.734102296373838s; -webkit-animation-delay:0.808875472147887s;}
+#n94 {animation-delay:1.1333492294389185s; -webkit-animation-delay:1.9901836384198663s;}
+#n95 {animation-delay:0.9456442657388098s; -webkit-animation-delay:1.3951274009668744s;}
+#n96 {animation-delay:2.264532647750032s; -webkit-animation-delay:2.598191326278458s;}
+#n97 {animation-delay:2.8540169859817044s; -webkit-animation-delay:1.842824432169576s;}
+#n98 {animation-delay:0.5077914225811551s; -webkit-animation-delay:2.423431817657595s;}
+#n99 {animation-delay:3.51858372134335s; -webkit-animation-delay:1.8813465055654568s;}
+#n100 {animation-delay:3.7783595386324573s; -webkit-animation-delay:2.8212771223206468s;}
+#n101 {animation-delay:1.8228796888180772s; -webkit-animation-delay:1.806477440104985s;}
+#n102 {animation-delay:1.0442768558357902s; -webkit-animation-delay:3.397953872644416s;}
+#n103 {animation-delay:2.139323910437955s; -webkit-animation-delay:0.6880756911868242s;}
+#n104 {animation-delay:2.51782123496753s; -webkit-animation-delay:2.927139302658688s;}
+#n105 {animation-delay:1.8064352645183641s; -webkit-animation-delay:1.9004104380560989s;}
+#n106 {animation-delay:2.752278622792856s; -webkit-animation-delay:2.9930922287829684s;}
+#n107 {animation-delay:0.8239477202832095s; -webkit-animation-delay:1.3541928340977325s;}
+#n108 {animation-delay:3.7545257089942727s; -webkit-animation-delay:1.7725517310694303s;}
+#n109 {animation-delay:3.3626263607798497s; -webkit-animation-delay:1.9069859494334138s;}
+#n110 {animation-delay:3.4778040155503285s; -webkit-animation-delay:2.0277910228070017s;}
+#n111 {animation-delay:0.001993173856853492s; -webkit-animation-delay:3.6513348581771177s;}
+#n112 {animation-delay:2.4379718152123617s; -webkit-animation-delay:2.1683693460436553s;}
+#n113 {animation-delay:0.05057536907296667s; -webkit-animation-delay:0.12761308101637736s;}
+#n114 {animation-delay:3.7004266289292644s; -webkit-animation-delay:0.1492839788023428s;}
+#n115 {animation-delay:0.8696982792438042s; -webkit-animation-delay:0.98124034002206s;}
+#n116 {animation-delay:3.1137964609113666s; -webkit-animation-delay:1.0083770960832585s;}
+#n117 {animation-delay:3.813248165612688s; -webkit-animation-delay:2.18157906474928s;}
+#n118 {animation-delay:3.4204050767135397s; -webkit-animation-delay:0.006010867741190307s;}
+#n119 {animation-delay:2.2122395650966427s; -webkit-animation-delay:3.6424772542632335s;}
+#n120 {animation-delay:1.7524221167898286s; -webkit-animation-delay:2.6151802189328337s;}
+#n121 {animation-delay:3.7744245009184643s; -webkit-animation-delay:2.9320787243820967s;}
+#n122 {animation-delay:3.0265155264502077s; -webkit-animation-delay:0.020387255533302895s;}
+#n123 {animation-delay:3.8355907524686397s; -webkit-animation-delay:0.732179778057163s;}
+#n124 {animation-delay:1.8787300637091011s; -webkit-animation-delay:0.3187601897696184s;}
+#n125 {animation-delay:1.0905999161922564s; -webkit-animation-delay:2.8050658827811485s;}
+#n126 {animation-delay:1.0352216383643116s; -webkit-animation-delay:1.277053153568493s;}
+#n127 {animation-delay:3.748624153920655s; -webkit-animation-delay:2.448420532414213s;}
+#n128 {animation-delay:2.3933837136444276s; -webkit-animation-delay:0.2833218107651718s;}
+#n129 {animation-delay:3.498444556482582s; -webkit-animation-delay:0.7665520519377944s;}
+#n130 {animation-delay:2.5918077142150113s; -webkit-animation-delay:3.0422247701145197s;}
+#n131 {animation-delay:1.236082889331715s; -webkit-animation-delay:1.5588423283412367s;}
+#n132 {animation-delay:3.4764271326572884s; -webkit-animation-delay:2.598056392891532s;}
+#n133 {animation-delay:0.19844319262000587s; -webkit-animation-delay:3.2239774049766723s;}
+#n134 {animation-delay:1.6240989098677643s; -webkit-animation-delay:2.42977518516104s;}
+#n135 {animation-delay:2.9630457046519036s; -webkit-animation-delay:1.8011745139579385s;}
+#n136 {animation-delay:1.963784504660643s; -webkit-animation-delay:3.647445578513219s;}
+#n137 {animation-delay:2.715342566950033s; -webkit-animation-delay:1.1172792231800797s;}
+#n138 {animation-delay:0.5393960757464438s; -webkit-animation-delay:2.72966835568998s;}
+#n139 {animation-delay:2.2515117975739503s; -webkit-animation-delay:1.9812593912750454s;}
+#n140 {animation-delay:0.5872846803244527s; -webkit-animation-delay:0.7767317987191165s;}
+#n141 {animation-delay:2.376029450976858s; -webkit-animation-delay:0.46528213187659784s;}
+#n142 {animation-delay:0.35524630732414453s; -webkit-animation-delay:3.91437123088169s;}
+#n143 {animation-delay:2.6697297907456226s; -webkit-animation-delay:1.5342131729445625s;}
+#n144 {animation-delay:0.4688359240443485s; -webkit-animation-delay:1.2681794072961194s;}
+#n145 {animation-delay:0.045466334606629744s; -webkit-animation-delay:0.6330363612918428s;}
+#n146 {animation-delay:3.154678170525717s; -webkit-animation-delay:1.8388703809928537s;}
+#n147 {animation-delay:2.074895425278678s; -webkit-animation-delay:2.314346858263238s;}
+#n148 {animation-delay:3.259376702053203s; -webkit-animation-delay:2.64375138261265s;}
+#n149 {animation-delay:0.7613079264874223s; -webkit-animation-delay:3.5857271839188583s;}
+
+.n1 {animation-delay:0.4373780226862345s; -webkit-animation-delay:2.5871224328116504s;}
+.n2 {animation-delay:1.328340811232306s; -webkit-animation-delay:0.26389825331579475s;}
+.n3 {animation-delay:2.83727661670746s; -webkit-animation-delay:0.35610972932436447s;}
+.n4 {animation-delay:2.948723683557881s; -webkit-animation-delay:3.9091561577505316s;}
+.n5 {animation-delay:0.7483049722809896s; -webkit-animation-delay:0.3530682112391781s;}
+.n6 {animation-delay:1.4473870040145438s; -webkit-animation-delay:3.7410192737282855s;}
+.n7 {animation-delay:3.978055215337194s; -webkit-animation-delay:1.2585171086970424s;}
+.n8 {animation-delay:3.322776400184951s; -webkit-animation-delay:2.045670524031696s;}
+.n9 {animation-delay:2.5680812819203447s; -webkit-animation-delay:2.9104691814507206s;}
+.n10 {animation-delay:0.8796264602110453s; -webkit-animation-delay:0.8924945640086954s;}
+.n11 {animation-delay:1.2534799474586475s; -webkit-animation-delay:3.8365717159231054s;}
+.n12 {animation-delay:0.13432852213645674s; -webkit-animation-delay:0.6897190537599482s;}
+.n13 {animation-delay:2.996937797172551s; -webkit-animation-delay:2.2400167504241235s;}
+.n14 {animation-delay:1.016506010138225s; -webkit-animation-delay:0.13285165128277399s;}
+.n15 {animation-delay:0.3229533790960839s; -webkit-animation-delay:0.4510622798357109s;}
+.n16 {animation-delay:1.4225836928752411s; -webkit-animation-delay:1.7159559971936016s;}
+.n17 {animation-delay:3.6193479467114402s; -webkit-animation-delay:3.203661217607506s;}
+.n18 {animation-delay:1.1810423704877686s; -webkit-animation-delay:1.8859683456020555s;}
+.n19 {animation-delay:3.1395860387213625s; -webkit-animation-delay:0.5693503310836641s;}
+.n20 {animation-delay:1.6179583196116214s; -webkit-animation-delay:3.955409301038614s;}
+.n21 {animation-delay:2.1308321024961585s; -webkit-animation-delay:0.9782104942589913s;}
+.n22 {animation-delay:3.1653324525411355s; -webkit-animation-delay:3.049005103438365s;}
+.n23 {animation-delay:0.32907609439472685s; -webkit-animation-delay:0.4793630025065587s;}
+.n24 {animation-delay:1.3336195443403027s; -webkit-animation-delay:3.6448865318013906s;}
+.n25 {animation-delay:2.0040682923788546s; -webkit-animation-delay:1.241124082186174s;}
+.n26 {animation-delay:2.373776030493535s; -webkit-animation-delay:1.6811903686334855s;}
+.n27 {animation-delay:2.8032075598153674s; -webkit-animation-delay:1.2635961571480694s;}
+.n28 {animation-delay:0.08304886346773577s; -webkit-animation-delay:2.7340460974335565s;}
+.n29 {animation-delay:2.8349352162535086s; -webkit-animation-delay:0.37413050003533144s;}
+.n30 {animation-delay:2.462636262789833s; -webkit-animation-delay:3.433084147150514s;}
+.n31 {animation-delay:3.7485935540896507s; -webkit-animation-delay:0.7987518373805291s;}
+.n32 {animation-delay:3.3142560917202606s; -webkit-animation-delay:3.0657604317749843s;}
+.n33 {animation-delay:3.009111207179086s; -webkit-animation-delay:3.950291830228546s;}
+.n34 {animation-delay:3.366563633880676s; -webkit-animation-delay:0.23194669620002895s;}
+.n35 {animation-delay:3.131288115089173s; -webkit-animation-delay:2.546635593235843s;}
+.n36 {animation-delay:2.1512689769709947s; -webkit-animation-delay:1.4453943641330986s;}
+.n37 {animation-delay:3.3298552972064632s; -webkit-animation-delay:2.770139849408435s;}
+.n38 {animation-delay:1.6027071105689314s; -webkit-animation-delay:0.7388333223554953s;}
+.n39 {animation-delay:3.857892524962399s; -webkit-animation-delay:0.9019388457064395s;}
+.n40 {animation-delay:1.2335229530595626s; -webkit-animation-delay:1.614625070283842s;}
+.n41 {animation-delay:1.247594655191079s; -webkit-animation-delay:2.7125103659185736s;}
+.n42 {animation-delay:2.7430386465988374s; -webkit-animation-delay:1.0930452388702285s;}
+.n43 {animation-delay:1.733780035102241s; -webkit-animation-delay:3.862530323192869s;}
+.n44 {animation-delay:3.0437761286263583s; -webkit-animation-delay:0.14542769149967283s;}
+.n45 {animation-delay:2.3319440496812778s; -webkit-animation-delay:1.6656992437026696s;}
+.n46 {animation-delay:2.94551545550674s; -webkit-animation-delay:1.4595567317522895s;}
+.n47 {animation-delay:0.35906581340068566s; -webkit-animation-delay:2.787883365989481s;}
+.n48 {animation-delay:2.1151749825120842s; -webkit-animation-delay:0.26985215362262815s;}
+.n49 {animation-delay:0.6267813359433978s; -webkit-animation-delay:3.8045657526739385s;}
+.n50 {animation-delay:1.4347051423045327s; -webkit-animation-delay:2.8950472437051245s;}
+.n51 {animation-delay:3.102945136825476s; -webkit-animation-delay:0.011261795880288972s;}
+.n52 {animation-delay:3.5080955359187076s; -webkit-animation-delay:0.6612158986365984s;}
+.n53 {animation-delay:0.5290051268530465s; -webkit-animation-delay:2.4792082448561787s;}
+.n54 {animation-delay:2.822498799468079s; -webkit-animation-delay:0.0481615163155924s;}
+.n55 {animation-delay:3.2970262051151202s; -webkit-animation-delay:2.0712914139573475s;}
+.n56 {animation-delay:0.9473843691966497s; -webkit-animation-delay:3.1823376733266473s;}
+.n57 {animation-delay:1.8315989745391708s; -webkit-animation-delay:3.980837230103868s;}
+.n58 {animation-delay:1.1595369491854854s; -webkit-animation-delay:2.2096233895626307s;}
+.n59 {animation-delay:2.7882819397317364s; -webkit-animation-delay:3.328540866815036s;}
+.n60 {animation-delay:3.0106257137681482s; -webkit-animation-delay:0.6164375345143687s;}
+.n61 {animation-delay:2.57162688140585s; -webkit-animation-delay:1.450470642086524s;}
+.n62 {animation-delay:2.607972930698025s; -webkit-animation-delay:0.22782744210949035s;}
+.n63 {animation-delay:1.992245981577442s; -webkit-animation-delay:1.7327374243141382s;}
+.n64 {animation-delay:0.758058241993544s; -webkit-animation-delay:2.396327351189755s;}
+.n65 {animation-delay:3.3237859277322173s; -webkit-animation-delay:1.1960761001237499s;}
+.n66 {animation-delay:0.6262006114441694s; -webkit-animation-delay:1.8055355317665804s;}
+.n67 {animation-delay:1.5870776986486255s; -webkit-animation-delay:1.5062425117550324s;}
+.n68 {animation-delay:3.194767934502051s; -webkit-animation-delay:1.3475180061098615s;}
+.n69 {animation-delay:1.5801403278359598s; -webkit-animation-delay:0.6837857622189172s;}
+.n70 {animation-delay:2.556167831991043s; -webkit-animation-delay:2.693300303622973s;}
+.n71 {animation-delay:0.9891212681221973s; -webkit-animation-delay:2.5094116753865356s;}
+.n72 {animation-delay:3.9557808564100134s; -webkit-animation-delay:1.4608668321266762s;}
+.n73 {animation-delay:1.8566618973380984s; -webkit-animation-delay:2.468808485470931s;}
+.n74 {animation-delay:3.5039046986379394s; -webkit-animation-delay:2.2952431722684374s;}
+.n75 {animation-delay:3.75058450831551s; -webkit-animation-delay:1.0534650459849346s;}
+.n76 {animation-delay:3.6046814172855015s; -webkit-animation-delay:3.7103919924539617s;}
+.n77 {animation-delay:0.16720246540970995s; -webkit-animation-delay:1.331663905735394s;}
+.n78 {animation-delay:0.4038886999203264s; -webkit-animation-delay:1.2028109019643027s;}
+.n79 {animation-delay:1.0199608858863134s; -webkit-animation-delay:3.926491817139175s;}
+.n80 {animation-delay:0.936381108572828s; -webkit-animation-delay:3.9318767142867084s;}
+.n81 {animation-delay:2.505523005922041s; -webkit-animation-delay:2.8853639573773195s;}
+.n82 {animation-delay:0.15787298928300642s; -webkit-animation-delay:3.172134744708651s;}
+.n83 {animation-delay:1.2058215956096485s; -webkit-animation-delay:2.398214951988349s;}
+.n84 {animation-delay:3.674662786696357s; -webkit-animation-delay:1.777890949250311s;}
+.n85 {animation-delay:1.9760039782993952s; -webkit-animation-delay:0.919167130440131s;}
+.n86 {animation-delay:0.7388026413714872s; -webkit-animation-delay:1.0606193296933464s;}
+.n87 {animation-delay:2.984601048691081s; -webkit-animation-delay:1.969140558919452s;}
+.n88 {animation-delay:1.9551249293130568s; -webkit-animation-delay:0.7648528038489926s;}
+.n89 {animation-delay:0.21366263547287367s; -webkit-animation-delay:1.7445288701081965s;}
+.n90 {animation-delay:1.150443465873201s; -webkit-animation-delay:3.238384042203191s;}
+.n91 {animation-delay:1.7930019218951236s; -webkit-animation-delay:0.6297166896577493s;}
+.n92 {animation-delay:0.9841516183865835s; -webkit-animation-delay:0.4277564491232293s;}
+.n93 {animation-delay:3.734102296373838s; -webkit-animation-delay:0.808875472147887s;}
+.n94 {animation-delay:1.1333492294389185s; -webkit-animation-delay:1.9901836384198663s;}
+.n95 {animation-delay:0.9456442657388098s; -webkit-animation-delay:1.3951274009668744s;}
+.n96 {animation-delay:2.264532647750032s; -webkit-animation-delay:2.598191326278458s;}
+.n97 {animation-delay:2.8540169859817044s; -webkit-animation-delay:1.842824432169576s;}
+.n98 {animation-delay:0.5077914225811551s; -webkit-animation-delay:2.423431817657595s;}
+.n99 {animation-delay:3.51858372134335s; -webkit-animation-delay:1.8813465055654568s;}
+.n100 {animation-delay:3.7783595386324573s; -webkit-animation-delay:2.8212771223206468s;}
+.n101 {animation-delay:1.8228796888180772s; -webkit-animation-delay:1.806477440104985s;}
+.n102 {animation-delay:1.0442768558357902s; -webkit-animation-delay:3.397953872644416s;}
+.n103 {animation-delay:2.139323910437955s; -webkit-animation-delay:0.6880756911868242s;}
+.n104 {animation-delay:2.51782123496753s; -webkit-animation-delay:2.927139302658688s;}
+.n105 {animation-delay:1.8064352645183641s; -webkit-animation-delay:1.9004104380560989s;}
+.n106 {animation-delay:2.752278622792856s; -webkit-animation-delay:2.9930922287829684s;}
+.n107 {animation-delay:0.8239477202832095s; -webkit-animation-delay:1.3541928340977325s;}
+.n108 {animation-delay:3.7545257089942727s; -webkit-animation-delay:1.7725517310694303s;}
+.n109 {animation-delay:3.3626263607798497s; -webkit-animation-delay:1.9069859494334138s;}
+.n110 {animation-delay:3.4778040155503285s; -webkit-animation-delay:2.0277910228070017s;}
+.n111 {animation-delay:0.001993173856853492s; -webkit-animation-delay:3.6513348581771177s;}
+.n112 {animation-delay:2.4379718152123617s; -webkit-animation-delay:2.1683693460436553s;}
+.n113 {animation-delay:0.05057536907296667s; -webkit-animation-delay:0.12761308101637736s;}
+.n114 {animation-delay:3.7004266289292644s; -webkit-animation-delay:0.1492839788023428s;}
+.n115 {animation-delay:0.8696982792438042s; -webkit-animation-delay:0.98124034002206s;}
+.n116 {animation-delay:3.1137964609113666s; -webkit-animation-delay:1.0083770960832585s;}
+.n117 {animation-delay:3.813248165612688s; -webkit-animation-delay:2.18157906474928s;}
+.n118 {animation-delay:3.4204050767135397s; -webkit-animation-delay:0.006010867741190307s;}
+.n119 {animation-delay:2.2122395650966427s; -webkit-animation-delay:3.6424772542632335s;}
+.n120 {animation-delay:1.7524221167898286s; -webkit-animation-delay:2.6151802189328337s;}
+.n121 {animation-delay:3.7744245009184643s; -webkit-animation-delay:2.9320787243820967s;}
+.n122 {animation-delay:3.0265155264502077s; -webkit-animation-delay:0.020387255533302895s;}
+.n123 {animation-delay:3.8355907524686397s; -webkit-animation-delay:0.732179778057163s;}
+.n124 {animation-delay:1.8787300637091011s; -webkit-animation-delay:0.3187601897696184s;}
+.n125 {animation-delay:1.0905999161922564s; -webkit-animation-delay:2.8050658827811485s;}
+.n126 {animation-delay:1.0352216383643116s; -webkit-animation-delay:1.277053153568493s;}
+.n127 {animation-delay:3.748624153920655s; -webkit-animation-delay:2.448420532414213s;}
+.n128 {animation-delay:2.3933837136444276s; -webkit-animation-delay:0.2833218107651718s;}
+.n129 {animation-delay:3.498444556482582s; -webkit-animation-delay:0.7665520519377944s;}
+.n130 {animation-delay:2.5918077142150113s; -webkit-animation-delay:3.0422247701145197s;}
+.n131 {animation-delay:1.236082889331715s; -webkit-animation-delay:1.5588423283412367s;}
+.n132 {animation-delay:3.4764271326572884s; -webkit-animation-delay:2.598056392891532s;}
+.n133 {animation-delay:0.19844319262000587s; -webkit-animation-delay:3.2239774049766723s;}
+.n134 {animation-delay:1.6240989098677643s; -webkit-animation-delay:2.42977518516104s;}
+.n135 {animation-delay:2.9630457046519036s; -webkit-animation-delay:1.8011745139579385s;}
+.n136 {animation-delay:1.963784504660643s; -webkit-animation-delay:3.647445578513219s;}
+.n137 {animation-delay:2.715342566950033s; -webkit-animation-delay:1.1172792231800797s;}
+.n138 {animation-delay:0.5393960757464438s; -webkit-animation-delay:2.72966835568998s;}
+.n139 {animation-delay:2.2515117975739503s; -webkit-animation-delay:1.9812593912750454s;}
+.n140 {animation-delay:0.5872846803244527s; -webkit-animation-delay:0.7767317987191165s;}
+.n141 {animation-delay:2.376029450976858s; -webkit-animation-delay:0.46528213187659784s;}
+.n142 {animation-delay:0.35524630732414453s; -webkit-animation-delay:3.91437123088169s;}
+.n143 {animation-delay:2.6697297907456226s; -webkit-animation-delay:1.5342131729445625s;}
+.n144 {animation-delay:0.4688359240443485s; -webkit-animation-delay:1.2681794072961194s;}
+.n145 {animation-delay:0.045466334606629744s; -webkit-animation-delay:0.6330363612918428s;}
+.n146 {animation-delay:3.154678170525717s; -webkit-animation-delay:1.8388703809928537s;}
+.n147 {animation-delay:2.074895425278678s; -webkit-animation-delay:2.314346858263238s;}
+.n148 {animation-delay:3.259376702053203s; -webkit-animation-delay:2.64375138261265s;}
+.n149 {animation-delay:0.7613079264874223s; -webkit-animation-delay:3.5857271839188583s;}
+
+
+
 line {
   stroke:rgb(53,53,53);
   stroke-width:0.1;
   
-  filter:"url(#f1)";
-  transition-property: background;
-    transition-duration: 5s;
-    transition-timing-function: linear;
+ 
 	
-	-webkit-animation: myfirst 5s; /* Chrome, Safari, Opera */
-	    animation: myfirst 5s;
+	-webkit-animation: myfirst 2s; /* Chrome, Safari, Opera */
+	    animation: myfirst 3s;
 		animation-timing-function: linear;
-		    animation-delay: 2s;
+		    animation-delay: 0s;
 		    animation-iteration-count: infinite;
 		    animation-direction: alternate;
 		    animation-play-state: running;
@@ -437,17 +728,17 @@ line:hover {
 
 @-webkit-keyframes myfirst {
     from {stroke:rgb(53,53,53);
-  stroke-width:0.4;}
+  stroke-width:0.8;}
     to {stroke:rgb(100,100,100);
-  stroke-width:0.7;}
+  stroke-width:1.2;}
 }
 
 /* Standard syntax */
 @keyframes myfirst {
     from {stroke:rgb(53,53,53);;
-  stroke-width:0.4;}
-    to {stroke:rgb(100,100,100);
-  stroke-width:0.7;}
+  stroke-width:0.6;}
+    to {stroke:rgb(80,80,80);
+  stroke-width:0.9;}
 }
 
 
