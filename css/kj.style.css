@@ -262,6 +262,13 @@
 	background-image:url("img/muchbef.jpg");*/
 	/* background-image: url("img/muchbef.jpg"); */
 	background-color:#27272b;
+	-moz-transition: all 3s ease-out;
+	    /* WebKit */
+	    -webkit-transition: all 3s ease-out;
+	    /* Opera */
+	    -o-transition: all 3s ease-out;
+	    /* Standard */
+	    transition: all 3s ease-out;
 }
 .test {
 	background-color:#27272b;
@@ -376,8 +383,8 @@
 
 circle {
 	fill:rgb(98,98,98);
-	-webkit-animation:circles 3s;
-	
+	-webkit-animation:circles 5s;
+	-webkit-animation-delay: 2s;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-direction: alternate;
     -webkit-animation-play-state: running;
@@ -392,10 +399,10 @@ circle {
 
 
 @-webkit-keyframes circles {
-    from {fill:rgb(60,60,60);
+    from {fill:rgb(100,100,100);
 		stroke-width:0.1;
  }
-    to {fill:rgb(220,220,220);
+    to {fill:rgb(180,180,180);
 		stroke-width:0.9;
  }
 }
@@ -699,17 +706,35 @@ circle {
 .n148 {animation-delay:3.259376702053203s; -webkit-animation-delay:2.64375138261265s;}
 .n149 {animation-delay:0.7613079264874223s; -webkit-animation-delay:3.5857271839188583s;}
 
-
-
+.btnmine {
+	padding: 19px 51px 17px;
+	font-size: 12px;
+	line-height: 16px;
+	border: 2px solid;
+	color: #de4f4f;
+	border-color: #de4f4f;
+	border-radius:0px;
+	margin-top:10px;
+	font-size: xx-large;
+}
+.btnmine:hover {
+	border: 2px solid #de4f4f;
+	background-color: #de4f4f;
+	color: white;
+}
+#mainhead {
+	position:relative;
+	top: -30px;
+}
 line {
   stroke:rgb(53,53,53);
-  stroke-width:0.1;
+  stroke-width:0.2;
   
  
 	
-	-webkit-animation: myfirst 2s; /* Chrome, Safari, Opera */
+	-webkit-animation: myfirst 1s; /* Chrome, Safari, Opera */
 	    animation: myfirst 3s;
-		animation-timing-function: linear;
+		animation-timing-function: ease-out;
 		    animation-delay: 0s;
 		    animation-iteration-count: infinite;
 		    animation-direction: alternate;
@@ -728,7 +753,7 @@ line:hover {
 
 @-webkit-keyframes myfirst {
     from {stroke:rgb(53,53,53);
-  stroke-width:0.8;}
+  stroke-width:1;}
     to {stroke:rgb(100,100,100);
   stroke-width:1.2;}
 }

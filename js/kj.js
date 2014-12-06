@@ -2,11 +2,17 @@
 $( document ).ready(function() {
     // your code here
 	$('line').each(function() {
-		var x = Math.floor(100*Math.random());
+		var x = Math.floor(150*Math.random());
 		x=x.toString();
 		x="n"+x;
 		$(this).attr("id", x);
 	});
+	$(".btnmine" ).mouseenter(function() {
+		$(".intro").css("background-color","#de4f4f");
+	}).mouseleave(function() {
+		$(".intro").css("background-color","#27272b");
+	});
+	
 	$(".fancybox").fancybox();
 	$(window).scroll(function() {
 		
