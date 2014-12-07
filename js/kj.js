@@ -1,6 +1,7 @@
 
 $( document ).ready(function() {
     // your code here
+	
 	$('line').each(function() {
 		var x = Math.floor(150*Math.random());
 		x=x.toString();
@@ -9,6 +10,7 @@ $( document ).ready(function() {
 	});
 	$(".btnmine" ).mouseenter(function() {
 		$(".intro").css("background-color","#de4f4f");
+		$(".stats").css("background-color","#de4f4f");
 		$('line').each(function() {
 			
 			$(this).attr("class", "redLine");
@@ -16,6 +18,7 @@ $( document ).ready(function() {
 		});
 	}).mouseleave(function() {
 		$(".intro").css("background-color","#27272b");
+		$(".stats").css("background-color","#27272b")
 		$('line').each(function() {
 			
 			$(this).attr("class", " ");
@@ -26,8 +29,16 @@ $( document ).ready(function() {
 		});
 	});
 	
-	$(".fancybox").fancybox();
+$(".fancybox")
+    .attr('rel', 'gallery')
+    .fancybox({
+        padding : 0
+    });
 	$(window).scroll(function() {
+		
+		
+	
+		
 		
 		
 		$('#firstball').each(function(){
@@ -38,11 +49,13 @@ $( document ).ready(function() {
 				$(this).addClass("slideDown");
 			}
 		});
+		
+		
 		$('#cyno').each(function(){
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+800) {
+			if (imagePos < topOfWindow+620) {
 				$(this).addClass("slideDown");
 			}
 		});
@@ -51,7 +64,7 @@ $( document ).ready(function() {
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+700) {
+			if (imagePos < topOfWindow+580) {
 				$(this).addClass("slideDown");
 			}
 		});
@@ -59,7 +72,7 @@ $( document ).ready(function() {
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+600) {
+			if (imagePos < topOfWindow+540) {
 				$(this).addClass("slideDown");
 			}
 		});
@@ -173,6 +186,51 @@ $( document ).ready(function() {
 	$('#fifthball').addClass("slideDownX slideDownX4");
 	
 	
+	$(function(){
+	  $("#slides").slidesjs({
+	    width: 500,
+	    height: 500,
+		  navigation: {
+		        active: false,
+		          // [boolean] Generates next and previous buttons.
+		          // You can set to false and use your own buttons.
+		          // User defined buttons must have the following:
+		          // previous button: class="slidesjs-previous slidesjs-navigation"
+		          // next button: class="slidesjs-next slidesjs-navigation"
+		        effect: "slide"
+		          // [string] Can be either "slide" or "fade".
+		      },
+			  pagination: {
+				  active:false
+			  },
+			  play: {
+				  auto:true,interval: 3000
+			  }
+	  });
+	});
+	
+	$(function(){
+	  $("#slide-intro").slidesjs({
+	    width: 300,
+	    height: 50,
+		  navigation: {
+		        active: false,
+		          // [boolean] Generates next and previous buttons.
+		          // You can set to false and use your own buttons.
+		          // User defined buttons must have the following:
+		          // previous button: class="slidesjs-previous slidesjs-navigation"
+		          // next button: class="slidesjs-next slidesjs-navigation"
+		        effect: "slide"
+		          // [string] Can be either "slide" or "fade".
+		      },
+			  pagination: {
+				  active:false
+			  },
+			  play: {
+				  auto:true,interval: 9000
+			  }
+	  });
+	});
 	
 	
 	});

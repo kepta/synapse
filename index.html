@@ -1,270 +1,296 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Synapse v0.2.5</title>
-        <link rel = "icon" href = "/favicon.png" type = "image/png"> <!-- NEED TO ADD FAVICON-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Synapse v0.5.5</title>
+	<link rel = "icon" href = "/favicon.png" type = "image/png"> <!-- NEED TO ADD FAVICON-->
 
-        <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- custom style sheet-->
-        <link href="css/anima.css" rel="stylesheet">
-		 <link href="css/magni.css" rel="stylesheet">
-		  <link href="css/magniq.css" rel="stylesheet">
+	<!-- custom style sheet-->
+	<link href="css/anima.css" rel="stylesheet">
+	<link href="css/magni.css" rel="stylesheet">
+	<link href="css/magniq.css" rel="stylesheet">
 	<!-- bxSlider Javascript file -->
 	
 	<!-- bxSlider CSS file -->
 	
        
-		<link href="css/jquery.fancybox.css" rel="stylesheet" >
-		<link href = "css/kj.style.css" rel="stylesheet" >
+	<link href="css/jquery.fancybox.css" rel="stylesheet" >
+	<link href = "css/kj.style.css" rel="stylesheet" >
 
- 	    <script src="js/jquery.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-  		<script src="js/jquery.fancybox.pack.js"></script>
-		 <script src="js/magni.js"></script>
-        <script src="js/kj.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.fancybox.pack.js"></script>
+	<script src="js/magni.js"></script>
+	<script src="js/jquery.slides.min.js"></script>
 		
-        <!-- meta discription -->
-        <meta name="Discription" content="Some shit here " >
-      <!--  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-   	   	-->
-    </head>
-    <body>
-        <div id="wrap">
-            <div id="main">
+		
+	<script src="js/kj.js"></script>
+		
+	<!-- meta discription -->
+	<meta name="Discription" content="Some shit here " >
+	<!--  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		-->
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="main">
 
-                <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <div class="logo">
-                                <img src="img/navLogo.png" id="logoIn">
-                            </div>
-                        </div>
+				<nav class="navbar navbar-default navbar-fixed" role="navigation">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<div class="logo">
+								<img src="img/navLogo.png" id="logoIn">
+							</div>
+						</div>
 
-                        <div id ="navbarCollapse" class="collapse navbar-collapse">
-                            <ul class="nav navbar-nav navbar-right" id="navRight">
-                                <li><a href="/install">Home</a></li>
-                                <li><a target="_blank" href="">Events</a></li>
-                                <li><a href="/projects">Sponsors</a></li>
-                                <li><a target="_blank" href="">Gallery</a></li>
-                                <li><a href="/about">About us</a></li>
-                                <li><a href="/blog/2014/10/28/meteor-1-0">Blog</a></li>
-                            </ul>
-                        </div>
-                    </div>	
-                </nav>
+						<div id ="navbarCollapse" class="collapse navbar-collapse">
+							<ul class="nav navbar-nav navbar-right" id="navRight">
+								<li><a href="/install">Home</a></li>
+								<li><a target="_blank" href="">Events</a></li>
+								<li><a href="/projects">Sponsors</a></li>
+								<li><a target="_blank" href="">Gallery</a></li>
+								<li><a href="/about">About us</a></li>
+								<li><a href="/blog/2014/10/28/meteor-1-0">Blog</a></li>
+							</ul>
+						</div>
+					</div>	
+				</nav>
 
-                <div id="home">
-                    <section class="intro" style="overflow:hidden">
+				<div id="home">
+					<section class="intro" style="overflow:hidden">
                        	
-                            <div class="row">
-                                <div class= "col-md-6 jeweltopleft">
-                                    <svg width="100%" height="100%">
-										<defs>
-										    <filter id="f1" x="0" y="0">
-										      <feGaussianBlur in="SourceGraphic" stdDeviation="0.3" />
-										    </filter>
-										  </defs>
-                                        <line id="n122"  x1="0" y1="0" x2="10%" y2="39%"></line>
-                                        <line id="n123"  x1="10%" y1="39%" x2="17%" y2="0%"></line>
-                                        <line id="n124"  x1="17%" y1="0%" x2="25%" y2="25%"></line>
-                                        <line id="n125"  x1="0%" y1="60%" x2="10%" y2="39%"></line>
-                                        <line id="n126"  x1="10%" y1="39%" x2="25%" y2="25%"></line>
-                                        <line id="n127"  x1="25%" y1="25%" x2="37%" y2="0%"></line>
-                                        <line id="n128"  x1="37%" y1="0%" x2="46%" y2="56%"></line>
-                                        <line id="n129"  x1="46%" y1="56%" x2="25%" y2="25%"></line>
-                                        <line id="n130"  x1="25%" y1="25%" x2="19%" y2="81%"></line>
-                                        <line id="n131"  x1="19%" y1="81%" x2="10%" y2="39%"></line>
-                                        <line id="n132"  x1="19%" y1="81%" x2="0%" y2="60%"></line>
-                                        <line id="n134"  x1="46%" y1="56%" x2="47%" y2="0%"></line>
-                                        <line id="n135"  x1="47%" y1="0%" x2="57%" y2="20%"></line>
-                                        <line id="n136"  x1="58%" y1="0%" x2="57%" y2="20%"></line>
-                                        <line id="n137"  x1="64%" y1="0%" x2="57%" y2="20%"></line>
-                                        <line id="n138"  x1="78%" y1="41%" x2="57%" y2="20%"></line>
-                                        <line id="n138"  x1="54%" y1="0%" x2="57%" y2="20%"></line>
-                                        <line id="n139"  x1="69%" y1="80%" x2="57%" y2="20%"></line>
-                                        <line id="n140"  x1="69%" y1="80%" x2="78%" y2="41%"></line>
-                                        <line id="n141"  x1="73%" y1="0%" x2="78%" y2="41%"></line>
-                                        <line id="n142"  x1="100%" y1="25%" x2="78%" y2="41%"></line>
-                                        <line id="n143"  x1="80%" y1="0%" x2="78%" y2="41%"></line>
-                                        <line id="n144"  x1="96%" y1="80%" x2="78%" y2="41%"></line>
-                                        <line id="n145"  x1="96%" y1="80%" x2="100%" y2="25%"></line>
-                                        <line id="n146"  x1="100%" y1="25%" x2="96%" y2="0%"></line>
-                                        <line id="n147"  x1="96%" y1="80%" x2="100%" y2="70%"></line>
-                                        <line id="n148"  x1="46%" y1="56%" x2="57%" y2="20%"></line>
-										<line id="n149"  x1="46%" y1="56%" x2="57%" y2="20%"></line>
+						<div id="row-above-jumbo" class="row">
+							<div class= "col-md-6 jeweltopleft">
+								<svg width="100%" height="100%">
+									<defs>
+										
+									</defs>
+									<line id="n122"  x1="0" y1="0" x2="10%" y2="39%"></line>
+									<line id="n123"  x1="10%" y1="39%" x2="17%" y2="0%"></line>
+									<line id="n124"  x1="17%" y1="0%" x2="25%" y2="25%"></line>
+									<line id="n125"  x1="0%" y1="60%" x2="10%" y2="39%"></line>
+									<line id="n126"  x1="10%" y1="39%" x2="25%" y2="25%"></line>
+									<line id="n127"  x1="25%" y1="25%" x2="37%" y2="0%"></line>
+									<line id="n128"  x1="37%" y1="0%" x2="46%" y2="56%"></line>
+									<line id="n129"  x1="46%" y1="56%" x2="25%" y2="25%"></line>
+									<line id="n130"  x1="25%" y1="25%" x2="19%" y2="81%"></line>
+									<line id="n131"  x1="19%" y1="81%" x2="10%" y2="39%"></line>
+									<line id="n132"  x1="19%" y1="81%" x2="0%" y2="60%"></line>
+									<line id="n134"  x1="46%" y1="56%" x2="47%" y2="0%"></line>
+									<line id="n135"  x1="47%" y1="0%" x2="57%" y2="20%"></line>
+									<line id="n136"  x1="58%" y1="0%" x2="57%" y2="20%"></line>
+									<line id="n137"  x1="64%" y1="0%" x2="57%" y2="20%"></line>
+									<line id="n138"  x1="78%" y1="41%" x2="57%" y2="20%"></line>
+									<line id="n138"  x1="54%" y1="0%" x2="57%" y2="20%"></line>
+									<line id="n139"  x1="69%" y1="80%" x2="57%" y2="20%"></line>
+									<line id="n140"  x1="69%" y1="80%" x2="78%" y2="41%"></line>
+									<line id="n141"  x1="73%" y1="0%" x2="78%" y2="41%"></line>
+									<line id="n142"  x1="100%" y1="25%" x2="78%" y2="41%"></line>
+									<line id="n143"  x1="80%" y1="0%" x2="78%" y2="41%"></line>
+									<line id="n144"  x1="96%" y1="80%" x2="78%" y2="41%"></line>
+									<line id="n145"  x1="96%" y1="80%" x2="100%" y2="25%"></line>
+									<line id="n146"  x1="100%" y1="25%" x2="96%" y2="0%"></line>
+									<line id="n147"  x1="96%" y1="80%" x2="100%" y2="70%"></line>
+									<line id="n148"  x1="46%" y1="56%" x2="57%" y2="20%"></line>
+									<line id="n149"  x1="46%" y1="56%" x2="57%" y2="20%"></line>
 
-                                        <circle r="2" cx="10%" cy="39%" filter="url(#f1)"></circle>
-                                        <circle r="2" cx="25%" cy="25%" filter="url(#f1)"></circle>
-                                        <circle r="2" cx="0%" cy="60%" filter="url(#f1)"></circle>
-                                        <circle r="2" cx="37%" cy="0%" filter="url(#f1)"></circle>
-                                        <circle r="2" cx="17%" cy="0%" filter="url(#f1)"></circle>
-                                        <circle r="2" cx="10%" cy="39%" filter="url(#f1)"></circle>
-                                        <circle r="2" cx="19%" cy="81%" filter="url(#f1)"></circle>
-                                        <circle r="2" cx="46%" cy="56%" filter="url(#f1)"></circle>
-                                        <circle r="2" cx="57%" cy="20%" filter="url(#f1)"></circle>
-                                        <circle r="2" cx="46%" cy="56%" filter="url(#f1)"></circle>
-                                        <circle r="2" cx="69%" cy="80%" filter="url(#f1)"></circle>
-                                        <circle r="2" cx="78%" cy="41%" filter="url(#f1)"></circle>
+									<circle r="2" cx="10%" cy="39%"  ></circle>
+									<circle r="2" cx="25%" cy="25%"  ></circle>
+									<circle r="2" cx="0%" cy="60%"  ></circle>
+									<circle r="2" cx="37%" cy="0%"  ></circle>
+									<circle r="2" cx="17%" cy="0%"  ></circle>
+									<circle r="2" cx="10%" cy="39%"  ></circle>
+									<circle r="2" cx="19%" cy="81%"  ></circle>
+									<circle r="2" cx="46%" cy="56%"  ></circle>
+									<circle r="2" cx="57%" cy="20%"  ></circle>
+									<circle r="2" cx="46%" cy="56%"  ></circle>
+									<circle r="2" cx="69%" cy="80%"  ></circle>
+									<circle r="2" cx="78%" cy="41%"  ></circle>
 
-                                        <circle r="2" cx="96%" cy="80%" filter="url(#f1)"></circle>
-                                        <circle r="2" cx="100%" cy="25%" filter="url(#f1)"></circle>
+									<circle r="2" cx="96%" cy="80%"  ></circle>
+									<circle r="2" cx="100%" cy="25%"  ></circle>
 
 
-                                    </svg>
-                                </div>
-                                <div class= "col-md-6 hidden-sm hidden-xs jeweltopright">
-                                    <svg width="100%" height="100%">
-                                        <line id="n95"  x1="5%" y1="0" x2="10%" y2="39%"></line>
-                                        <line id="n96"  x1="5%" y1="0" x2="0%" y2="26%"></line>
-                                        <line id="n97"  x1="10%" y1="39%" x2="17%" y2="0%"></line>
-                                        <line id="n98"  x1="17%" y1="0%" x2="25%" y2="25%"></line>
-                                        <line id="n99"  x1="0%" y1="26%" x2="10%" y2="39%"></line>
-                                        <line id="n100"  x1="10%" y1="39%" x2="25%" y2="25%"></line>
-                                        <line id="n101"  x1="25%" y1="25%" x2="37%" y2="0%"></line>
-                                        <line id="n102"  x1="37%" y1="0%" x2="46%" y2="56%"></line>
-                                        <line id="n103"  x1="46%" y1="56%" x2="25%" y2="25%"></line>
-                                        <line id="n104"  x1="25%" y1="25%" x2="19%" y2="81%"></line>
-                                        <line id="n105"  x1="19%" y1="81%" x2="10%" y2="39%"></line>
+								</svg>
+							</div>
+							<div class= "col-md-6 hidden-sm hidden-xs jeweltopright">
+								<svg width="100%" height="100%">
+									<line id="n95"  x1="5%" y1="0" x2="10%" y2="39%"></line>
+									<line id="n96"  x1="5%" y1="0" x2="0%" y2="26%"></line>
+									<line id="n97"  x1="10%" y1="39%" x2="17%" y2="0%"></line>
+									<line id="n98"  x1="17%" y1="0%" x2="25%" y2="25%"></line>
+									<line id="n99"  x1="0%" y1="26%" x2="10%" y2="39%"></line>
+									<line id="n100"  x1="10%" y1="39%" x2="25%" y2="25%"></line>
+									<line id="n101"  x1="25%" y1="25%" x2="37%" y2="0%"></line>
+									<line id="n102"  x1="37%" y1="0%" x2="46%" y2="56%"></line>
+									<line id="n103"  x1="46%" y1="56%" x2="25%" y2="25%"></line>
+									<line id="n104"  x1="25%" y1="25%" x2="19%" y2="81%"></line>
+									<line id="n105"  x1="19%" y1="81%" x2="10%" y2="39%"></line>
 
-                                        <line id="n106"  x1="10%" y1="39%" x2="0%" y2="70%"></line>
+									<line id="n106"  x1="10%" y1="39%" x2="0%" y2="70%"></line>
 
 
-                                        <line id="n107"  x1="46%" y1="56%" x2="47%" y2="0%"></line>
-                                        <line id="n108"  x1="47%" y1="0%" x2="57%" y2="20%"></line>
-                                        <line id="n109"  x1="58%" y1="0%" x2="57%" y2="20%"></line>
-                                        <line id="n110"  x1="64%" y1="0%" x2="57%" y2="20%"></line>
-                                        <line id="n111"  x1="78%" y1="41%" x2="57%" y2="20%"></line>
-                                        <line id="n112"  x1="54%" y1="0%" x2="57%" y2="20%"></line>
-                                        <line id="n113"  x1="69%" y1="80%" x2="57%" y2="20%"></line>
-                                        <line id="n114"  x1="69%" y1="80%" x2="78%" y2="41%"></line>
-                                        <line id="n115"  x1="73%" y1="0%" x2="78%" y2="41%"></line>
-                                        <line id="n116"  x1="99%" y1="25%" x2="78%" y2="41%"></line>
-                                        <line id="n117"  x1="80%" y1="0%" x2="78%" y2="41%"></line>
-                                        <line id="n118"  x1="96%" y1="80%" x2="78%" y2="41%"></line>
-                                        <line id="n119"  x1="96%" y1="80%" x2="99%" y2="25%"></line>
-                                        <line id="n120"  x1="99%" y1="25%" x2="96%" y2="0%"></line>
-                                        <line id="n121"  x1="46%" y1="56%" x2="57%" y2="20%"></line>
+									<line id="n107"  x1="46%" y1="56%" x2="47%" y2="0%"></line>
+									<line id="n108"  x1="47%" y1="0%" x2="57%" y2="20%"></line>
+									<line id="n109"  x1="58%" y1="0%" x2="57%" y2="20%"></line>
+									<line id="n110"  x1="64%" y1="0%" x2="57%" y2="20%"></line>
+									<line id="n111"  x1="78%" y1="41%" x2="57%" y2="20%"></line>
+									<line id="n112"  x1="54%" y1="0%" x2="57%" y2="20%"></line>
+									<line id="n113"  x1="69%" y1="80%" x2="57%" y2="20%"></line>
+									<line id="n114"  x1="69%" y1="80%" x2="78%" y2="41%"></line>
+									<line id="n115"  x1="73%" y1="0%" x2="78%" y2="41%"></line>
+									<line id="n116"  x1="99%" y1="25%" x2="78%" y2="41%"></line>
+									<line id="n117"  x1="80%" y1="0%" x2="78%" y2="41%"></line>
+									<line id="n118"  x1="96%" y1="80%" x2="78%" y2="41%"></line>
+									<line id="n119"  x1="96%" y1="80%" x2="99%" y2="25%"></line>
+									<line id="n120"  x1="99%" y1="25%" x2="96%" y2="0%"></line>
+									<line id="n121"  x1="46%" y1="56%" x2="57%" y2="20%"></line>
 
-                                        <circle r="2" cx="10%" cy="39%" filter="url(#f1)"></circle>
-                                        <circle r="2" cx="25%" cy="25%" filter="url(#f1)"></circle>
+									<circle r="2" cx="10%" cy="39%"  ></circle>
+									<circle r="2" cx="25%" cy="25%"  ></circle>
 
-                                        <circle r="2" cx="37%" cy="0%" filter="url(#f1)"></circle>
-                                        <circle r="2" cx="17%" cy="0%" filter="url(#f1)"></circle>
-                                        <circle r="2" cx="10%" cy="39%" filter="url(#f1)"></circle>
-                                        <circle r="2" cx="19%" cy="81%" filter="url(#f1)"></circle>
-                                        <circle r="2" cx="46%" cy="56%" filter="url(#f1)"></circle>
-                                        <circle r="2" cx="57%" cy="20%" filter="url(#f1)"></circle>
-                                        <circle r="2" cx="46%" cy="56%" filter="url(#f1)"></circle>
-                                        <circle r="2" cx="69%" cy="80%" filter="url(#f1)"></circle>
-                                        <circle r="2" cx="78%" cy="41%" filter="url(#f1)"></circle>
+									<circle r="2" cx="37%" cy="0%"  ></circle>
+									<circle r="2" cx="17%" cy="0%"  ></circle>
+									<circle r="2" cx="10%" cy="39%"  ></circle>
+									<circle r="2" cx="19%" cy="81%"  ></circle>
+									<circle r="2" cx="46%" cy="56%"  ></circle>
+									<circle r="2" cx="57%" cy="20%"  ></circle>
+									<circle r="2" cx="46%" cy="56%"  ></circle>
+									<circle r="2" cx="69%" cy="80%"  ></circle>
+									<circle r="2" cx="78%" cy="41%"  ></circle>
 
-                                        <circle r="2" cx="96%" cy="80%" filter="url(#f1)"></circle>
+									<circle r="2" cx="96%" cy="80%"  ></circle>
 
-                                        <circle r="2" cx="0%" cy="25%" filter="url(#f1)"></circle>
-                                    </svg>
-                                </div>
-                            </div>
+									<circle r="2" cx="0%" cy="25%"  ></circle>
+								</svg>
+							</div>
+						</div>
 							
- 							<div class="container-fluid">
-               					<div class="row">
+						<div class="container-fluid">
+							<div class="row">
 
-                                <div class="col-md-8 col-md-offset-2">
-                                    <div class="jumbotron">
+								<div class="col-md-8 col-md-offset-2">
+									<div class="jumbotron">
                                         
-                                        <div id ="othershit" style="text-align:center">
-
-                                            <h2 id="mainhead">A song of fire and ice</h2>
-											<p class="text-center"><a href="/install" class="expandOpen btnmine btn" role="button">INFERNO</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-							<span class="stats" id="firstball">
-								<span class="value">20</span>
-								<span class="stat-title">Events</span>
-							</span>
-							<span class="stats hidden-xs" id="secondball">
-								<span class="value">15000+</span>
-								<span class="stat-title">Footfall</span>
-							</span>
-							<span class="stats " id="thirdball">
-								<span class="value">750+</span>
-								<span class="stat-title">Participants</span>
-							</span>
-							<span class="stats " id="fourthball">
-								<span class="value">82</span>
-								<span class="stat-title">Colleges</span>
-							</span>
-							<span class="stats  hidden-xs" id="fifthball">
-								<span class="value">$82</span>
-								<span class="stat-title">Prizes</span>
-							</span>
+										<div id ="othershit" style="text-align:center">
+											<div id ="slide-intro">
+											<h2 id="mainhead">
+												<!--<span>A</span> 
+													<span>&nbsp</span>
+													<span>S</span> 
+													<span>O</span> 
+													<span>N</span> 
+													<span>G</span> 
+													<span>&nbsp</span> 
+													<span>O</span>
+													<span>F</span> 
+													<span>&nbsp</span> 
+													<span>F</span> 
+													<span>I</span> 
+													<span>R</span> 
+													<span>E</span> 
+													<span>&nbsp</span> 
+													<span>&</span> 
+													<span>&nbsp</span> 
+													<span>I</span>
+													<span>C</span> 
+													<span>E</span> -->
+													A Song of fire & ice
+												</h2>
+												<h3 style="font-size:large;letter-spacing:5px">
+													synapse is a structure that permits a neuron to pass an electrical signal to another neuron
+												</h3></div>
+												<p class="text-center"><a href="/install" class="expandOpen btnmine btn" role="button">INFERNO</a></p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<span class="stats" id="firstball">
+									<span class="value">20</span>
+									<span class="stat-title">Events</span>
+								</span>
+								<span class="stats hidden-xs" id="secondball">
+									<span class="value">15000+</span>
+									<span class="stat-title">Footfall</span>
+								</span>
+								<span class="stats " id="thirdball">
+									<span class="value">750+</span>
+									<span class="stat-title">Participants</span>
+								</span>
+								<span class="stats " id="fourthball">
+									<span class="value">82</span>
+									<span class="stat-title">Colleges</span>
+								</span>
+								<span class="stats  hidden-xs" id="fifthball">
+									<span class="value">$82</span>
+									<span class="stat-title">Prizes</span>
+								</span>
 							</div>
 							
-                            <div class="row">
-<div class="col-md-6 lowerjewelleft lowerupperjewel">
-							  							                                       <svg width="100%" height="140px">
+							<div class="row bottomjewelsrow">
+								<div class="col-md-6 lowerjewelleft lowerupperjewel">
+									<svg width="100%" height="140px">
 
-							  							                                           <line id="n1" x1="10%" y1="39%" x2="17%" y2="4%"></line>
-							  							                                           <line id="n2" x1="17%" y1="4%" x2="25%" y2="25%"></line><line x1="0%" y1="60%" x2="5%" y2="100%"></line>
-							  							                                           <line id="n3" x1="0%" y1="60%" x2="10%" y2="39%"></line>
-							  							                                           <line id="n4" x1="10%" y1="39%" x2="25%" y2="25%"></line>
-							  							                                           <line id="n5"x1="25%" y1="25%" x2="37%" y2="4%"></line>
-							  							                                           <line id="n6" x1="37%" y1="4%" x2="46%" y2="56%"></line>
-							  							                                           <line id="n7" x1="46%" y1="56%" x2="25%" y2="25%"></line>
+										<line id="n1" x1="10%" y1="39%" x2="17%" y2="4%"></line>
+										<line id="n2" x1="17%" y1="4%" x2="25%" y2="25%"></line><line x1="0%" y1="60%" x2="5%" y2="100%"></line>
+										<line id="n3" x1="0%" y1="60%" x2="10%" y2="39%"></line>
+										<line id="n4" x1="10%" y1="39%" x2="25%" y2="25%"></line>
+										<line id="n5"x1="25%" y1="25%" x2="37%" y2="4%"></line>
+										<line id="n6" x1="37%" y1="4%" x2="46%" y2="56%"></line>
+										<line id="n7" x1="46%" y1="56%" x2="25%" y2="25%"></line>
                                         
-							  							   <line id ="n8" x1="25%" y1="25%" x2="17%" y2="100%"></line><line id="n9" x1="25%" y1="25%" x2="37%" y2="100%"></line>
-							  							                                           <line id="n10" x1="17%" y1="100%" x2="10%" y2="39%"></line>
-							  							                                           <line id="n11" x1="17%" y1="100%" x2="0%" y2="60%"></line>
+										<line id ="n8" x1="25%" y1="25%" x2="17%" y2="100%"></line><line id="n9" x1="25%" y1="25%" x2="37%" y2="100%"></line>
+										<line id="n10" x1="17%" y1="100%" x2="10%" y2="39%"></line>
+										<line id="n11" x1="17%" y1="100%" x2="0%" y2="60%"></line>
 							                                           
 							                                           
-							  							                                           <line id="n12" x1="46%" y1="56%" x2="17%" y2="100%"></line>
-							  							                                           <line id="n13" x1="70%" y1="100%" x2="46%" y2="56%"></line>
+										<line id="n12" x1="46%" y1="56%" x2="17%" y2="100%"></line>
+										<line id="n13" x1="70%" y1="100%" x2="46%" y2="56%"></line>
                                         
-							  							   <line id="n14" x1="37%" y1="100%" x2="46%" y2="56%"></line><line id="n15" x1="46%" y1="56%" x2="17%" y2="100%"></line><line id="n16" x1="78%" y1="43%" x2="80%" y2="76%"></line><line id="n17" x1="90%" y1="100%" x2="80%" y2="76%"></line>
-							  							                                           <line id="n18" x1="70%" y1="100%" x2="80%" y2="76%"></line>
-							  							                                           <line id="n19" x1="78%" y1="41%" x2="57%" y2="20%"></line>
-							  							                                           <line id="n20" x1="70%" y1="100%" x2="57%" y2="20%"></line>
+										<line id="n14" x1="37%" y1="100%" x2="46%" y2="56%"></line><line id="n15" x1="46%" y1="56%" x2="17%" y2="100%"></line><line id="n16" x1="78%" y1="43%" x2="80%" y2="76%"></line><line id="n17" x1="90%" y1="100%" x2="80%" y2="76%"></line>
+										<line id="n18" x1="70%" y1="100%" x2="80%" y2="76%"></line>
+										<line id="n19" x1="78%" y1="41%" x2="57%" y2="20%"></line>
+										<line id="n20" x1="70%" y1="100%" x2="57%" y2="20%"></line>
                                         
-							  							   <line id="n21" x1="46%" y1="56%" x2="47%" y2="100%"></line><line x1="70%" y1="100%" x2="78%" y2="41%"></line><circle r="2" cx="47%" cy="100%" filter="url(#f1)"></circle>
+										<line id="n21" x1="46%" y1="56%" x2="47%" y2="100%"></line><line x1="70%" y1="100%" x2="78%" y2="41%"></line><circle r="2" cx="47%" cy="100%"  ></circle>
 							                                           
 							                                           
 							                                           
-							  							                                           <line id="n22" x1="90%" y1="100%" x2="78%" y2="41%"></line>
+										<line id="n22" x1="90%" y1="100%" x2="78%" y2="41%"></line>
 							                                           
 							                                           
-							  							                                           <line id="n23" x1="46%" y1="56%" x2="57%" y2="20%"></line>
-							  							   <circle r="2" cx="80%" cy="76%" filter="url(#f1)"></circle><circle r="2" cx="37%" cy="100%" filter="url(#f1)"></circle>
-							  							                                           <circle r="2" cx="10%" cy="39%" filter="url(#f1)"></circle>
-							  							                                           <circle r="2" cx="17%" cy="4%" filter="url(#f1)"></circle>
-							  							                                           <circle r="2" cx="0%" cy="60%" filter="url(#f1)"></circle>
-							  							                                           <circle r="2" cx="25%" cy="25%" filter="url(#f1)"></circle>
-							  							                                           <circle r="2" cx="37%" cy="4%" filter="url(#f1)"></circle>
-							  							                                           <circle r="2" cx="46%" cy="56%" filter="url(#f1)"></circle>
-							  							                                           <circle r="2" cx="17%" cy="100%" filter="url(#f1)"></circle><circle r="2" cx="46%" cy="56%" filter="url(#f1)"></circle>
+										<line id="n23" x1="46%" y1="56%" x2="57%" y2="20%"></line>
+										<circle r="2" cx="80%" cy="76%"  ></circle><circle r="2" cx="37%" cy="100%"  ></circle>
+										<circle r="2" cx="10%" cy="39%"  ></circle>
+										<circle r="2" cx="17%" cy="4%"  ></circle>
+										<circle r="2" cx="0%" cy="60%"  ></circle>
+										<circle r="2" cx="25%" cy="25%"  ></circle>
+										<circle r="2" cx="37%" cy="4%"  ></circle>
+										<circle r="2" cx="46%" cy="56%"  ></circle>
+										<circle r="2" cx="17%" cy="100%"  ></circle><circle r="2" cx="46%" cy="56%"  ></circle>
 							                                           
-							  							                                           <circle r="2" cx="70%" cy="100%" filter="url(#f1)"></circle>
-							  							                                           <circle r="2" cx="90%" cy="100%" filter="url(#f1)"></circle>
+										<circle r="2" cx="70%" cy="100%"  ></circle>
+										<circle r="2" cx="90%" cy="100%"  ></circle>
 							                                           
-							  							                                           <circle r="2" cx="78%" cy="41%" filter="url(#f1)"></circle>
-							  							                                           <circle r="2" cx="57%" cy="20%" filter="url(#f1)"></circle>
+										<circle r="2" cx="78%" cy="41%"  ></circle>
+										<circle r="2" cx="57%" cy="20%"  ></circle>
 							  							                                          
 
-							  							                                       </svg>
-							  							                                   </div>
-							   <div class="col-md-6 lowerjewelright lowerupperjewel hidden-xs hidden-sm">
-							                                       <svg width="100%" height="140px">
+									</svg>
+								</div>
+								<div class="col-md-6 lowerjewelright lowerupperjewel hidden-xs hidden-sm">
+									<svg width="100%" height="140px">
 
                                         
                                         
@@ -272,724 +298,576 @@
                                         
 
 
-							                                           <line id="n24"  x1="46%" y1="56%" x2="25%" y2="25%"></line>
-							                                           <line id="n25"  x1="25%" y1="25%" x2="12%" y2="100%"></line>
+										<line id="n24"  x1="46%" y1="56%" x2="25%" y2="25%"></line>
+										<line id="n25"  x1="25%" y1="25%" x2="12%" y2="100%"></line>
                                         
                                         
-							                                           <line id="n26"  x1="46%" y1="56%" x2="47%" y2="4%"></line>
-							                                           <line id="n27"  x1="47%" y1="4%" x2="57%" y2="20%"></line>
-							                                           <line id="n28"  x1="46%" y1="56%" x2="12%" y2="100%"></line>
-							                                           <line id="n29"  x1="71%" y1="100%" x2="46%" y2="56%"></line>
-							                                           <line id="n30"  x1="46%" y1="56%" x2="32%" y2="100%"></line>
-							                                           <line id="n31"  x1="71%" y1="4%" x2="57%" y2="20%"></line>
-							                                           <line id="n32"  x1="78%" y1="41%" x2="57%" y2="20%"></line>
-							                                           <line id="n33"  x1="71%" y1="100%" x2="57%" y2="20%"></line>
-							                                           <line id="n34"  x1="71%" y1="100%" x2="78%" y2="41%"></line>
-							                                           <line id="n35"  x1="71%" y1="4%" x2="78%" y2="41%"></line>
-							                                           <line id="n36"  x1="99%" y1="25%" x2="78%" y2="41%"></line>
-							                                           <line id="n37"  x1="90%" y1="4%" x2="78%" y2="41%"></line>
-							                                           <line id="n38"  x1="90%" y1="100%" x2="78%" y2="41%"></line>
-							                                           <line id="n39"  x1="90%" y1="100%" x2="99%" y2="25%"></line>
-							                                           <line id="n40"  x1="99%" y1="25%" x2="90%" y2="4%"></line>
-							                                           <line id="n41"  x1="46%" y1="56%" x2="57%" y2="20%"></line>
-							   <line id="n"  x1="46%" y1="56%" x2="47%" y2="100%"></line>
+										<line id="n26"  x1="46%" y1="56%" x2="47%" y2="4%"></line>
+										<line id="n27"  x1="47%" y1="4%" x2="57%" y2="20%"></line>
+										<line id="n28"  x1="46%" y1="56%" x2="12%" y2="100%"></line>
+										<line id="n29"  x1="71%" y1="100%" x2="46%" y2="56%"></line>
+										<line id="n30"  x1="46%" y1="56%" x2="32%" y2="100%"></line>
+										<line id="n31"  x1="71%" y1="4%" x2="57%" y2="20%"></line>
+										<line id="n32"  x1="78%" y1="41%" x2="57%" y2="20%"></line>
+										<line id="n33"  x1="71%" y1="100%" x2="57%" y2="20%"></line>
+										<line id="n34"  x1="71%" y1="100%" x2="78%" y2="41%"></line>
+										<line id="n35"  x1="71%" y1="4%" x2="78%" y2="41%"></line>
+										<line id="n36"  x1="99%" y1="25%" x2="78%" y2="41%"></line>
+										<line id="n37"  x1="90%" y1="4%" x2="78%" y2="41%"></line>
+										<line id="n38"  x1="90%" y1="100%" x2="78%" y2="41%"></line>
+										<line id="n39"  x1="90%" y1="100%" x2="99%" y2="25%"></line>
+										<line id="n40"  x1="99%" y1="25%" x2="90%" y2="4%"></line>
+										<line id="n41"  x1="46%" y1="56%" x2="57%" y2="20%"></line>
+										<line id="n"  x1="46%" y1="56%" x2="47%" y2="100%"></line>
                                         
                                         
                                         
                                         
-							                                           <circle r="2" cx="25%" cy="25%" filter="url(#f1)"></circle>
-							                                           <circle r="2" cx="46%" cy="56%" filter="url(#f1)"></circle>
-							                                           <circle r="2" cx="12%" cy="100%" filter="url(#f1)"></circle>
-							                                           <circle r="2" cx="47%" cy="4%" filter="url(#f1)"></circle>
-							                                           <circle r="2" cx="71%" cy="100%" filter="url(#f1)"></circle>
-							                                           <circle r="2" cx="90%" cy="100%" filter="url(#f1)"></circle>
-							                                           <circle r="2" cx="71%" cy="4%" filter="url(#f1)"></circle>
-							                                           <circle r="2" cx="78%" cy="41%" filter="url(#f1)"></circle>
-							                                           <circle r="2" cx="57%" cy="20%" filter="url(#f1)"></circle>
-							                                           <circle r="2" cx="99%" cy="25%" filter="url(#f1)"></circle>
-							                                           <circle r="2" cx="90%" cy="4%" filter="url(#f1)"></circle>
-																	   <circle r="2" cx="47%" cy="100%" filter="url(#f1)"></circle>
-							                                       </svg>
-							                                   </div>
-							   <div class="col-md-6 lowerjewelleft">
-							   							                                       <svg width="100%" height="140px">
+										<circle r="2" cx="25%" cy="25%"  ></circle>
+										<circle r="2" cx="46%" cy="56%"  ></circle>
+										<circle r="2" cx="12%" cy="100%"  ></circle>
+										<circle r="2" cx="47%" cy="4%"  ></circle>
+										<circle r="2" cx="71%" cy="100%"  ></circle>
+										<circle r="2" cx="90%" cy="100%"  ></circle>
+										<circle r="2" cx="71%" cy="4%"  ></circle>
+										<circle r="2" cx="78%" cy="41%"  ></circle>
+										<circle r="2" cx="57%" cy="20%"  ></circle>
+										<circle r="2" cx="99%" cy="25%"  ></circle>
+										<circle r="2" cx="90%" cy="4%"  ></circle>
+										<circle r="2" cx="47%" cy="100%"  ></circle>
+									</svg>
+								</div>
+								<div class="col-md-6 lowerjewelleft">
+									<svg width="100%" height="140px">
 
-							   							                                           <line id="n42"  x1="10%" y1="39%" x2="17%" y2="0%"></line>
-							   							                                           <line id="n43"  x1="17%" y1="0%" x2="25%" y2="25%"></line>
-							   							                                           <line id="n44"  x1="0%" y1="60%" x2="10%" y2="39%"></line>
-							   							                                           <line id="n45"  x1="10%" y1="39%" x2="25%" y2="25%"></line>
-							   							                                           <line id="n46"  x1="25%" y1="25%" x2="37%" y2="0%"></line>
-							   							                                           <line id="n47"  x1="37%" y1="0%" x2="46%" y2="56%"></line>
-							   							   <line id="n48"  x1="5%" y1="0%" x2="10%" y2="39%"></line>
-							   							                                           <line id="n49"  x1="46%" y1="56%" x2="25%" y2="25%"></line>
-							   							                                           <line id="n50"  x1="25%" y1="25%" x2="19%" y2="100%"></line>
-							   							                                           <line id="n51"  x1="19%" y1="100%" x2="10%" y2="39%"></line>
-							   							                                           <line id="n51"  x1="19%" y1="100%" x2="0%" y2="60%"></line>
-							   							                                           <line id="n53"  x1="46%" y1="56%" x2="47%" y2="0%"></line>
-							   							                                           <line id="n54"  x1="47%" y1="0%" x2="57%" y2="20%"></line>
-							   							                                           <line id="n55"  x1="46%" y1="56%" x2="19%" y2="100%"></line>
-							   							                                           <line id="n56"  x1="69%" y1="100%" x2="46%" y2="56%"></line>
-							   							                                           <line id="n57"  x1="46%" y1="56%" x2="19%" y2="100%"></line>
-							   							                                           <line id="n58"  x1="70%" y1="0%" x2="57%" y2="20%"></line>
-							   							                                           <line id="n59"  x1="78%" y1="41%" x2="57%" y2="20%"></line>
-							   							                                           <line id="n60"  x1="69%" y1="100%" x2="57%" y2="20%"></line>
-							   							                                           <line id="n61"  x1="69%" y1="100%" x2="78%" y2="41%"></line>
-							   							                                           <line id="n62"  x1="70%" y1="0%" x2="78%" y2="41%"></line>
-							   							                                           <line id="n63"  x1="100%" y1="25%" x2="78%" y2="41%"></line>
-							   							                                           <line id="n64"  x1="90%" y1="0%" x2="78%" y2="41%"></line>
-							   							                                           <line id="n65"  x1="96%" y1="100%" x2="78%" y2="41%"></line>
-							   							                                           <line id="n66"  x1="96%" y1="100%" x2="100%" y2="25%"></line>
-							   							                                           <line id="n67"  x1="100%" y1="25%" x2="90%" y2="0%"></line>
-							   							                                           <line id="n68"  x1="46%" y1="56%" x2="57%" y2="20%"></line>
+										<line id="n42"  x1="10%" y1="39%" x2="17%" y2="0%"></line>
+										<line id="n43"  x1="17%" y1="0%" x2="25%" y2="25%"></line>
+										<line id="n44"  x1="0%" y1="60%" x2="10%" y2="39%"></line>
+										<line id="n45"  x1="10%" y1="39%" x2="25%" y2="25%"></line>
+										<line id="n46"  x1="25%" y1="25%" x2="37%" y2="0%"></line>
+										<line id="n47"  x1="37%" y1="0%" x2="46%" y2="56%"></line>
+										<line id="n48"  x1="5%" y1="0%" x2="10%" y2="39%"></line>
+										<line id="n49"  x1="46%" y1="56%" x2="25%" y2="25%"></line>
+										<line id="n50"  x1="25%" y1="25%" x2="19%" y2="100%"></line>
+										<line id="n51"  x1="19%" y1="100%" x2="10%" y2="39%"></line>
+										<line id="n51"  x1="19%" y1="100%" x2="0%" y2="60%"></line>
+										<line id="n53"  x1="46%" y1="56%" x2="47%" y2="0%"></line>
+										<line id="n54"  x1="47%" y1="0%" x2="57%" y2="20%"></line>
+										<line id="n55"  x1="46%" y1="56%" x2="19%" y2="100%"></line>
+										<line id="n56"  x1="69%" y1="100%" x2="46%" y2="56%"></line>
+										<line id="n57"  x1="46%" y1="56%" x2="19%" y2="100%"></line>
+										<line id="n58"  x1="70%" y1="0%" x2="57%" y2="20%"></line>
+										<line id="n59"  x1="78%" y1="41%" x2="57%" y2="20%"></line>
+										<line id="n60"  x1="69%" y1="100%" x2="57%" y2="20%"></line>
+										<line id="n61"  x1="69%" y1="100%" x2="78%" y2="41%"></line>
+										<line id="n62"  x1="70%" y1="0%" x2="78%" y2="41%"></line>
+										<line id="n63"  x1="100%" y1="25%" x2="78%" y2="41%"></line>
+										<line id="n64"  x1="90%" y1="0%" x2="78%" y2="41%"></line>
+										<line id="n65"  x1="96%" y1="100%" x2="78%" y2="41%"></line>
+										<line id="n66"  x1="96%" y1="100%" x2="100%" y2="25%"></line>
+										<line id="n67"  x1="100%" y1="25%" x2="90%" y2="0%"></line>
+										<line id="n68"  x1="46%" y1="56%" x2="57%" y2="20%"></line>
 
-							   							                                           <circle r="2" cx="10%" cy="39%" filter="url(#f1)"></circle>
-							   							                                           <circle r="2" cx="17%" cy="0%" filter="url(#f1)"></circle>
-							   							                                           <circle r="2" cx="0%" cy="60%" filter="url(#f1)"></circle>
-							   							                                           <circle r="2" cx="25%" cy="25%" filter="url(#f1)"></circle>
-							   							                                           <circle r="2" cx="37%" cy="0%" filter="url(#f1)"></circle>
-							   							                                           <circle r="2" cx="46%" cy="56%" filter="url(#f1)"></circle>
-							   							                                           <circle r="2" cx="19%" cy="100%" filter="url(#f1)"></circle>
-							   							                                           <circle r="2" cx="47%" cy="0%" filter="url(#f1)"></circle>
-							   							                                           <circle r="2" cx="69%" cy="100%" filter="url(#f1)"></circle>
-							   							                                           <circle r="2" cx="96%" cy="99%" filter="url(#f1)"></circle>
-							   							                                           <circle r="2" cx="70%" cy="0%" filter="url(#f1)"></circle>
-							   							                                           <circle r="2" cx="78%" cy="41%" filter="url(#f1)"></circle>
-							   							                                           <circle r="2" cx="57%" cy="20%" filter="url(#f1)"></circle>
-							   							                                           <circle r="2" cx="100%" cy="25%" filter="url(#f1)"></circle>
-							   							                                           <circle r="2" cx="90%" cy="0%" filter="url(#f1)"></circle>
-
-
-							   							                                       </svg>
-							   							                                   </div>
-							  <div class="col-md-6 lowerjewelright hidden-xs hidden-sm">
-							                                      <svg width="100%" height="140px">
-
-							                                          <line id="n69"  x1="10%" y1="39%" x2="12%" y2="0%"></line>
-							                                          <line id="n70"  x1="12%" y1="0%" x2="25%" y2="25%"></line>
-							                                          <line id="n71"  x1="0%" y1="25%" x2="10%" y2="39%"></line>
-							                                          <line id="n72"  x1="10%" y1="39%" x2="25%" y2="25%"></line>
-							  <line id="n73"  x1="32%" y1="0%" x2="25%" y2="25%"></line>
+										<circle r="2" cx="10%" cy="39%"  ></circle>
+										<circle r="2" cx="17%" cy="0%"  ></circle>
+										<circle r="2" cx="0%" cy="60%"  ></circle>
+										<circle r="2" cx="25%" cy="25%"  ></circle>
+										<circle r="2" cx="37%" cy="0%"  ></circle>
+										<circle r="2" cx="46%" cy="56%"  ></circle>
+										<circle r="2" cx="19%" cy="100%"  ></circle>
+										<circle r="2" cx="47%" cy="0%"  ></circle>
+										<circle r="2" cx="69%" cy="100%"  ></circle>
+										<circle r="2" cx="96%" cy="99%"  ></circle>
+										<circle r="2" cx="70%" cy="0%"  ></circle>
+										<circle r="2" cx="78%" cy="41%"  ></circle>
+										<circle r="2" cx="57%" cy="20%"  ></circle>
+										<circle r="2" cx="100%" cy="25%"  ></circle>
+										<circle r="2" cx="90%" cy="0%"  ></circle>
 
 
-							                                          <line id="n74"  x1="46%" y1="56%" x2="25%" y2="25%"></line>
-							                                          <line id="n75"  x1="25%" y1="25%" x2="19%" y2="100%"></line>
-							                                          <line id="n76"  x1="19%" y1="100%" x2="10%" y2="39%"></line>
-							                                          <line id="n77"  x1="19%" y1="100%" x2="0%" y2="25%"></line>
-							                                          <line id="n78"  x1="46%" y1="56%" x2="47%" y2="0%"></line>
-							                                          <line id="n79"  x1="47%" y1="0%" x2="57%" y2="20%"></line>
-							                                          <line id="n80"  x1="46%" y1="56%" x2="19%" y2="100%"></line>
-							                                          <line id="n81"  x1="69%" y1="100%" x2="46%" y2="56%"></line>
-							                                          <line id="n82"  x1="46%" y1="56%" x2="19%" y2="100%"></line>
-							                                          <line id="n83"  x1="71%" y1="0%" x2="57%" y2="20%"></line>
-							                                          <line id="n84"  x1="78%" y1="41%" x2="57%" y2="20%"></line>
-							                                          <line id="n85"  x1="69%" y1="100%" x2="57%" y2="20%"></line>
-							                                          <line id="n86"  x1="69%" y1="100%" x2="78%" y2="41%"></line>
-							                                          <line id="n87"  x1="71%" y1="0%" x2="78%" y2="41%"></line>
-							                                          <line id="n88"  x1="99%" y1="25%" x2="78%" y2="41%"></line>
-							                                          <line id="n89"  x1="90%" y1="0%" x2="78%" y2="41%"></line>
-							                                          <line id="n90"  x1="96%" y1="100%" x2="78%" y2="41%"></line>
-							                                          <line id="n91"  x1="96%" y1="100%" x2="99%" y2="25%"></line>
-							                                          <line id="n92"  x1="99%" y1="25%" x2="90%" y2="0%"></line>
-							                                          <line id="n93"  x1="46%" y1="56%" x2="57%" y2="20%"></line>
-							                                          <line id="n94"  x1="25%" y1="25%" x2="47%" y2="0%"></line>
-							                                          <circle r="2" cx="10%" cy="39%" filter="url(#f1)"></circle>
-							                                          <circle r="2" cx="12%" cy="0%" filter="url(#f1)"></circle>
-							                                          <circle r="2" cx="0%" cy="25%" filter="url(#f1)"></circle>
-							                                          <circle r="2" cx="25%" cy="25%" filter="url(#f1)"></circle>
-							                                          <circle r="2" cx="46%" cy="56%" filter="url(#f1)"></circle>
-							                                          <circle r="2" cx="19%" cy="100%" filter="url(#f1)"></circle>
-							                                          <circle r="2" cx="47%" cy="0%" filter="url(#f1)"></circle>
-							                                          <circle r="2" cx="69%" cy="100%" filter="url(#f1)"></circle>
-							                                          <circle r="2" cx="96%" cy="99%" filter="url(#f1)"></circle>
-							                                          <circle r="2" cx="71%" cy="0%" filter="url(#f1)"></circle>
-							                                          <circle r="2" cx="78%" cy="41%" filter="url(#f1)"></circle>
-							                                          <circle r="2" cx="57%" cy="20%" filter="url(#f1)"></circle>
-							                                          <circle r="2" cx="99%" cy="25%" filter="url(#f1)"></circle>
-							                                          <circle r="2" cx="90%" cy="0%" filter="url(#f1)"></circle>
-							                                      </svg>
-							                                  </div>
-                            </div>
+									</svg>
+								</div>
+								<div class="col-md-6 lowerjewelright hidden-xs hidden-sm">
+									<svg width="100%" height="140px">
+
+										<line id="n69"  x1="10%" y1="39%" x2="12%" y2="0%"></line>
+										<line id="n70"  x1="12%" y1="0%" x2="25%" y2="25%"></line>
+										<line id="n71"  x1="0%" y1="25%" x2="10%" y2="39%"></line>
+										<line id="n72"  x1="10%" y1="39%" x2="25%" y2="25%"></line>
+										<line id="n73"  x1="32%" y1="0%" x2="25%" y2="25%"></line>
+
+
+										<line id="n74"  x1="46%" y1="56%" x2="25%" y2="25%"></line>
+										<line id="n75"  x1="25%" y1="25%" x2="19%" y2="100%"></line>
+										<line id="n76"  x1="19%" y1="100%" x2="10%" y2="39%"></line>
+										<line id="n77"  x1="19%" y1="100%" x2="0%" y2="25%"></line>
+										<line id="n78"  x1="46%" y1="56%" x2="47%" y2="0%"></line>
+										<line id="n79"  x1="47%" y1="0%" x2="57%" y2="20%"></line>
+										<line id="n80"  x1="46%" y1="56%" x2="19%" y2="100%"></line>
+										<line id="n81"  x1="69%" y1="100%" x2="46%" y2="56%"></line>
+										<line id="n82"  x1="46%" y1="56%" x2="19%" y2="100%"></line>
+										<line id="n83"  x1="71%" y1="0%" x2="57%" y2="20%"></line>
+										<line id="n84"  x1="78%" y1="41%" x2="57%" y2="20%"></line>
+										<line id="n85"  x1="69%" y1="100%" x2="57%" y2="20%"></line>
+										<line id="n86"  x1="69%" y1="100%" x2="78%" y2="41%"></line>
+										<line id="n87"  x1="71%" y1="0%" x2="78%" y2="41%"></line>
+										<line id="n88"  x1="99%" y1="25%" x2="78%" y2="41%"></line>
+										<line id="n89"  x1="90%" y1="0%" x2="78%" y2="41%"></line>
+										<line id="n90"  x1="96%" y1="100%" x2="78%" y2="41%"></line>
+										<line id="n91"  x1="96%" y1="100%" x2="99%" y2="25%"></line>
+										<line id="n92"  x1="99%" y1="25%" x2="90%" y2="0%"></line>
+										<line id="n93"  x1="46%" y1="56%" x2="57%" y2="20%"></line>
+										<line id="n94"  x1="25%" y1="25%" x2="47%" y2="0%"></line>
+										<circle r="2" cx="10%" cy="39%"  ></circle>
+										<circle r="2" cx="12%" cy="0%"  ></circle>
+										<circle r="2" cx="0%" cy="25%"  ></circle>
+										<circle r="2" cx="25%" cy="25%"  ></circle>
+										<circle r="2" cx="46%" cy="56%"  ></circle>
+										<circle r="2" cx="19%" cy="100%"  ></circle>
+										<circle r="2" cx="47%" cy="0%"  ></circle>
+										<circle r="2" cx="69%" cy="100%"  ></circle>
+										<circle r="2" cx="96%" cy="99%"  ></circle>
+										<circle r="2" cx="71%" cy="0%"  ></circle>
+										<circle r="2" cx="78%" cy="41%"  ></circle>
+										<circle r="2" cx="57%" cy="20%"  ></circle>
+										<circle r="2" cx="99%" cy="25%"  ></circle>
+										<circle r="2" cx="90%" cy="0%"  ></circle>
+									</svg>
+								</div>
+							</div>
 							
                        
-                    </section>
+						</section>
                     
-                    <section class="pronites">
-                        <div class="container-fluid inline-popups ">
+						<section class="pronites">
+							<div class="container-fluid inline-popups ">
 							
-                            <div class="row pronitesicon">
-                                <h2>Pronites</h2>
+                           
+								<div class="row slidesrow">
+									<div class="col-sm-offset-2 col-sm-4">
+										<div class="row pronitesicon">
+											<h1 style="letter-spacing:9px">Pronites</h1>
 
-                            </div>
-                            <div class="row ">
-                                <div class="col-md-3" id ="cyno">
+										</div>
+									</div>
+									<div class="col-sm-offset-2 col-sm-4">
+										<div id="slides">
+											<img src="img2/photo1.png">
+											<img src="img2/photo2.png">
+											<img src="img2/photo3.png">
+											<img src="img2/photo4.png">
+										</div>
+									</div>
+								</div>
+							
+								<div class="row ">
+									<div class="col-md-3" id ="cyno">
 
-                                    <img src="img/cyno.png">
+										<img src="img/cyno.png">
 									
-                                    <h3><a href="#cyno-popup"  data-effect="mfp-newspaper">Cynosure</a></h3>
+										<h3><a href="#cyno-popup"  data-effect="mfp-newspaper">Cynosure</a></h3>
 									
 									
                                     
-                                </div>
-                                <div class="col-md-3" id ="ramp">
-                                    <img src="img/rampage.png">
-                                    <h3> <h3><a href="#rampage-popup"  data-effect="mfp-newspaper">Rampage</a></h3></h3>
+									</div>
+									<div class="col-md-3" id ="ramp">
+										<img src="img/rampage.png">
+										<h3> <h3><a href="#rampage-popup"  data-effect="mfp-newspaper">Rampage</a></h3></h3>
 									
                                   
-                                    </div>
-                                    <div class="col-md-3" id="piano">
-                                        <img src="img/piano.png">
-                                        <h3> <a href="#innaugral-popup"  data-effect="mfp-newspaper">Innaugral</a></h3>
+									</div>
+									<div class="col-md-3" id="piano">
+										<img src="img/piano.png">
+										<h3> <a href="#innaugral-popup"  data-effect="mfp-newspaper">Innaugral</a></h3>
                                         
-                                    </div>
-                                    <div class="col-md-3" id="rock">
-                                        <img src="img/rock.jpg">
-                                        <h3> <a href="#ragna-popup"  data-effect="mfp-newspaper">Ragna Rock</a></h3>
+									</div>
+									<div class="col-md-3" id="rock">
+										<img src="img/rock.jpg">
+										<h3> <a href="#ragna-popup"  data-effect="mfp-newspaper">Ragna Rock</a></h3>
                                         
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-	                    
-                    <section class="mid">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="page-header">
-                                            <h1>
-                                                Synapse is the new shit in town
-                                                <br>
-                                                it keeps getting better
-                                                <br>
-                                                And yes we never will pay your prize money 
-                                            </h1>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row about-header-row">
-                                    <div class="col-md-10 col-md-offset-1">
-                                        <div class="box" id="inferno">
-                                            <h2>Inferno</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row about-row">
-                                    <div class="col-md-6 about-section">
-                                        <div class="image-block modern-user-interface"></div>
-                                        <div class="content-block">
-                                            <h3>Aome</h3>
-                                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, st laborum.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 about-section">
-                                        <div class="image-block radically-less-code"></div>
-                                        <div class="content-block">
-                                            <h3>Radically less code</h3>
-                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row about-row">
-                                    <div class="col-md-6 about-section">
-                                        <div class="image-block modern-user-interface"></div>
-                                        <div class="content-block">
-                                            <h3>Aome</h3>
-                                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, st laborum.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 about-section">
-                                        <div class="image-block radically-less-code"></div>
-                                        <div class="content-block">
-                                            <h3>Radically less code</h3>
-                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row about-row">
-                                    <div class="col-md-6 about-section">
-                                        <div class="image-block modern-user-interface"></div>
-                                        <div class="content-block">
-                                            <h3>Aome</h3>
-                                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, st laborum.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 about-section">
-                                        <div class="image-block radically-less-code"></div>
-                                        <div class="content-block">
-                                            <h3>Radically less code</h3>
-                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row about-row">
-                                    <div class="col-md-6 about-section">
-                                        <div class="image-block modern-user-interface"></div>
-                                        <div class="content-block">
-                                            <h3>Aome</h3>
-                                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, st laborum.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 about-section">
-                                        <div class="image-block radically-less-code"></div>
-                                        <div class="content-block">
-                                            <h3>Radically less code</h3>
-                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    <section class="celeb">
-                        <div class="container-fluid">
-                            <div class="row"> 
-                                <div class = "col-md-6">
-                                    <h2>Javed ali</h2>
-                                </div>
-                                <div class= "col-md-6">
-                                    <h2>Picture of this guy</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="redzone  inline-popups">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-8 col-md-offset-2">
-                                        <div class="page-header"><h1>The events</h1></div>
-                                    </div>
-                                </div>
-                                <div class="eventzone">
-                                    <div class="row events1">
-                                        <div class="col-xs-4 info">
-                                            <img src="img/drama.png">
-                                            <h3><a href="#Masquerade-popup"  data-effect="mfp-newspaper">Masquerade</a></h3>
-                                        </div>
-                                        <div class="col-xs-4 info">
-                                            <img src="img/zing.jpg">
-                                            <h3><a href="#Zing-popup"  data-effect="mfp-newspaper">Zing</a></h3>
-                                        </div>
-                                        <div class="col-xs-4 info">
-                                            <img src="img/head.png">
-                                            <h3><a href="#Headrush-popup"  data-effect="mfp-newspaper">Headrush</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="row events2">
-                                        <div class="col-xs-4 info">
-                                            <img src="img/senate.jpg">
-                                            <h3><a href="#Senate-popup"  data-effect="mfp-newspaper">Senate</a></h3>
-                                        </div>
-                                        <div class="col-xs-4 info">
-                                            <img src="img/dlounge.jpg">
-                                            <h3><a href="#D-lounge-popup"  data-effect="mfp-newspaper">D-lounge</a></h3>
-                                        </div>
-                                        <div class="col-xs-4 info">
-                                            <img src="img/shailey.png">
-                                            <h3><a href="#Shailey-popup"  data-effect="mfp-newspaper">Shailey</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="row events3">
-                                        <div class="col-xs-4 info">
-                                            <img src="img/circus.png">
-                                            <h3><a href="#Synapcity-popup"  data-effect="mfp-newspaper">Synapcity</a></h3>
-                                        </div>
-                                        <div class="col-xs-4 info">
-                                            <img src="img/geek.png">
-                                            <h3><a href="#Technical-popup"  data-effect="mfp-newspaper">Technical</a></h3>
-                                        </div>
-                                        <div class="col-xs-4 info">
-                                            <img src="img/online.png">
-                                            <h3><a href="#Online-popup"  data-effect="mfp-newspaper">Online Events</a></h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    <section class="sponsors2">
-                            <div class="container" style="text-align:center">
-                                <div class="row solidsponsor">
-                                    <h2 >Sponsors</h2>
-                                </div></div>
-                            </section> 
-                    <section class="sponsors"> 
-                                <div class="container-fluid">
+									</div>
+								</div>
+							</div>
+						</section>
+	                    <section class="synapse-tareef">
+							<div class="row">
+								<div class="col-md-offset-2 col-md-8">
+									<div class="page-header">
+										<h1 class="synapse-shit">
+											Synapse is the new shit in town
+											<br>
+											it keeps getting better
+											<br>
+											And yes we  will never pay your prize money (*placeholder)
+										</h1>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="mid">
+							<div class="container-fluid">
+								
+								<div class="row about-header-row">
+									<div class="col-md-10 col-md-offset-1">
+										<div class="box" id="inferno">
+											<h2>Inferno</h2>
+										</div>
+									</div>
+								</div>
+								<div class="row about-row">
+									<div class="col-md-6 about-section">
+										<div class="image-block modern-user-interface"></div>
+										<div class="content-block">
+											<h3>Aome</h3>
+											<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, st laborum.</p>
+										</div>
+									</div>
+									<div class="col-md-6 about-section">
+										<div class="image-block radically-less-code"></div>
+										<div class="content-block">
+											<h3>Radically less code</h3>
+											<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut </p>
+										</div>
+									</div>
+								</div>
+								<div class="row about-row">
+									<div class="col-md-6 about-section">
+										<div class="image-block modern-user-interface"></div>
+										<div class="content-block">
+											<h3>Aome</h3>
+											<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, st laborum.</p>
+										</div>
+									</div>
+									<div class="col-md-6 about-section">
+										<div class="image-block radically-less-code"></div>
+										<div class="content-block">
+											<h3>Radically less code</h3>
+											<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut </p>
+										</div>
+									</div>
+								</div>
+								<div class="row about-row">
+									<div class="col-md-6 about-section">
+										<div class="image-block modern-user-interface"></div>
+										<div class="content-block">
+											<h3>Aome</h3>
+											<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, st laborum.</p>
+										</div>
+									</div>
+									<div class="col-md-6 about-section">
+										<div class="image-block radically-less-code"></div>
+										<div class="content-block">
+											<h3>Radically less code</h3>
+											<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut </p>
+										</div>
+									</div>
+								</div>
+								<div class="row about-row">
+									<div class="col-md-6 about-section">
+										<div class="image-block modern-user-interface"></div>
+										<div class="content-block">
+											<h3>Aome</h3>
+											<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, st laborum.</p>
+										</div>
+									</div>
+									<div class="col-md-6 about-section">
+										<div class="image-block radically-less-code"></div>
+										<div class="content-block">
+											<h3>Radically less code</h3>
+											<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut </p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="celeb">
+							<div class="container-fluid">
+								<div class="row"> 
+									<div class = "col-md-6">
+										<h2>Javed ali</h2>
+									</div>
+									<div class= "col-md-6">
+										<h2>Picture of this guy</h2>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="redzone  inline-popups">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-8 col-md-offset-2">
+										<div class="page-header"><h1>The events</h1></div>
+									</div>
+								</div>
+								<div class="eventzone">
+									<div class="row events1">
+										<div class="col-xs-4 info">
+											<img src="img/drama.png">
+											<h3><a href="#Masquerade-popup"  data-effect="mfp-newspaper">Masquerade</a></h3>
+										</div>
+										<div class="col-xs-4 info">
+											<img src="img/zing.jpg">
+											<h3><a href="#Zing-popup"  data-effect="mfp-newspaper">Zing</a></h3>
+										</div>
+										<div class="col-xs-4 info">
+											<img src="img/head.png">
+											<h3><a href="#Headrush-popup"  data-effect="mfp-newspaper">Headrush</a></h3>
+										</div>
+									</div>
+									<div class="row events2">
+										<div class="col-xs-4 info">
+											<img src="img/senate.jpg">
+											<h3><a href="#Senate-popup"  data-effect="mfp-newspaper">Senate</a></h3>
+										</div>
+										<div class="col-xs-4 info">
+											<img src="img/dlounge.jpg">
+											<h3><a href="#D-lounge-popup"  data-effect="mfp-newspaper">D-lounge</a></h3>
+										</div>
+										<div class="col-xs-4 info">
+											<img src="img/shailey.png">
+											<h3><a href="#Shailey-popup"  data-effect="mfp-newspaper">Shailey</a></h3>
+										</div>
+									</div>
+									<div class="row events3">
+										<div class="col-xs-4 info">
+											<img src="img/circus.png">
+											<h3><a href="#Synapcity-popup"  data-effect="mfp-newspaper">Synapcity</a></h3>
+										</div>
+										<div class="col-xs-4 info">
+											<img src="img/geek.png">
+											<h3><a href="#Technical-popup"  data-effect="mfp-newspaper">Technical</a></h3>
+										</div>
+										<div class="col-xs-4 info">
+											<img src="img/online.png">
+											<h3><a href="#Online-popup"  data-effect="mfp-newspaper">Online Events</a></h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="sponsors2">
+							<div class="container" style="text-align:center">
+								<div class="row solidsponsor">
+									<h2 >Sponsors</h2>
+								</div></div>
+							</section> 
+							<section class="sponsors"> 
+								<div class="container-fluid">
 
-                                    <div class="col-md-6 sponsorleft">
-                                        <img id="sponsorpic1" src="img/sponsor1.jpg">
-                                    </div>
-                                    <div class="col-md-6 sponsorright">
-                                        <img id="sponsorpic2"  src="img/sponsor2.jpg">
-                                    </div>
-                                </div>
-                            </section>
-                    <section class="end">
-                                <div class="container-fluid">
-                                    <div class="row">
+									<div class="col-md-6 sponsorleft">
+										<img id="sponsorpic1" src="img/sponsor1.jpg">
+									</div>
+									<div class="col-md-6 sponsorright">
+										<img id="sponsorpic2"  src="img/sponsor2.jpg">
+									</div>
+								</div>
+							</section>
+							<section class="end">
+								<div class="container-fluid">
+									<div class="row">
 
-                                        <h2>Some stuff </h2>
-                                    </div>
-                                </div>
-                            </section>
+										<h2>Some stuff </h2>
+									</div>
+								</div>
+							</section>
                    
-								                    <section class="slider">
-														<div  id = "slideshow">
-															<a class="fancybox" rel="group" href="photographs/photo1.jpg"><img src="thumbs/photo1.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo2.jpg"><img src="thumbs/photo2.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo3.jpg"><img src="thumbs/photo3.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo4.jpg"><img src="thumbs/photo4.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo5.jpg"><img src="thumbs/photo5.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo6.jpg"><img src="thumbs/photo6.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo7.jpg"><img src="thumbs/photo7.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo8.jpg"><img src="thumbs/photo8.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo9.jpg"><img src="thumbs/photo9.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo10.jpg"><img src="thumbs/photo10.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo11.jpg"><img src="thumbs/photo11.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo12.jpg"><img src="thumbs/photo12.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo13.jpg"><img src="thumbs/photo13.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo14.jpg"><img src="thumbs/photo14.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo15.jpg"><img src="thumbs/photo15.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo16.jpg"><img src="thumbs/photo16.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo17.jpg"><img src="thumbs/photo17.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo18.jpg"><img src="thumbs/photo18.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo19.jpg"><img src="thumbs/photo19.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo20.jpg"><img src="thumbs/photo20.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo21.jpg"><img src="thumbs/photo21.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo22.jpg"><img src="thumbs/photo22.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo23.jpg"><img src="thumbs/photo23.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo24.jpg"><img src="thumbs/photo24.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo25.jpg"><img src="thumbs/photo25.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo26.jpg"><img src="thumbs/photo26.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo27.jpg"><img src="thumbs/photo27.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo28.jpg"><img src="thumbs/photo28.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo29.jpg"><img src="thumbs/photo29.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo30.jpg"><img src="thumbs/photo30.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo31.jpg"><img src="thumbs/photo31.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo32.jpg"><img src="thumbs/photo32.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo33.jpg"><img src="thumbs/photo33.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo34.jpg"><img src="thumbs/photo34.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo35.jpg"><img src="thumbs/photo35.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo36.jpg"><img src="thumbs/photo36.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo37.jpg"><img src="thumbs/photo37.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo38.jpg"><img src="thumbs/photo38.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo39.jpg"><img src="thumbs/photo39.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo40.jpg"><img src="thumbs/photo40.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo41.jpg"><img src="thumbs/photo41.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo42.jpg"><img src="thumbs/photo42.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo43.jpg"><img src="thumbs/photo43.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo44.jpg"><img src="thumbs/photo44.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo45.jpg"><img src="thumbs/photo45.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo46.jpg"><img src="thumbs/photo46.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo47.jpg"><img src="thumbs/photo47.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo48.jpg"><img src="thumbs/photo48.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo49.jpg"><img src="thumbs/photo49.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo50.jpg"><img src="thumbs/photo50.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo51.jpg"><img src="thumbs/photo51.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo52.jpg"><img src="thumbs/photo52.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo53.jpg"><img src="thumbs/photo53.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo54.jpg"><img src="thumbs/photo54.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo55.jpg"><img src="thumbs/photo55.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo56.jpg"><img src="thumbs/photo56.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo57.jpg"><img src="thumbs/photo57.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo58.jpg"><img src="thumbs/photo58.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo59.jpg"><img src="thumbs/photo59.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo60.jpg"><img src="thumbs/photo60.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo61.jpg"><img src="thumbs/photo61.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo62.jpg"><img src="thumbs/photo62.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo63.jpg"><img src="thumbs/photo63.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo64.jpg"><img src="thumbs/photo64.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo65.jpg"><img src="thumbs/photo65.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo66.jpg"><img src="thumbs/photo66.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo67.jpg"><img src="thumbs/photo67.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo68.jpg"><img src="thumbs/photo68.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo69.jpg"><img src="thumbs/photo69.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo70.jpg"><img src="thumbs/photo70.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo71.jpg"><img src="thumbs/photo71.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo72.jpg"><img src="thumbs/photo72.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo73.jpg"><img src="thumbs/photo73.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo74.jpg"><img src="thumbs/photo74.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo75.jpg"><img src="thumbs/photo75.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo76.jpg"><img src="thumbs/photo76.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo77.jpg"><img src="thumbs/photo77.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo78.jpg"><img src="thumbs/photo78.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo79.jpg"><img src="thumbs/photo79.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo80.jpg"><img src="thumbs/photo80.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo81.jpg"><img src="thumbs/photo81.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo82.jpg"><img src="thumbs/photo82.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo83.jpg"><img src="thumbs/photo83.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo84.jpg"><img src="thumbs/photo84.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo85.jpg"><img src="thumbs/photo85.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo86.jpg"><img src="thumbs/photo86.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo87.jpg"><img src="thumbs/photo87.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo88.jpg"><img src="thumbs/photo88.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo89.jpg"><img src="thumbs/photo89.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo90.jpg"><img src="thumbs/photo90.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo91.jpg"><img src="thumbs/photo91.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo92.jpg"><img src="thumbs/photo92.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo93.jpg"><img src="thumbs/photo93.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo94.jpg"><img src="thumbs/photo94.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo95.jpg"><img src="thumbs/photo95.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo96.jpg"><img src="thumbs/photo96.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo97.jpg"><img src="thumbs/photo97.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo98.jpg"><img src="thumbs/photo98.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo99.jpg"><img src="thumbs/photo99.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo100.jpg"><img src="thumbs/photo100.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo101.jpg"><img src="thumbs/photo101.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo102.jpg"><img src="thumbs/photo102.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo103.jpg"><img src="thumbs/photo103.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo104.jpg"><img src="thumbs/photo104.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo105.jpg"><img src="thumbs/photo105.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo106.jpg"><img src="thumbs/photo106.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo107.jpg"><img src="thumbs/photo107.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo108.jpg"><img src="thumbs/photo108.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo109.jpg"><img src="thumbs/photo109.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo110.jpg"><img src="thumbs/photo110.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo111.jpg"><img src="thumbs/photo111.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo112.jpg"><img src="thumbs/photo112.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo113.jpg"><img src="thumbs/photo113.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo114.jpg"><img src="thumbs/photo114.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo115.jpg"><img src="thumbs/photo115.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo116.jpg"><img src="thumbs/photo116.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo117.jpg"><img src="thumbs/photo117.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo118.jpg"><img src="thumbs/photo118.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo119.jpg"><img src="thumbs/photo119.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo120.jpg"><img src="thumbs/photo120.jpg" alt="" /></a>
-															<a class="fancybox" rel="group" href="photographs/photo121.jpg"><img src="thumbs/photo121.jpg" alt="" /></a>
+							<section class="slider">
+								<div  id = "slideshow">
+									<a class="fancybox" rel="group" href="photographs/photo1.jpg"><img src="thumbs/photo1.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo2.jpg"><img src="thumbs/photo2.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo3.jpg"><img src="thumbs/photo3.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo4.jpg"><img src="thumbs/photo4.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo5.jpg"><img src="thumbs/photo5.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo6.jpg"><img src="thumbs/photo6.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo7.jpg"><img src="thumbs/photo7.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo8.jpg"><img src="thumbs/photo8.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo9.jpg"><img src="thumbs/photo9.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo10.jpg"><img src="thumbs/photo10.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo11.jpg"><img src="thumbs/photo11.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo12.jpg"><img src="thumbs/photo12.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo13.jpg"><img src="thumbs/photo13.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo14.jpg"><img src="thumbs/photo14.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo15.jpg"><img src="thumbs/photo15.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo16.jpg"><img src="thumbs/photo16.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo17.jpg"><img src="thumbs/photo17.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo18.jpg"><img src="thumbs/photo18.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo19.jpg"><img src="thumbs/photo19.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo20.jpg"><img src="thumbs/photo20.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo21.jpg"><img src="thumbs/photo21.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo22.jpg"><img src="thumbs/photo22.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo23.jpg"><img src="thumbs/photo23.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo24.jpg"><img src="thumbs/photo24.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo25.jpg"><img src="thumbs/photo25.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo26.jpg"><img src="thumbs/photo26.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo27.jpg"><img src="thumbs/photo27.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo28.jpg"><img src="thumbs/photo28.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo29.jpg"><img src="thumbs/photo29.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo30.jpg"><img src="thumbs/photo30.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo31.jpg"><img src="thumbs/photo31.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo32.jpg"><img src="thumbs/photo32.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo33.jpg"><img src="thumbs/photo33.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo34.jpg"><img src="thumbs/photo34.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo35.jpg"><img src="thumbs/photo35.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo36.jpg"><img src="thumbs/photo36.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo37.jpg"><img src="thumbs/photo37.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo38.jpg"><img src="thumbs/photo38.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo39.jpg"><img src="thumbs/photo39.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo40.jpg"><img src="thumbs/photo40.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo41.jpg"><img src="thumbs/photo41.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo42.jpg"><img src="thumbs/photo42.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo43.jpg"><img src="thumbs/photo43.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo44.jpg"><img src="thumbs/photo44.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo45.jpg"><img src="thumbs/photo45.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo46.jpg"><img src="thumbs/photo46.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo47.jpg"><img src="thumbs/photo47.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo48.jpg"><img src="thumbs/photo48.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo49.jpg"><img src="thumbs/photo49.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo50.jpg"><img src="thumbs/photo50.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo51.jpg"><img src="thumbs/photo51.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo52.jpg"><img src="thumbs/photo52.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo53.jpg"><img src="thumbs/photo53.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo54.jpg"><img src="thumbs/photo54.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo55.jpg"><img src="thumbs/photo55.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo56.jpg"><img src="thumbs/photo56.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo57.jpg"><img src="thumbs/photo57.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo58.jpg"><img src="thumbs/photo58.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo59.jpg"><img src="thumbs/photo59.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo60.jpg"><img src="thumbs/photo60.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo61.jpg"><img src="thumbs/photo61.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo62.jpg"><img src="thumbs/photo62.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo63.jpg"><img src="thumbs/photo63.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo64.jpg"><img src="thumbs/photo64.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo65.jpg"><img src="thumbs/photo65.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo66.jpg"><img src="thumbs/photo66.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo67.jpg"><img src="thumbs/photo67.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo68.jpg"><img src="thumbs/photo68.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo69.jpg"><img src="thumbs/photo69.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo70.jpg"><img src="thumbs/photo70.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo71.jpg"><img src="thumbs/photo71.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo72.jpg"><img src="thumbs/photo72.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo73.jpg"><img src="thumbs/photo73.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo74.jpg"><img src="thumbs/photo74.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo75.jpg"><img src="thumbs/photo75.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo76.jpg"><img src="thumbs/photo76.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo77.jpg"><img src="thumbs/photo77.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo78.jpg"><img src="thumbs/photo78.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo79.jpg"><img src="thumbs/photo79.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo80.jpg"><img src="thumbs/photo80.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo81.jpg"><img src="thumbs/photo81.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo82.jpg"><img src="thumbs/photo82.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo83.jpg"><img src="thumbs/photo83.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo84.jpg"><img src="thumbs/photo84.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo85.jpg"><img src="thumbs/photo85.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo86.jpg"><img src="thumbs/photo86.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo87.jpg"><img src="thumbs/photo87.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo88.jpg"><img src="thumbs/photo88.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo89.jpg"><img src="thumbs/photo89.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo90.jpg"><img src="thumbs/photo90.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo91.jpg"><img src="thumbs/photo91.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo92.jpg"><img src="thumbs/photo92.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo93.jpg"><img src="thumbs/photo93.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo94.jpg"><img src="thumbs/photo94.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo95.jpg"><img src="thumbs/photo95.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo96.jpg"><img src="thumbs/photo96.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo97.jpg"><img src="thumbs/photo97.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo98.jpg"><img src="thumbs/photo98.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo99.jpg"><img src="thumbs/photo99.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo100.jpg"><img src="thumbs/photo100.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo101.jpg"><img src="thumbs/photo101.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo102.jpg"><img src="thumbs/photo102.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo103.jpg"><img src="thumbs/photo103.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo104.jpg"><img src="thumbs/photo104.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo105.jpg"><img src="thumbs/photo105.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo106.jpg"><img src="thumbs/photo106.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo107.jpg"><img src="thumbs/photo107.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo108.jpg"><img src="thumbs/photo108.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo109.jpg"><img src="thumbs/photo109.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo110.jpg"><img src="thumbs/photo110.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo111.jpg"><img src="thumbs/photo111.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo112.jpg"><img src="thumbs/photo112.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo113.jpg"><img src="thumbs/photo113.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo114.jpg"><img src="thumbs/photo114.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo115.jpg"><img src="thumbs/photo115.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo116.jpg"><img src="thumbs/photo116.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo117.jpg"><img src="thumbs/photo117.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo118.jpg"><img src="thumbs/photo118.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo119.jpg"><img src="thumbs/photo119.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo120.jpg"><img src="thumbs/photo120.jpg" alt="" /></a>
+									<a class="fancybox" rel="group" href="photographs/photo121.jpg"><img src="thumbs/photo121.jpg" alt="" /></a>
 																
-								                        </div>
-								                    </section>
+								</div>
+							</section>
 													
 													
 													
-													<div id="cyno-popup" class="white-popup mfp-with-anim mfp-hide"><p>Stars brighten up the night. But the kind cynosure offer can set the night ablaze. The celebrity walks up to the stage amidst loud cheers from the crowd. <button id="show">Show</button><span class="texty">The next few hours of the night will leave you mesmerized, for sure . The Raghu Dixit Project, Agnee , Indi- an Ocean , Aditya Narayan , Tochi Raina and still counting ..</span></p></div>
+							<div id="cyno-popup" class="white-popup mfp-with-anim mfp-hide"><p>Stars brighten up the night. But the kind cynosure offer can set the night ablaze. The celebrity walks up to the stage amidst loud cheers from the crowd. <button id="show">Show</button><span class="texty">The next few hours of the night will leave you mesmerized, for sure . The Raghu Dixit Project, Agnee , Indi- an Ocean , Aditya Narayan , Tochi Raina and still counting ..</span></p></div>
 													
 													
-													<div id="rampage-popup" class="white-popup mfp-with-anim mfp-hide"><p>RampStars brighten up the night. But the kind cynosure offer can set the night ablaze. The celebrity walks up to the stage amidst loud cheers from the crowd. <button id="show">Show</button><span class="texty">The next few hours of the night will leave you mesmerized, for sure . The Raghu Dixit Project, Agnee , Indi- an Ocean , Aditya Narayan , Tochi Raina and still counting ..</span></p></div>
+							<div id="rampage-popup" class="white-popup mfp-with-anim mfp-hide"><p>RampStars brighten up the night. But the kind cynosure offer can set the night ablaze. The celebrity walks up to the stage amidst loud cheers from the crowd. <button id="show">Show</button><span class="texty">The next few hours of the night will leave you mesmerized, for sure . The Raghu Dixit Project, Agnee , Indi- an Ocean , Aditya Narayan , Tochi Raina and still counting ..</span></p></div>
 													
-													<div id="innaugral-popup" class="white-popup mfp-with-anim mfp-hide"><p>Hi</p></div>
-													<div id="ragna-popup" class="white-popup mfp-with-anim mfp-hide"><p>RRRRampStars brighten up the night. But the kind cynosure offer can set the night ablaze. The celebrity walks up to the stage amidst loud cheers from the crowd. <button id="show">Show</button><span class="texty">The next few hours of the night will leave you mesmerized, for sure . The Raghu Dixit Project, Agnee , Indi- an Ocean , Aditya Narayan , Tochi Raina and still counting ..</span></p></div>
+							<div id="innaugral-popup" class="white-popup mfp-with-anim mfp-hide"><p>Hi</p></div>
+							<div id="ragna-popup" class="white-popup mfp-with-anim mfp-hide"><p>RRRRampStars brighten up the night. But the kind cynosure offer can set the night ablaze. The celebrity walks up to the stage amidst loud cheers from the crowd. <button id="show">Show</button><span class="texty">The next few hours of the night will leave you mesmerized, for sure . The Raghu Dixit Project, Agnee , Indi- an Ocean , Aditya Narayan , Tochi Raina and still counting ..</span></p></div>
 													
-                </div>
-                    </div>
-                </div>
-                <!-- some spanning of fonts here -->
+						</div>
+					</div>
+				</div>
+				<!-- some spanning of fonts here -->
 
-                <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <div id="footer">
-                    <div class="container-fluid">
+				<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+				<div id="footer">
+					<div class="container-fluid">
 
-                        <div class="col-sm-4 footerfirstcol">
-                            <div class="row teamhead">
-                                <h4 style="text-rendering: optimizelegibility;line-height: 18.200000762939453px;"><span style="display:inline-block ; background-color:rgb(242, 105, 81);padding-left:10px;padding-right:10px;letter-spacing:4px;line-height: 18.200000762939453px;">The Team</span></h4>
-                            </div>
-                            <ul>
+						<div class="col-sm-4 footerfirstcol">
+							<div class="row teamhead">
+								<h4 style="text-rendering: optimizelegibility;line-height: 18.200000762939453px;"><span style="display:inline-block ; background-color:rgb(242, 105, 81);padding-left:10px;padding-right:10px;letter-spacing:4px;line-height: 18.200000762939453px;">The Team</span></h4>
+							</div>
+							<ul>
 
-                                <li>Person1</li>
-                                <li>Person1</li>
-                                <li>Person1</li>
-                                <li>Person1</li>
-                                <li>Person1</li>
-                            </ul>
-                        </div>
+								<li>Person1</li>
+								<li>Person1</li>
+								<li>Person1</li>
+								<li>Person1</li>
+								<li>Person1</li>
+							</ul>
+						</div>
 
-                        <div class="col-sm-4 middlecol">
-                            <div class="boxe">
-                                <h5>DA-IICT</h5> 
-                            </div> 
-                            <div class="boxe">
-                                <h5>Synapse 2014</h5> 
-                            </div>
-                            <div class="boxe">
-                                <h5>Gandhinagar</h5> 
-                            </div>
-                            <div class="boxe">
-                                <h5>Title Sponsor</h5> 
-                            </div>
-                            <div class="boxe">
-                                <h5>Other sponsor</h5> 
-                            </div>
-                        </div>
-                        <div class="col-sm-4 footerfirstcol">
-                            <div class="row teamhead">
-                                <h4 style="text-rendering: optimizelegibility;line-height: 18.200000762939453px;"><span style="display:inline-block ; background-color:rgb(242, 105, 81);padding-left:10px;padding-right:10px;letter-spacing:4px;line-height: 18.200000762939453px;">The Team</span></h4>
-                            </div>
-                            <ul>
+						<div class="col-sm-4 middlecol">
+							<div class="boxe">
+								<h5>DA-IICT</h5> 
+							</div> 
+							<div class="boxe">
+								<h5>Synapse 2014</h5> 
+							</div>
+							<div class="boxe">
+								<h5>Gandhinagar</h5> 
+							</div>
+							<div class="boxe">
+								<h5>Title Sponsor</h5> 
+							</div>
+							<div class="boxe">
+								<h5>Other sponsor</h5> 
+							</div>
+						</div>
+						<div class="col-sm-4 footerfirstcol">
+							<div class="row teamhead">
+								<h4 style="text-rendering: optimizelegibility;line-height: 18.200000762939453px;"><span style="display:inline-block ; background-color:rgb(242, 105, 81);padding-left:10px;padding-right:10px;letter-spacing:4px;line-height: 18.200000762939453px;">The Team</span></h4>
+							</div>
+							<ul>
 
-                                <li>Person1</li>
-                                <li>Person1</li>
-                                <li>Person1</li>
-                                <li>Person1</li>
-                                <li>Person1</li>
-                            </ul>
-                        </div>
+								<li>Person1</li>
+								<li>Person1</li>
+								<li>Person1</li>
+								<li>Person1</li>
+								<li>Person1</li>
+							</ul>
+						</div>
 
-                    </div>
+					</div>
 
-                </div>
+				</div>
 
 
                
 
-                <!-- Include all compiled plugins (below), or include individual files as needed -->
-              
-
-                <!--
-                    /*
-                    var width = Math.max(960, innerWidth),
-                    height = Math.max(500, innerHeight);
-
-                    var i = 0;
-
-                    var svg = d3.select(".test").append("svg")
-                    .attr("width", width)
-                    .attr("height", height);
-
-                    svg.append("rect")
-                    .attr("width", width)
-                    .attr("height", height)
-                    .on("ontouchstart" in document ? "touchmove" : "mousemove", particle);
-
-                    function particle() {
-                    var m = d3.mouse(this);
-
-                    svg.insert("circle", "rect")
-                    .attr("cx", m[0])
-                    .attr("cy", m[1])
-                    .attr("r", 1e-6)
-                    .style("stroke", d3.hsl((i = (i + 1) % 360), 1, .5))
-                    .style("stroke-opacity", 1)
-                    .transition()
-                    .duration(2000)
-                    .ease(Math.sqrt)
-                    .attr("r", 100)
-                    .style("stroke-opacity", 1e-6)
-                    .remove();
-
-                    d3.event.preventDefault();
-                    }
-                    var width = Math.max(960, innerWidth),
-                    height = Math.max(500, innerHeight);
-
-                    var color = d3.scale.category20();
-
-                    var force = d3.layout.force()
-                    .charge(-120)
-                    .linkDistance(130)
-                    .size([width, height]);
-
-                    var svg = d3.select(".test").append("svg")
-                    .attr("width", width)
-                    .attr("height", height);
-
-                    d3.json("miserables.json", function(error, graph) {
-                    force
-                    .nodes(graph.nodes)
-                    .links(graph.links)
-                    .start();
-
-
-                    var link = svg.selectAll(".link")
-                    .data(graph.links)
-                    .enter().append("line")
-                    .attr("class", "link")
-                    .style("stroke-width", "2");
-
-
-                    var node = svg.selectAll(".node")
-                    .data(graph.nodes)
-                    .enter().append("circle")
-                    .attr("class", "node")
-                    .attr("r", 5)
-                    .style("fill", "#5F5F5F")
-                    .call(force.drag);
-
-
-                    force.on("tick", function() {
-                    link.attr("x1", function(d) { return d.source.x; })
-                    .attr("y1", function(d) { return d.source.y; })
-                    .attr("x2", function(d) { return d.target.x; })
-                    .attr("y2", function(d) { return d.target.y; });
-
-                    node.attr("cx", function(d) { return d.x; })
-                    .attr("cy", function(d) { return d.y; });
-                    });
-                    });
-
-                    /*
-
-                    var width = Math.max(960, innerWidth),
-                    height = Math.max(500, innerHeight);
-                    var svg = d3.select("#main").append("svg")
-                    .attr("width", width)
-                    .attr("height", height);
-
-                    var circle = svg.selectAll("circle")
-                    .data([32, 57, 112, 293,555]);
-
-                    var circleEnter = circle.enter().append("circle");
-                    circleEnter.attr("cy", 60);
-                    circleEnter.attr("cx", function(d, i) { return i * 100 + 30; });
-                    circleEnter.attr("r", function(d) { return Math.sqrt(d); });
-                    circleEnter.style("fill", "steelblue");
-
-                    circle.exit().remove();
-                    var width = Math.max(960, innerWidth),
-                    height = Math.max(500, innerHeight);
-
-                    var nodes = [
-                    { x:   width/3, y: height/2 },
-                    { x: 2*width/3, y: height/2 }
-                    ];
-
-                    var links = [
-                    {source:0,target:1}
-                    ];
-                    var svg =d3.select(".test").append('svg')
-                    .attr('width',width)
-                    .attr('height',height);
-                    var force = d3.layout.force().size([width,height]).nodes(nodes).links(links);
-                    force.linkDistance(width/2);
-
-                    var link = svg.selectAll('.link')
-                    .data(links)
-                    .enter().append('line')
-                    .attr('class','link');
-                    var node = svg.selectAll('.node')
-                    .data(nodes)
-                    .enter().append('circle')
-                    .attr('class','node');
-                    force.on('end',function() {
-                    node.attr('r',width/25)
-                    .attr('cx',function(d){return d.x;})
-                    .attr('cy',function(d){return d.y;});
-                    link.attr('x1',function(d) {return d.source.x;})
-                    .attr('y1',function(d) {return d.source.y;})
-                    .attr('x2',function(d) {return d.target.x;})
-                    .attr('y2',function(d) {return d.target.y;})
-                    });
-                    force.start();
-                    var svgq =d3.select(".test").append('svg')
-                    .attr('width',width)
-                    .attr('height',height);
-                    var force2 = d3.layout.force().size([width,height]).nodes(nodes).links(links);
-                    force2.linkDistance(width/2);
-
-                    var link = svgq.selectAll('.link')
-                    .data(links)
-                    .enter().append('line')
-                    .attr('class','link');
-                    var node = svgq.selectAll('.node')
-                    .data(nodes)
-                    .enter().append('circle')
-                    .attr('class','node');
-                    force2.on('end',function() {
-                    node.attr('r',width/25)
-                    .attr('cx',function(d){return d.x;})
-                    .attr('cy',function(d){return d.y;});
-                    link.attr('x1',function(d) {return d.source.x;})
-                    .attr('y1',function(d) {return d.source.y;})
-                    .attr('x2',function(d) {return d.target.x;})
-                    .attr('y2',function(d) {return d.target.y;})
-                    });
-                    force2.start();
-                    */
-                    -->
-          </body>
-</html>
+				</body>
+				</html>
