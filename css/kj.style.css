@@ -25,50 +25,50 @@
 	/* color: #A6253E; */
 }
 .navbar-blur {
-    z-index: 1000;
+	z-index: 1000;
 	
-    -webkit-filter: blur(20px);     -moz-filter: blur(10px);     -ms-filter: blur(10px);      -o-filter: blur(10px);     filter: blur(10px);     
-    background: rgba(250,250,250,0.7);     top: 0;     left: 0;     width: 100%;     
-    height: 77px;     padding: 0;
+	-webkit-filter: blur(20px);     -moz-filter: blur(10px);     -ms-filter: blur(10px);      -o-filter: blur(10px);     filter: blur(10px);     
+	background: rgba(250,250,250,0.7);     top: 0;     left: 0;     width: 100%;     
+	height: 77px;     padding: 0;
 } 
 #slider {
 	height :100px;
 	background-position: center center;
-		background-repeat:no-repeat;
-		background-attachment:fixed;
-		background-size:cover;
-		width:100%;
-		display:table;
-		position:relative;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+	width:100%;
+	display:table;
+	position:relative;
 		
-	}
-	#slideshow {
-		height:200px;
-		text-align:center;
-		 overflow:scroll;
-		 background-color:black;
-	}
-	#slideshow a {
-		margin-top:5px;
-		padding-top:5px;
-	}
-		/*
-	-webkit-animation:slide 5s;
-    -webkit-animation-timing-function: linear;
-       -webkit-animation-delay: 2s;
-       -webkit-animation-iteration-count: infinite;
-       -webkit-animation-play-state: running;
-	animation:slide 10s;
-    animation-timing-function: step-start;
-       animation-delay: 0s;
-       animation-iteration-count: infinite;
-       animation-play-state: running;
+}
+#slideshow {
+	height:200px;
+	text-align:center;
+	overflow:scroll;
+	background-color:black;
+}
+#slideshow a {
+	margin-top:5px;
+	padding-top:5px;
+}
+/*
+-webkit-animation:slide 5s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-delay: 2s;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-play-state: running;
+animation:slide 10s;
+animation-timing-function: step-start;
+animation-delay: 0s;
+animation-iteration-count: infinite;
+animation-play-state: running;
 }
 
 @keyframes slide {
-	0% {background-image:url("pics/img1.jpg")};
-	29% {background-image:url("pics/img2.jpg")};
-	50% {background-image:url("pics/img3.jpg");}
+0% {background-image:url("pics/img1.jpg")};
+29% {background-image:url("pics/img2.jpg")};
+50% {background-image:url("pics/img3.jpg");}
 	
 }*/
 .redzone img {
@@ -76,21 +76,22 @@
 	position:relative;
 	
 }
- .pronites .row  img {
+.pronites .row  img {
 	width:80%;
 }
 .pronites {
-    margin-top: 40px;
+	margin-top: 40px;
 	text-align:center;
-    margin-bottom: 80px;
+	margin-bottom: 80px;
+	color: black;
 }
 .pronites .row .col-md-3 {
 	text-align:center;
 }
 .pronites .row p {
-    line-height: 22px;
+	line-height: 22px;
 	
-    font-size: medium;
+	font-size: medium;
 }
 
 .slidesrow {
@@ -98,12 +99,12 @@
 }
 /*
 @-webkit-keyframes slide {
-	0% {background-image:url("pics/img1.jpg")};
+0% {background-image:url("pics/img1.jpg")};
 	
-	50% {background-image:url("pics/t.jpg")};
+50% {background-image:url("pics/t.jpg")};
 	
 	
-	100% {background-image:url("pics/img3.jpg");}
+100% {background-image:url("pics/img3.jpg");}
 }*/
 .teamhead {
 	position: relative;
@@ -119,12 +120,12 @@
 }
 
 .chart div {
-  font: 10px sans-serif;
-  background-color: steelblue;
-  text-align: right;
-  padding: 3px;
-  margin: 1px;
-  color: white;
+	font: 10px sans-serif;
+	background-color: steelblue;
+	text-align: right;
+	padding: 3px;
+	margin: 1px;
+	color: white;
 }
 #logoIn {
 	width: 317px;
@@ -160,7 +161,7 @@
 	z-index:10;
 	text-align:center ;
 	
-	 fill:white;
+	fill:white;
 }
 .sponsors .sponsorright{
 	padding-left:0px;
@@ -176,6 +177,7 @@
 	background-color:#de4f4f;
 	text-align:center;
 	padding-top:50px;
+	color: whitesmoke;
 	padding-bottom:100px;
 }
 
@@ -183,8 +185,8 @@
 	margin-bottom: 150px;
 }
 .end {
-	background-color:black;
-	height:630px;
+	background-color: rgb(232,229,213);
+	/* height:630px; */
 }
 #othershit{
 	color: white;
@@ -202,7 +204,7 @@
 	/* margin-top:80px; */
 	width: 100%;
 	font-family:Helvetica;
-/*	font-family: 'Montserrat', sans-serif;*/
+	/*	font-family: 'Montserrat', sans-serif;*/
 }
 #footer ul {
 	top: -50px;
@@ -229,9 +231,9 @@
 	
 }
 .lowerupperjewel {
-    top: 2px;
+	top: 2px;
 	
-    position: relative;
+	position: relative;
 }
 .col-md-6.lowerjewelleft{
 	padding-right:0px;
@@ -269,25 +271,25 @@
 	/* background-image: url("img/muchbef.jpg"); */
 	background-color:#27272b;
 	-moz-transition: all 15s ease-out;
-	    /* WebKit */
-	    -webkit-transition: all 8s ease-out;
-	    /* Opera */
-	    -o-transition: all 8s ease-out;
-	    /* Standard */
-	    transition: all 8s ease-out;
-	    height: 600px;
+	/* WebKit */
+	-webkit-transition: all 8s ease-out;
+	/* Opera */
+	-o-transition: all 8s ease-out;
+	/* Standard */
+	transition: all 8s ease-out;
+	height: 600px;
 }
 .test {
 	background-color:#27272b;
 }
 .node {
-  stroke: #fff;
-  stroke-width: 0px;
+	stroke: #fff;
+	stroke-width: 0px;
 }
 
 .link {
-  stroke: #999;
-  stroke-opacity: .6;
+	stroke: #999;
+	stroke-opacity: .6;
 }
 .container-fluid {
 	padding-left:10%;
@@ -340,14 +342,15 @@
 	-webkit-animation-delay: 1s;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-direction: alternate;
-    -webkit-animation-play-state: running;
+	-webkit-animation-play-state: running;
 	
-    animation: synapse 10s;
+	animation: synapse 10s;
 	animation-timing-function: ease;
 	animation-delay: 1s;
-    animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
 	animation-direction: alternate;
-    animation-play-state: running;
+	animation-play-state: running;
+	padding-bottom: 10px;
 }
 
 
@@ -370,8 +373,103 @@
 	
 }
 
+
+
+
+
+.no-padding-col {
+	
+	background-color:white;
+	
+	-webkit-animation:synapse 8s;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction:alternate ;
+	-webkit-animation-timing-function: ease-out;
+	-webkit-animation-play-state: running;
+	-webkit-animation-delay:0s;
+	animation: synapse 4s;
+	animation-timing-function: linear;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-play-state: running;
+	
+}
+
+.no-padding-col-pop {
+	
+	background-color:white;
+	
+	-webkit-animation:synapse 20s;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction:alternate ;
+	-webkit-animation-timing-function: ease-out;
+	-webkit-animation-play-state: running;
+	-webkit-animation-delay:0s;
+	animation: synapse 20s;
+	animation-timing-function: linear;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-play-state: running;
+	
+}
+.div1 {
+	-webkit-animation-delay:0s;
+	
+}
+.poop-clickable {
+	height:auto !important;
+	color:white;
+}
+.div2 {
+	-webkit-animation-delay:0.5s;
+	background-color:#de4f4f;
+}
+.div3 {
+	-webkit-animation-delay:1s;
+	background-color:#F25252;
+}
+.div4 {
+	-webkit-animation-delay:1.5s;
+	background-color:#F2C12E;
+}
+.div5 {
+	-webkit-animation-delay:2s;
+}
+.div6 {
+	-webkit-animation-delay:2.5s;
+}
+.pop-clickable {
+	height:auto !important;
+	color:white;
+	margin: 0px;
+}
+@-webkit-keyframes synapse {
+	0% {
+		background-color:rgb(24,169,227);
+	}
+	25% {
+		background-color:#A9CF54;
+	}
+	50% {
+		background-color:#de4f4f;
+	}
+	75% {
+		background-color:rgb(255,207,20);
+		
+	}
+	100% {
+		background-color:rgb(242, 105, 81);
+	}
+	
+}
+
+
 .synapse-shit {
-    color: rgba(255, 255, 255,0.9);
+	color: rgba(255, 255, 255,0.9);
 	
 }
 .value {
@@ -392,20 +490,25 @@
 }
 @media (max-width: 766px) { 
 	.pronitesicon{
-	border:none;
-	padding-right: 0%;
-}
+		border:none;
+		padding-right: 0%;
+	}
 }
 
+
+.no-padding-col {
+	background-color: rgba(142, 200, 111,0.2);
+	height: 7px;
+}
 #row-above-jumbo {
-    margin-bottom: 0px !important;
+	margin-bottom: 0px !important;
 	
 }
 #slide-intro {
-    position: relative;
+	position: relative;
 	
-    top: -40px;
-    letter-spacing: 10px;
+	top: -40px;
+	letter-spacing: 10px;
 }
 
 .bottomjewelsrow {
@@ -465,24 +568,24 @@ circle {
 	-webkit-animation-delay: 2s;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-direction: alternate;
-    -webkit-animation-play-state: running;
+	-webkit-animation-play-state: running;
 	
-    animation: circles 5s;
+	animation: circles 5s;
 	animation-timing-function: linear;
 	animation-delay: 4s;
-    animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
 	animation-direction: alternate;
-    animation-play-state: running;
+	animation-play-state: running;
 }
 
 
 @-webkit-keyframes circles {
-    from {fill:rgb(120,120,120);
+	from {fill:rgb(120,120,120);
 		stroke-width:0.1;
- }
-    to {fill:rgb(180,180,180);
+	}
+	to {fill:rgb(180,180,180);
 		stroke-width:0.9;
- }
+	}
 }
 #n1 {animation-delay:0.4373780226862345s; -webkit-animation-delay:2.5871224328116504s;}
 #n2 {animation-delay:1.328340811232306s; -webkit-animation-delay:0.26389825331579475s;}
@@ -806,7 +909,10 @@ circle {
 	position:relative;
 	top: -30px;
 }
-
+.row-no-padding {
+	padding:0;
+	margin:0;
+}
 .redLine {
 	stroke:rgb(200,200,200);
 	
@@ -814,86 +920,117 @@ circle {
 	stroke-width:0.9;
 }
 @-webkit-keyframes myfirstRed {
-    from {stroke:rgb(70,70,70);
-  stroke-width:1;}
-    to {stroke:rgb(230,220,210);
-  stroke-width:1.2;}
-}
+	from {stroke:rgb(70,70,70);
+		stroke-width:1;}
+		to {stroke:rgb(230,220,210);
+			stroke-width:1.2;}
+		}
 
-/* Standard syntax */
-@keyframes myfirstRed {
-    from {stroke:rgb(100,100,100);;
-  stroke-width:0.6;}
-    to {stroke:rgb(100,100,100);
-  stroke-width:0.9;}
-}
-line {
-  stroke:rgb(53,53,53);
-  stroke-width:0.2;
+		/* Standard syntax */
+		@keyframes myfirstRed {
+			from {stroke:rgb(100,100,100);;
+				stroke-width:0.6;}
+				to {stroke:rgb(100,100,100);
+					stroke-width:0.9;}
+				}
+				line {
+					stroke:rgb(53,53,53);
+					stroke-width:0.2;
   
  
 	
-	-webkit-animation: myfirst 1s; /* Chrome, Safari, Opera */
-	    animation: myfirst 3s;
-		animation-timing-function: ease-out;
-		    animation-delay: 0s;
-		    animation-iteration-count: infinite;
-		    animation-direction: alternate;
-		    animation-play-state: running;
-			-webkit-animation-delay: 2s;
-			    -webkit-animation-iteration-count: infinite;
-			    -webkit-animation-direction: alternate;
-			    -webkit-animation-play-state: running;
-}
+					-webkit-animation: myfirst 1s; /* Chrome, Safari, Opera */
+					animation: myfirst 3s;
+					animation-timing-function: ease-out;
+					animation-delay: 0s;
+					animation-iteration-count: infinite;
+					animation-direction: alternate;
+					animation-play-state: running;
+					-webkit-animation-delay: 3s;
+					-webkit-animation-iteration-count: infinite;
+					-webkit-animation-direction: alternate;
+					-webkit-animation-play-state: running;
+				}
 
-line:hover {
-    stroke:rgb(255,255,0);
-    stroke-width:1;
+				line:hover {
+					stroke:rgb(255,255,0);
+					stroke-width:1;
 	
-}
+				}
 
-@-webkit-keyframes myfirst {
-    from {stroke:rgb(53,53,53);
-  stroke-width:1;}
-    to {stroke:rgb(100,100,100);
-  stroke-width:1.2;}
-}
+				@-webkit-keyframes myfirst {
+					from {stroke:rgb(53,53,53);
+						stroke-width:1;}
+						to {stroke:rgb(100,100,100);
+							stroke-width:1.2;}
+						}
 
-/* Standard syntax */
-@keyframes myfirst {
-    from {stroke:rgb(53,53,53);;
-  stroke-width:0.6;}
-    to {stroke:rgb(80,80,80);
-  stroke-width:0.9;}
-}
-
-
+						/* Standard syntax */
+						@keyframes myfirst {
+							from {stroke:rgb(53,53,53);;
+								stroke-width:0.6;}
+								to {stroke:rgb(80,80,80);
+									stroke-width:0.9;}
+								}
 
 
 
 
 
 
-.inline-popups a {
+
+
+								.inline-popups a {
 	
-	  color: black;
-	  text-decoration: none; /* no underline */
+									color: #F4F2E8;
+									text-decoration: none; /* no underline */
 	
+								}
+								.inline-popups li {
+									list-style-type: none;
+								}
+
+								.inline-popups ul {
+									padding-left:0px;
+								}
+								.white-popup {
+									position: relative;
+									background: #FFF;
+									padding: 25px;
+									width:auto;
+									max-width: 400px;
+									margin: 0 auto; 
+								}
+
+								.data-popup {
+									position: relative;
+									background: rgba(0,0,0,0.4);
+									padding: 25px;
+									width:auto;
+									max-width:1024px;
+									margin: 0 auto; 
+									overflow:scroll;
+									font-size: medium;
+									font-family: Helvetica;
+									letter-spacing: 2px;
+									font-weight: 200;
+									max-height: 600px;
 }
-.inline-popups li {
-	list-style-type: none;
+.popup-col {
+	padding-top: 4%;
 }
 
-.inline-popups ul {
-	padding-left:0px;
-}
-.white-popup {
-  position: relative;
-  background: #FFF;
-  padding: 25px;
-  width:auto;
-  max-width: 400px;
-  margin: 0 auto; 
-}
 
-/*    	------------------------------------- popup 
+
+
+								
+								.loader {
+									position: fixed;
+									left: 0px;
+									top: 0px;
+									width: 100%;
+									height: 100%;
+									z-index: 9999;
+									background: rgb(249,249,249);
+								}
+								/*    	------------------------------------- popup 
