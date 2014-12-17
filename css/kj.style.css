@@ -960,9 +960,13 @@ circle {
 				}
 
 				@-webkit-keyframes myfirst {
-					from {stroke:rgb(53,53,53);
+					0% {stroke:rgba(53,53,53,0.5);
 						stroke-width:1;}
-						to {stroke:rgb(100,100,100);
+						90 % {
+							stroke:rgba(59,59,59,0.6);
+													stroke-width:1;
+						}
+						100% {stroke:rgba(100,100,100,1);
 							stroke-width:1.2;}
 						}
 
@@ -1005,7 +1009,7 @@ circle {
 
 								.data-popup {
 									position: relative;
-									background: rgba(0,0,0,0.4);
+									background: rgb(255,255,255);
 									padding: 25px;
 									width:auto;
 									max-width:1024px;
