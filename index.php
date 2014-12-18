@@ -37,6 +37,7 @@
 		-->
 	</head>
 	<body>
+		
 		<div class="loader" style="text-align:center">
 			<img src="img/logo.png" class="slideright pulse" style="width:25%;padding-top:20%" >
 			<div class="synapse-tareef"></div>7
@@ -44,6 +45,45 @@
 		<div id="wrap">
 			<div id="main">
 
+
+
+				<?php
+				require_once('db.php');
+				$error_msg = "";
+				if (!isset($_COOKIE['user_id'])) {
+					if(isset($_POST['submit'])) {
+						//connect to database
+						$dbc = mysqli_connect($HOST,$USER,$PASS,$DB);
+						if (!$dbc) {
+						    die("Connection failed: " . mysqli_connect_error());
+						}
+						echo "Connected successfully";
+						//grabbing the credentials
+						$team_name = mysqli_real_escape_string($dbc,trim($_POST['username']));
+						$pass_word = mysqli_real_escape_string($dbc,trim($_POST['password']));
+						
+						if (!empty($team_name) && !empty($pass_word)) {
+							// Lookup 
+							$query = "SELECT user_id, teamname FROM main_tb1 WHERE teamname = '$team_name' AND password = SHA('$pass_word')";
+							$data = mysqli_query($dbc,$query);
+							
+							if (mysqli_num_rows($data) == 1) {
+								// login is ok
+								$row = mysqli_fetch_array($data);
+								setcookie('user_id',$row['user_id']);
+								setcookie('username',$row['username']);
+								$home_url = 'http://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']) . '/coord.php';	
+								header('Location:',$home_url);
+							}
+							$error_msg = 'Sorry, you must enter a valid username and password.';
+						}
+						else {
+							$error_msg = 'Sorry, the usrname and password field cannot be blank';
+						}
+					}
+				}
+					
+					?>
 				<nav class="navbar navbar-default navbar-fixed" role="navigation">
 					<div class="container-fluid">
 						<div class="navbar-header">
@@ -59,17 +99,45 @@
 						</div>
 
 						<div id ="navbarCollapse" class="collapse navbar-collapse">
-							<ul class="nav navbar-nav navbar-right" id="navRight">
+							<ul class="nav navbar-nav navbar-right " id="navRight">
 								<li><a href="/install">Home</a></li>
 								<li><a target="_blank" href="">Events</a></li>
-								<li><a href="/projects">Sponsors</a></li>
-								<li><a target="_blank" href="">Gallery</a></li>
+								<li><a href="#sponsorpic1">Sponsors</a></li>
+								<li><a href="#slideshow" href="">Gallery</a></li>
+								
 								<li><a href="form-div"  data-effect="mfp-newspaper">Contact Us</a></li>
-								<li><a href="/blog/2014/10/28/meteor-1-0">Blog</a></li>
+								<li class="inline-popups"><a href="#loginpopup" data-effect="mfp-move-from-top">Login</a></li>
+							
 							</ul>
 						</div>
 					</div>	
 				</nav>
+				
+				<div id="loginpopup" class="login-popup container-fluid mfp-with-anim mfp-hide">
+					<div class="login">
+						<h1>Login to Synapse</h1>
+						<?php
+						if (empty($_COOKIE['user_id'])) {
+						
+						 echo '<p class="error">' . $error_msg . '</p>';
+					 }
+						 ?>
+						<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+							<p><input type="text" name="username" value="" placeholder="Username"></p>
+							<p><input type="password" name="password" value="" placeholder="Password"></p>
+					        
+							<p class="submit"><input type="submit" name="submit" value="Login"></p>
+						</form>
+					</div>
+
+					<div class="login-help">
+					     
+					</div>
+				</div>
+				<div id="errata">
+					
+				</div>
+
 
 				<div id="home">
 					<section class="intro" style="overflow:hidden">
@@ -723,6 +791,9 @@
 									</div>
 									
 								</section>
+									
+									
+									
 													
 								<div id ="popups">					
 									<div id="cyno-popup" class="white-popup mfp-with-anim mfp-hide">
@@ -1132,7 +1203,6 @@
 
 
                
-
 				</body>
 				</html>
 				

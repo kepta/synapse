@@ -1,6 +1,22 @@
 
 $( document ).ready(function() {
     // your code here
+	$('a[href^="#"]').on('click',function (e) {
+		    e.preventDefault();
+
+		    var target = this.hash;
+		    var $target = $(target);
+
+		    $('html, body').stop().animate({
+		        'scrollTop': $target.offset().top
+		    }, 900, 'swing', function () {
+		        window.location.hash = target;
+		    });
+		});
+		
+		
+		
+		
 	 $(".loader").fadeOut("slow");
 	$('line').each(function() {
 		var x = Math.floor(150*Math.random());
