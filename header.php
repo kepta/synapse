@@ -9,25 +9,33 @@
 
 	<!-- Bootstrap -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	<!---foreign load CSS
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">-->
+	
 
 	<!-- custom style sheet-->
 	<link href="css/anima.css" rel="stylesheet">
 	<link href="css/magni.css" rel="stylesheet">
 	<link href="css/magniq.css" rel="stylesheet">
-	<!-- bxSlider Javascript file -->
 	
 	<!-- bxSlider CSS file -->
 	
+	<!-- foreign loads --->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+<!--	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>-->
        
 	<link href="css/jquery.fancybox.css" rel="stylesheet" >
 	<link href = "css/kj.style.css" rel="stylesheet" >
+	<link rel="stylesheet" href="css/quill.snow.css" />
+<!---	internal JS
+<script src="js/bootstrap.min.js"></script>
 
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+-->
 	<script src="js/jquery.fancybox.pack.js"></script>
 	<script src="js/magni.js"></script>
 	<script src="js/jquery.slides.min.js"></script>
-		
+	<script src = "js/quill.min.js"></script>
 		
 	<script src="js/kj.js"></script>
 		
@@ -39,7 +47,7 @@
 	<body>
 		
 		<div class="loader" style="text-align:center">
-			<img src="img/logo.png" class="slideright pulse" style="width:25%;padding-top:20%" >
+			<img src="img/logo.png" class="slideright pulse" style="padding-top:20%" >
 			<div class="synapse-tareef"></div>
 		</div>
 		<div id="wrap">

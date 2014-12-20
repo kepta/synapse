@@ -1,3 +1,14 @@
+#wrap {
+    overflow: hidden;
+}
+.errors {
+	color:red;
+	font-weight:300;
+}
+.success {
+color:green;
+font-weight:100;
+}
 .login-popup {
 	font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
 	position: relative;
@@ -125,7 +136,7 @@ input[type=submit] {
     border: none !important;
     color: #FFFFFF;
     cursor: pointer;
-    display: inline-block;
+    display: grid;
     font-family: Arial,sans-serif;
     font-size: 12px;
     font-weight: bold;
@@ -1326,7 +1337,33 @@ circle {
 								    border-radius: 3px;
 								    text-shadow: 1px 1px 1px #9E3F3F;
 								    cursor: pointer;
-								}
+								
+								    /* margin-left: 8px; */
+								    /* margin-left: 20%; */
+								    /* text-align: center; */
+}
 								.basic-grey .button:hover {
-								    background: #CF7A7A
-								}
+								    background: #de4f4f;}
+									
+									
+									
+									
+									/***quill***/
+									
+									
+									
+									.quill-wrapper {
+										background-color: #fff;
+										border-left: 1px solid #ccc;
+										border-right: 1px solid #ccc;
+										box-shadow: 0px 0px 10px #ccc;
+										margin-left: auto;
+										margin-right: auto;
+										max-width: 600px;
+										min-width: 320px;
+										/* width: 400px; */
+										min-height: 350px;
+										width: 100%;
+									
+										
+}

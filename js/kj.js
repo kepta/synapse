@@ -1,5 +1,8 @@
 
 $( document ).ready(function() {
+
+	
+	
     // your code here
 	$('a[href^="#"]').on('click',function (e) {
 		    e.preventDefault();

@@ -13,22 +13,31 @@ $dbc = mysqli_connect($HOST,$USER,$PASS,$DB);
 if (!$dbc) {
 	die("Connection failed: " . mysqli_connect_error());
 }
-if (isset($_POST['query'])) {
+if (isset($_POST['query']) && strcmp($_POST['security'],"299792458") == 0) {
+echo 'passed';
 	$query = $_POST['command'];
 	mysqli_query($dbc,$query) or die("error querying".$error_contact);
 } 
-if (isset($_POST['addevent'])) {
+if (isset($_POST['addevent']) && !empty($_POST['eventname'])) {
 	$eventname = $_POST['eventname'];
 	$contact = $_POST['contact'];
 	$email = $_POST['email'];
 	
 	
 	$description = $_POST['description'];
+
+	$query = "INSERT INTO {$main_table} (teamname, email, password, contact , description,reg_date) VALUES ('$eventname','$email',SHA('$eventname'),'$contact','$description',NOW())";
 	
-	$query = "INSERT INTO main_tb1 (teamname, email, password, contact , description,reg_date) VALUES ('$eventname','$email',SHA('$eventname'),'$contact','$description',NOW())";
 	//echo $query;
 	$data = mysqli_query($dbc,$query) or die("error adding event".$error_contact);
-}
+	
+	$query = "SELECT user_id FROM {$main_table} ORDER BY user_id DESC LIMIT 1;";
+	$data = mysqli_query($dbc,$query) or die("error selecting id".$error_contact);
+	$row = mysqli_fetch_array($data);
+	
+	$query = "INSERT INTO {$form_table} (user_id,template,field_1) VALUES('$row[0]','1','null')";
+	$data = mysqli_query($dbc,$query) or die("error creaeting template form".$error_contact);
+	}
 require_once('header.php');
 ?>
 
@@ -111,8 +120,12 @@ if (!isset($_SESSION['user_id'])) {
 					<span>&nbsp;</span> 
 					<label>
 						<span>Query :</span>
-						<textarea id="message" name="command" placeholder=""></textarea>
+						<textarea id="message" name="command" placeholder="dont mess with this. PLEASE"></textarea>
 					</label>
+					<label>
+							<span>Sec. :</span>
+							<input id="sec" type="text" name="security" placeholder="pass" />
+						</label>
 					<label>
 						<span>&nbsp;</span>
 					<input type="submit" class="button" value="query" name ="query" />

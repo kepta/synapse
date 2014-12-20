@@ -9,7 +9,7 @@ if (!isset($_SESSION['user_id'])) {
 		//connect to database
 		$dbc = mysqli_connect($HOST,$USER,$PASS,$DB);
 		if (!$dbc) {
-			die("Connection failed: " . mysqli_connect_error());
+			die("Connection failed: " . mysqli_connect_error()." ".$error_contact);
 		}
 						
 		//grabbing the credentials
@@ -18,8 +18,8 @@ if (!isset($_SESSION['user_id'])) {
 						
 		if (!empty($team_name) && !empty($pass_word)) {
 			// Lookup 
-			$query = "SELECT user_id, teamname FROM main_tb1 WHERE teamname = '$team_name' AND password = SHA('$pass_word')";
-			$data = mysqli_query($dbc,$query);
+			$query = "SELECT user_id, teamname FROM {$main_table} WHERE teamname = '$team_name' AND password = SHA('$pass_word')";
+			$data = mysqli_query($dbc,$query) or die("error looking up for user".$error_contact." ");
 							
 			if (mysqli_num_rows($data) == 1) {
 				// login is ok
