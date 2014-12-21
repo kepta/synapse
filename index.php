@@ -43,6 +43,46 @@ if (!isset($_SESSION['user_id'])) {
 		}
 	}
 }
+
+
+$dbc = mysqli_connect($HOST,$USER,$PASS,$DB);
+			if (!$dbc) {
+				die(" error fetching forms: " . mysqli_connect_error()." ".$error_contact);
+			}
+			if (isset($_POST['register'])) {
+	$data_1 = $_POST['data_1'];
+	$data_2 = $_POST['data_2'];
+	$data_3 =  $_POST['data_3'];
+	$data_4 =  $_POST['data_4'];
+	$data_5 =  $_POST['data_5'];
+	$data_6 =  $_POST['data_6'];
+	$data_7 =  $_POST['data_7'];
+	$data_8 =  $_POST['data_8'];
+	$data_9 =  $_POST['data_9'];
+	$bigdata1 = $_POST['big_data_1'];
+	$bigdata2 = $_POST['big_data_2'];
+	$bigdata3 = $_POST['big_data_3'];
+	$team_id = $_POST['user_id'];
+	$query = "INSERT INTO {$form_table} (user_id,template, data_1,data_2,data_3,data_4,data_5,data_6,data_7,data_8,data_9,big_data_1,big_data_2,big_data_3) VALUES ('$team_id','0','$data_1','$data_2','$data_3','$data_4','$data_5','$data_6','$data_7','$data_8','$data_9','$bigdata1','$bigdata2','$bigdata3')";
+	//echo $query;
+	mysqli_query($dbc,$query) or die("error registering for event ".$error_contact);
+}
+			$query = "SELECT teamname,user_id,description FROM {$main_table} WHERE disable = '0'";
+			$data=mysqli_query($dbc,$query) or die("error fetching event names".$error_contact);
+			$row_save = mysqli_fetch_array($data);
+			$description_html = array();
+			$team_name = array();
+			$team_id = array();
+			//$count = 0;
+			
+			while($row_save = mysqli_fetch_array($data)) {
+				$team_name[] = $row_save[0];
+				$description_html[] = $row_save[2];
+				$team_id[]= $row_save[1];
+			//	$count++;
+				}	
+				$size = count($team_id);		
+
 require_once('header.php');
 					
 ?>
@@ -70,30 +110,30 @@ require_once('header.php');
 			</div>
 		</div>
 							
-		<div class="row ">
+		<div style = "font-weight:300" class="row ">
 			<div class="col-md-3" id ="cyno">
 
 				<img src="img/cyno.png">
 									
-				<h3><a href="#cyno-popup"  data-effect="mfp-newspaper">Cynosure</a></h3>
+				<h3><a href="#cyno-popup" style = "color:rgb(52, 73, 94)" data-effect="mfp-newspaper">Cynosure</a></h3>
 									
 									
                                     
 			</div>
 			<div class="col-md-3" id ="ramp">
 				<img src="img/rampage.png">
-				<h3> <h3><a href="#rampage-popup"  data-effect="mfp-newspaper">Rampage</a></h3></h3>
+				<h3> <h3><a href="#rampage-popup" style = "color:rgb(52, 73, 94)" data-effect="mfp-newspaper">Rampage</a></h3></h3>
 									
                                   
 			</div>
 			<div class="col-md-3" id="piano">
 				<img src="img/piano.png">
-				<h3> <a href="#innaugral-popup"  data-effect="mfp-newspaper">Innaugral</a></h3>
+				<h3> <a href="#innaugral-popup"  style = "color:rgb(52, 73, 94)" data-effect="mfp-newspaper">Innaugral</a></h3>
                                         
 			</div>
 			<div class="col-md-3" id="rock">
 				<img src="img/rock.png">
-				<h3> <a href="#ragna-popup"  data-effect="mfp-newspaper">Ragna Rock</a></h3>
+				<h3> <a href="#ragna-popup" style = "color:rgb(52, 73, 94)" data-effect="mfp-newspaper">Ragna Rock</a></h3>
                                         
 			</div>
 		</div>
@@ -168,13 +208,13 @@ require_once('header.php');
 		</div>
 	</div>
 </section>
-<section class="sponsors2">
+<section class="sponsors2" id ="sponsorroll" >
 	<div class="container" style="text-align:center">
 		<div class="row solidsponsor">
 			<h2 >Sponsors</h2>
 		</div></div>
 	</section> 
-	<section class="sponsors"> 
+<section class="sponsors"> 
 		<div class="container-fluid">
 
 			<div class="col-md-6 sponsorleft">
@@ -186,7 +226,7 @@ require_once('header.php');
 		</div>
 	</section>
 							
-	<section class="divisor">
+<section class="divisor">
 		<div class="row row-no-padding">
 			<div class="col-xs-2 no-padding-col div1">
 			</div>
@@ -201,8 +241,103 @@ require_once('header.php');
 			<div class="col-xs-2 no-padding-col div6">
 			</div>
 		</div>
-	</section>
-	<section class="slider">
+</section>
+<section class="register" id="registerid">
+<div class="container-fluid">
+<div class = "row" id = "eventrow">
+<h1 style = "text-align:center">Registration </h1>
+<ul class="eventlist" style="text-align:center;margin-top:30px;padding-left:0px !important">
+<?php
+				for($i = 0 ; $i< $size ; $i++) {
+					
+					echo '<li class = "user_'.$team_id[$i].'">'.$team_name[$i].'</li>';
+				
+				
+				}
+			?>
+			</ul>
+			
+</div>
+
+	<div class = "col-md-5 col-md-offset-1" id = "forms" > 
+		
+		<?php
+		$query = "SELECT * FROM {$form_table} WHERE template='1' ";
+		//echo $query;
+		$data=mysqli_query($dbc,$query) or die("error fetching forms".$error_contact);
+	//	$i = 0;
+	$phpself = $_SERVER['PHP_SELF'];
+	
+		while($row = mysqli_fetch_array($data))  {
+		echo '<form style = "display:none" method="post" id="user_'.$row[1].'" action=" '. $phpself .' ">';
+		echo '<input id="bl" type="text" name="user_id"  value="'.$row[1].'" />';
+		$count = 1;
+		for($i = 3 ; $count < 10; $i=$i+2) {
+			if(empty($row[$i])) {
+				//echo 'break'.$i;
+				break;
+			}
+			?>
+			<label>
+							<input id="name" type="text" name="data_<?php echo $count;?>" placeholder="<?php echo $row[$i]?>" />
+						</label>
+			<?php
+			$count++;
+		
+		}
+		$count = 1;
+		for($i = 21 ; $count<4;$i=$i+2) {
+			if(empty($row[$i])) {
+				//echo 'break'.$i;
+				break;
+			}
+				?>
+			
+				<textarea rows="10" cols="10" id="name" type="text" name="big_data_<?php echo $count;?>" placeholder="<?php echo $row[$i]?>" ></textarea>
+			
+			<?php
+			
+			$count++;
+		}
+		
+			echo '<div class="container"><label><span style="clear:left">&nbsp;</span><input type="submit" class="button" value="register" name="register" /></label></div>   ';
+		echo '</form>';
+	}
+		?>
+		
+	
+	
+		</form>
+		</div>
+		<div class="col-md-6" id ="description">
+			<?php
+			for($i = 0 ; $i < $size ; $i++) {
+				echo '<div class="container" style = "overflow-x:hidden;display:none ;word-wrap:break-word;max-width:500px;font-size:medium;letter-spacing:1px;line-height:1.435em" id = "user_'.$team_id[$i].'d">';
+				echo $description_html[$i];
+				echo '</div>';
+			}	
+			?>
+		</div>
+	</div>
+</section>
+
+<section class="divisor">
+		<div class="row row-no-padding">
+			<div class="col-xs-2 no-padding-col div1">
+			</div>
+			<div class="col-xs-2 no-padding-col div2">
+			</div>
+			<div class="col-xs-2 no-padding-col div3">
+			</div>
+			<div class="col-xs-2 no-padding-col div4">
+			</div>
+			<div class="col-xs-2 no-padding-col div5">
+			</div>
+			<div class="col-xs-2 no-padding-col div6">
+			</div>
+		</div>
+</section>
+<section class="slider">
 		<div id="slideshow">
 			<a class="" rel="" href="photographs/photo1.jpg"><img src="thumbs/photo1.jpg" alt=""></a>
 			<a class="fancybox" rel="gallery" href="photographs/photo2.jpg"><img src="thumbs/photo2.jpg" alt=""></a>
@@ -332,8 +467,7 @@ require_once('header.php');
 									
 									
 									
-													
-	<div id ="popups">					
+<div id ="popups">					
 		<div id="cyno-popup" class="white-popup mfp-with-anim mfp-hide">
 			<p>Stars brighten up the night. But the kind cynosure offer can set the night ablaze. The celebrity walks up to the stage amidst loud cheers from the crowd. <button id="show">Show</button><span class="texty">The next few hours of the night will leave you mesmerized, for sure . The Raghu Dixit Project, Agnee , Indi- an Ocean , Aditya Narayan , Tochi Raina and still counting ..</span></p>
 		</div>

@@ -27,7 +27,7 @@ if (isset($_POST['eventupdate'])) {
 	}
 	else if(strcmp($_POST['password'],$_POST['passwordv']) == 0) {
 		//echo "hurrary";
-		$password = mysql_real_escape_string($_POST['password']);
+		$password = mysqli_real_escape_string($dbc,$_POST['password']);
 		$contact = $_POST['contact'];
 		$email = $_POST['email'];
 		
@@ -42,7 +42,7 @@ if (isset($_POST['eventupdate'])) {
 	}
 }
 if (isset($_POST['eventdescription'])) {
-	$description = mysql_real_escape_string($_POST['deshtml']);
+	$description = mysqli_real_escape_string($dbc,$_POST['deshtml']);
 	$query = "UPDATE {$main_table} SET description = '$description' WHERE user_id ='$user_id' ";
 	mysqli_query($dbc,$query) or die("error updating description ".$error_contact);
 	$error_msg = '<span class="success"> updated successfully</span>';
@@ -66,7 +66,7 @@ if (isset ( $_POST['formupdate'])) {
 	$query = "UPDATE {$form_table} SET field_1 = '$field_1' , field_2 = '$field_2', field_3 = '$field_3' , field_4 = '$field_4',field_5 = '$field_5' , field_6 = '$field_6', field_7 = '$field_7' , field_8 = '$field_8', field_9 = '$field_9' , big_field_1= '$big_field_1', big_field_2= '$big_field_2',big_field_3= '$big_field_3' WHERE user_id = '$user_id' AND template = '1' ";
 	//echo $query;
 	mysqli_query($dbc,$query) or die("error updating description ".$error_contact);
-	$error_msg = '<span class="success"> updated successfully</span>';
+	$error_msg = '<span class="success"> Updated successfully.</span>';
 }
 
 $query = "SELECT teamname , contact , email ,description  FROM {$main_table} WHERE user_id = '$user_id'";
@@ -276,6 +276,7 @@ if (!isset($_SESSION['user_id'])) {
 						<span class="ql-format-separator"></span><span title="Strikethrough" class="ql-format-button ql-strike"></span>
 					</span>
 					<span class="ql-format-separator"></span>
+					<span title="Image" class="ql-format-button ql-image"></span>
 					<span title="Bullet" class="ql-format-button ql-bullet"></span>
 					<span title="List" class="ql-format-button ql-list"></span>
 					<select class="ql-color"  title="Text Color">
@@ -299,10 +300,14 @@ if (!isset($_SESSION['user_id'])) {
 					<?php echo $row_event_info['description'] ;?>
 				</div>
 				<script>
-				var basicEditor = new Quill('#editor');
-				basicEditor.addModule('toolbar', {
-				  container: '#toolbar'
-				});
+				 quill = new Quill('#editor', {
+    modules: {
+      'toolbar': { container: '#toolbar' },
+      'image-tooltip': true,
+      'link-tooltip': true
+    },
+    theme: 'snow'
+  });
 				
 
 				$(".details").ready(function(){
@@ -310,8 +315,8 @@ if (!isset($_SESSION['user_id'])) {
 					$(".event-post").ready(function() {
 						$("#eventdescription").click(function() {
 							
-							//console.log(basicEditor.getHTML());
-							$("#html-input").val(basicEditor.getHTML());
+							//console.log(quill.getHTML());
+							$("#html-input").val(quill.getHTML());
 							$("#eventdescription-submit").trigger("click");
 						});
 				
@@ -322,7 +327,7 @@ if (!isset($_SESSION['user_id'])) {
 				
 				
 				</script>
-				
+				<link rel="stylesheet" href="css/quill.snow.css" />
 				
 			</div>
 			<form id ="event-post" method="post" class="basic-grey" action="<?php echo $_SERVER['PHP_SELF']; ?>">

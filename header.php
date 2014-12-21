@@ -27,12 +27,13 @@
        
 	<link href="css/jquery.fancybox.css" rel="stylesheet" >
 	<link href = "css/kj.style.css" rel="stylesheet" >
-	<link rel="stylesheet" href="css/quill.snow.css" />
+	
 <!---	internal JS
 <script src="js/bootstrap.min.js"></script>
 
 -->
 	<script src="js/jquery.fancybox.pack.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 	<script src="js/magni.js"></script>
 	<script src="js/jquery.slides.min.js"></script>
 	<script src = "js/quill.min.js"></script>
@@ -41,14 +42,16 @@
 		
 	<!-- meta discription -->
 	<meta name="Discription" content="Some shit here " >
+	
 	<!--  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	
 		-->
 	</head>
 	<body>
 		
 		<div class="loader" style="text-align:center">
-			<img src="img/logo.png" class="slideright pulse" style="padding-top:20%" >
-			<div class="synapse-tareef"></div>
+			<img src="img/logo2.jpg" class="slideright pulse" style="padding-top:20%" >
+			
 		</div>
 		<div id="wrap">
 			<div id="main">
@@ -80,9 +83,9 @@
 									?>
 									<li><a href="/install">Home</a></li>
 									<li><a href="#events">Events</a></li>
-									<li><a href="#sponsorpic1">Sponsors</a></li>
+									<li><a href="#sponsorroll">Sponsors</a></li>
 									<li><a href="#slideshow" >Gallery</a></li>
-								
+									<li><a href="#registerid" >Register</a></li>
 									<li><a href="form-div"  data-effect="mfp-newspaper">Contact Us</a></li>
 									<?php
 									echo '<li class="inline-popups"><a href="#loginpopup" data-effect="mfp-move-from-top">Login</a></li>';

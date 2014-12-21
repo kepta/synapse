@@ -6,10 +6,10 @@ if (!$dbc) {
 die("connection failed");
 }
 echo '<div style ="position:absolute ; top:0px">';
-$query = "CREATE TABLE {$main_table} ( user_id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, teamname VARCHAR(30) NOT NULL, password VARCHAR(40), email VARCHAR(50), contact VARCHAR(50), reg_date TIMESTAMP, description TEXT )";
+$query = "CREATE TABLE {$main_table} ( user_id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,disable INT(4) NOT NULL, teamname VARCHAR(30) NOT NULL, password VARCHAR(40), email VARCHAR(50), contact VARCHAR(50), reg_date TIMESTAMP, description TEXT )";
 $result = mysqli_query($dbc,$query) or die("unable to create main_tb1</div>");
 echo 'created table<br>';
-$query = "INSERT INTO {$main_table} (teamname, email, password, contact , description,reg_date) VALUES ('synapse','null_',SHA('ultimate15'),'null_','null_',NOW())";
+$query = "INSERT INTO {$main_table} (teamname, email, password, contact , description,reg_date,disable) VALUES ('synapse','null_',SHA('ultimate15'),'null_','null_',NOW(),'0')";
 $result = mysqli_query($dbc,$query) or die("could create synape</div>");
 echo 'created synapse<br>';
 

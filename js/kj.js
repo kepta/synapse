@@ -1,9 +1,34 @@
+//$(window).load(function() {
+$(document).ready(function() {
 
-$( document ).ready(function() {
+//random color
 
-	
-	
-    // your code here
+var color =["#1ABC9C","#2ECC71","#3498DB","#9B59B6","#34495E","#F1C40F","#E67E22","#E74C3C","#95A5A6"];
+var color_dark = ["#16A085","#27AE60","#2980B9","#8E44AD","#2C3E50","#F39C12","#D35400","#C0392B","#7F8C8D"];
+   // your code here
+   var tempString ="";
+   var tempDesc = "";
+   $('.eventlist').children().each(function () {
+   var d = Math.floor(Math.random() * 9);
+   $(this).css("background-color",color[d]);
+   $(this).click(function() {
+   		
+   		$(tempString).hide("fast");
+   		$(tempDesc).hide("fast");
+   		var string ="#"+ $(this).attr('class');
+   		var desc = string.slice(0) +"d";
+   		$(string).show("fast");
+   		$(desc).show("fast");
+   		tempString = string.slice(0);
+   		tempDesc = desc.slice(0);
+   		//console.log($(this).attr('class'));
+   });
+   $(this).hover(function() {
+   	$(this).css("background-color",color_dark[d]);
+   }, function() {
+   	$(this).css("background-color",color[d]);
+   });
+   });
 	$('a[href^="#"]').on('click',function (e) {
 		    e.preventDefault();
 
@@ -31,11 +56,11 @@ $( document ).ready(function() {
 	$(".pop-clickable").hoverIntent({
 		over:function() {
 		console.log("hover");
-		$(this).children().next().show("slow");
+		$(this).children().next().show("fast");
 		
 		
 	},out:function(){
-		$(this).children().next().hide("slow");
+		$(this).children().next().hide("fast");
 	},timeout:500});
 	$(".btnmine" ).mouseenter(function() {
 		$(".intro").css("background-color","#de4f4f");

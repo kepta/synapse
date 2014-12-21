@@ -18,6 +18,12 @@ echo 'passed';
 	$query = $_POST['command'];
 	mysqli_query($dbc,$query) or die("error querying".$error_contact);
 } 
+if (isset($_POST['disable'])) {
+	$team_id = $_POST['number'];
+	$query = "UPDATE {$main_table} SET disable = '1' WHERE user_id = '$team_id'";
+	echo $query;
+	mysqli_query($dbc,$query) or die('error disabling');
+}
 if (isset($_POST['addevent']) && !empty($_POST['eventname'])) {
 	$eventname = $_POST['eventname'];
 	$contact = $_POST['contact'];
@@ -26,7 +32,7 @@ if (isset($_POST['addevent']) && !empty($_POST['eventname'])) {
 	
 	$description = $_POST['description'];
 
-	$query = "INSERT INTO {$main_table} (teamname, email, password, contact , description,reg_date) VALUES ('$eventname','$email',SHA('$eventname'),'$contact','$description',NOW())";
+	$query = "INSERT INTO {$main_table} (teamname, email, password, contact , description,reg_date,disable) VALUES ('$eventname','$email',SHA('$eventname'),'$contact','The most beautiful of all description',NOW(),'0')";
 	
 	//echo $query;
 	$data = mysqli_query($dbc,$query) or die("error adding event".$error_contact);
@@ -133,7 +139,27 @@ if (!isset($_SESSION['user_id'])) {
 				</form>
 			</div>
 		</section>
-		<section class ="data">
+		
+		<section class ="disableevent">
+			<div class="container-fluid ">
+				<form method="post" class="basic-grey" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+					<span>&nbsp;</span> 
+											<label>
+							<span>Disable id :</span>
+							<input id="name" type="text" name="number" placeholder="donot use plzz" />
+						</label>
+					<label>
+							<span>Sec. :</span>
+							<input id="sec" type="text" name="security" placeholder="pass" />
+						</label>
+					<label>
+						<span>&nbsp;</span>
+					<input type="submit" class="button" value="query" name ="disable" />
+				</label>
+				</form>
+			</div>
+		</section>
+		<section class ="data" style ="overflow:scroll">
 			<div class="container-fluid">
 				
 				<?php
