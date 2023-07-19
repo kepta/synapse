@@ -1,3 +1,3 @@
-# muffled-storm
+# muffled-storms
 
 Hello world!
