@@ -1,3 +1,3 @@
-# muffled-stormxs
+# muffled-stormsxs
 
 Hello world!
